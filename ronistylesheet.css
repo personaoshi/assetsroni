@@ -18,11 +18,12 @@
 **/
 
 /* General Style */
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+</style>
 body {
     font-family: 'Mochiy Pop One', Courier, monospace;
+	font-family: 'Mochiy Pop One', sans-serif;
     font-size: 1.8rem;
 
 }
