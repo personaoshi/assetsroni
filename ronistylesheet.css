@@ -22,7 +22,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
 body {
-    font-family: 'Mochiy Pop One', Courier, monospace;
+    font-family: 'Mochiy Pop One', monospace, Courier;
 	font-family: 'Mochiy Pop One', sans-serif;
     font-size: 1.8rem;
 
