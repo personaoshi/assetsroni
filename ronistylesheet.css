@@ -206,4 +206,36 @@ input[type=range]::-ms-fill-upper {
 	[data-component="quick-menu"] span:hover {
 
 	}
+	
+}
+[data-component="main-menu"] {
+    position: fixed;
+    top: 45%;
+    right: 47%;
+}
+
+[data-screen="main"] {
+    background-image: url(https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/5937e90a5bafe882f5bc09e6/gatitos-cesta_0.jpg);
+}
+
+[data-action="open-screen"], [data-component="quick-menu"] {
+    display: none;
+}
+
+[data-component="text-box"] {
+    border: 5px solid black;
+    margin: 0 30px;
+    width: 96vw;
+    bottom: 20px;
+    min-height: 200px;
+    background-color: #000000a3;
+}
+
+[data-screen="game"] [data-character] {
+    transform: scale(1.5);
+}
+
+game-screen [data-sprite].right {
+    left: auto;
+    right: 50px;
 }
