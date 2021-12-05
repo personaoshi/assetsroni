@@ -224,11 +224,13 @@ input[type=range]::-ms-fill-upper {
 
 [data-component="text-box"] {
     border: 5px solid black;
+    border-radius: 100px 100px 100px 100px;
     margin: 0 30px;
     width: 96vw;
     bottom: 20px;
-    min-height: 200px;
-    background-color: #000000a3;
+    min-height: 250px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffffc5;
 }
 
 [data-screen="game"] [data-character] {
@@ -237,5 +239,12 @@ input[type=range]::-ms-fill-upper {
 
 game-screen [data-sprite].right {
     left: auto;
-    right: 50px;
+    right: 110px;
+}
+game-screen [data-sprite].left {
+    left: 110px;
+    right: auto;
+}
+choice-container button {
+     color: 
 }
