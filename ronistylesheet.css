@@ -103,14 +103,7 @@ button:hover {
 
 /* Text Box styling */
 [data-component="text-box"] {
-    border: 5px solid black;
-    border-radius: 100px 100px 100px 100px;
-    margin: 0 30px;
-    width: 96vw;
-    bottom: 20px;
-    min-height: 250px;
-    color: rgb(0, 0, 0);
-    background-color: #ffffffc5;
+
 }
 
 /* Character Name Style */
@@ -120,13 +113,12 @@ button:hover {
 
 /* Style for Centered Text */
 [data-component="centered-dialog"] {
-    background:rgb(0, 0, 0);
-    color:white;
+
 }
 
 /* Character Images Styles */
 [data-screen="game"] [data-character] {
-    transform: scale(1.5);
+
 }
 
 /* Other Images Styles */
