@@ -113,6 +113,8 @@ button:hover {
 
 /* Style for Centered Text */
 [data-component="centered-dialog"] {
+    color: white;
+    background-color: black;
 
 }
 
