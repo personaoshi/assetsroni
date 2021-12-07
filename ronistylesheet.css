@@ -103,7 +103,14 @@ button:hover {
 
 /* Text Box styling */
 [data-component="text-box"] {
-
+        border: 5px solid black;
+        border-radius: 100px 100px 100px 100px;
+        margin: 0 30px;
+        width: 96vw;
+        bottom: 20px;
+        min-height: 250px;
+        color: rgb(0, 0, 0);
+        background-color: #ffffffc5;
 }
 
 /* Character Name Style */
@@ -113,8 +120,9 @@ button:hover {
 
 /* Style for Centered Text */
 [data-component="centered-dialog"] {
-        background-color: black;
-        color: white;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    font-size: 40px;
 }
 
 /* Character Images Styles */
@@ -216,22 +224,14 @@ input[type=range]::-ms-fill-upper {
 }
 
 [data-screen="main"] {
-    background-image: url(https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/5937e90a5bafe882f5bc09e6/gatitos-cesta_0.jpg);
+    background-image: url(http://127.0.0.1:8887/assetsroni/images/Portada%20pitchv3.png);
 }
 
 [data-action="open-screen"], [data-component="quick-menu"] {
     display: none;
 }
 
-[data-component="text-box"] {
-    border: 5px solid black;
-    border-radius: 100px 100px 100px 100px;
-    margin: 0 30px;
-    width: 96vw;
-    bottom: 20px;
-    min-height: 250px;
-    color: rgb(0, 0, 0);
-    background-color: #ffffffc5;
+
 }
 
 [data-screen="game"] [data-character] {
