@@ -51,8 +51,9 @@ button:hover {
 
 /* Main Menu Styling */
 [data-screen="main"] {
-
+    background-image: url(http://127.0.0.1:8887/assetsroni/images/Portada%20pitchv3.png);
 }
+
 
 /* Main Menu Buttons Styling */
 [data-screen="main"] button {
@@ -115,7 +116,13 @@ button:hover {
 
 /* Character Name Style */
 [data-ui="who"] {
-
+    padding: 0rem;
+    margin: 7px 0px 23px 40rem;
+    font-size: 2.5rem;
+    background: #00000000;
+    width: 7rem;
+    border-radius: 50px;
+    border: 15px black;
 }
 
 /* Style for Centered Text */
@@ -223,10 +230,6 @@ input[type=range]::-ms-fill-upper {
     right: 47%;
 }
 
-[data-screen="main"] {
-    background-image: url(http://127.0.0.1:8887/assetsroni/images/Portada%20pitchv3.png);
-}
-
 [data-action="open-screen"], [data-component="quick-menu"] {
     display: none;
 }
@@ -248,4 +251,16 @@ game-screen [data-sprite].left {
 }
 choice-container button {
      color: 
+}
+[data-content=dialog], [data-ui=say] {
+    padding: 2rem 5rem 2rem 5rem;
+}
+text-box p {
+    display: block;
+    width: 75rem;
+    height: 8rem;
+    padding: 10px;
+    margin: -30px -2rem 0rem 8.5rem;
+    text-align: justify;
+    background: #ff000000;
 }
