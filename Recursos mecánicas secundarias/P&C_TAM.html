@@ -1,4 +1,5 @@
 <html>
+    <!--En este HTML probé usar modales para abrir la img en algo así como un pop-up-->
     <head>
         <title>RONI: point and click de la tienda</title>
         <style>
@@ -13,6 +14,7 @@
             margin: 0px;
           }
           .modal {
+            visibility: hidden;
             position: fixed;
             background-color: rgba(0,0,0,0.5);
             z-index: 1;
@@ -49,13 +51,13 @@
 
     <body style="background-color: black;">
         <audio autoplay loop>
-            <source src="https://personaoshi.github.io/assetsroni/music/p&c-music.wav" type="audio/wav">
+            <source src="https://personaoshi.github.io/assetsroni/music/p&c-music.wav?raw=true" type="audio/wav">
         </audio>
         <!--Imagen de fondo del point & click-->
         <img src="https://github.com/personaoshi/assetsroni/blob/main/scenes/intTodoamilA.jpg?raw=true" usemap="#image-map">
 
         <map name="image-map">
-            <area target="_self" alt="Juguetes a mil" title="Juguetes a mil" id="Juguetes" href="#JuguetesImg" coords="426,531,447,576,501,765,515,824,515,1079,14,1079,16,824,77,819,85,748,138,714,196,709,226,661,243,637,269,615,289,566,321,532,382,514" shape="poly">
+            <area target="_self" alt="Juguetes a mil" title="Juguetes a mil" id="Juguetes" href="javascript:" coords="426,531,447,576,501,765,515,824,515,1079,14,1079,16,824,77,819,85,748,138,714,196,709,226,661,243,637,269,615,289,566,321,532,382,514" shape="poly">
             <area target="_self" alt="Poster de Sandro" title="Poster de Sandro" id="Sandro" coords="644,219,569,221,569,284,628,353,666,404,793,406,793,146,644,143" shape="poly">
             <area target="_self" alt="Vinilos" title="Vinilos" id="Vinilos" coords="700,453,747,422,924,420,951,412,1142,417,1168,402,1380,398,1400,422,1405,541,1421,593,1093,597,1090,744,679,741,681,592,657,585,696,527" shape="poly">
             <area target="_self" alt="Máquina de apuestas" title="Máquina de apuestas" id="Máquina" coords="1495,144,1492,99,1512,65,1575,21,1641,2,1832,2,1861,4,1900,43,1914,63,1919,1074,1758,1079,1763,872,1785,843,1748,818,1709,765,1714,602,1451,594,1503,519,1498,348,1539,326,1571,294,1585,248,1561,192,1527,165" shape="poly">
@@ -83,7 +85,7 @@
         </map>
 
         <!--Imágenes pop-up-->
-        <div id="modalJuguetes" class="modal">
+        <div id="modalJuguetes" class="modal" onclick="funciónAbrir()">
             <img class="modal-content" id="JuguetesImg" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/Pop-ups/001_Juguetes.PNG?raw=true">
             <span class="close">&times;</span>
         </div>
