@@ -26,6 +26,10 @@
 
     <body>
 
+        <audio autoplay loop 0.8>
+            <source src="https://github.com/personaoshi/assetsroni/blob/main/music/p&c-music.wav?raw=true">
+        </audio>
+
         <!--
         <map name="mimapa" >
             <area alt="Juguetes a mil" shape="RECT" id = "btn-abrir-popup3" class="btn-abrir-popup3" xlink:title="Hello" coords="0,0,120,160" href="#" onclick="return false;" >
@@ -37,9 +41,9 @@
         <!--Mapa de la imagen-->
 
         <map name="mapa-pnc">
-            <area target="popup" alt="Juguetes a mil" id="btn-abrir-popup01" title="Juguetes a mil" href="#" onclick="return false;" coords="392,516,437,603,501,798,508,1079,14,1074,16,831,89,745,209,704,287,560" shape="poly">
-            <area target="popup" alt="Vinilos" id="btn-abrir-popup02" title="Vinilos" href="#" onclick="return false;" coords="699,409,1403,552" shape="rect">
-            <area target="popup" alt="Ventilador" id="btn-abrir-popup03" title="Ventilador" href="#" onclick="return false;" coords="837,136,973,326" shape="rect">
+            <area target="popup" alt="Juguetes a mil" id="btn-abrir-popup01" class="btn-abrir-popup01" title="Juguetes a mil" href="#" onclick="return false;" coords="392,516,437,603,501,798,508,1079,14,1074,16,831,89,745,209,704,287,560" shape="poly">
+            <area target="popup" alt="Vinilos" id="btn-abrir-popup02" class="btn-abrir-popup02" title="Vinilos" href="#" onclick="return false;" coords="699,409,1403,552" shape="rect">
+            <area target="popup" alt="Ventilador" id="btn-abrir-popup03" class="btn-abrir-popup" title="Ventilador" href="#" onclick="return false;" coords="837,136,973,326" shape="rect">
             <area target="popup" alt="Ventilación" id="btn-abrir-popup04" title="Ventilación" href="#" onclick="return false;" coords="1098,150,1261,63" shape="rect">
             <area target="popup" alt="Poster de Sandro" id="btn-abrir-popup05" title="Poster de Sandro" href="#" onclick="return false;" coords="574,140,793,399" shape="rect">
             <area target="popup" alt="Máquina de apuestas" id="btn-abrir-popup06" title="Máquina de apuestas" href="#" onclick="return false;" coords="1514,140,1912,142,1916,1076,1751,1076,1753,864,1705,824,1707,602,1525,600,1512,323,1566,295,1583,230,1558,183,1510,161" shape="poly">
@@ -65,33 +69,27 @@
         </map>
 
         <!--Imagen de fondo del P&C-->
-        <img src="https://github.com/personaoshi/assetsroni/blob/main/scenes/intTodoamil.png?raw=true" usemap="#mimapa" >
+        <img src="https://github.com/personaoshi/assetsroni/blob/main/scenes/intTodoamil.png?raw=true" usemap="#mapa-pnc" >
         
-        <!--Inicio botones pop-up-->
-        <button id="btn-abrir-popup" class="btn-abrir-popup">Abrir Ventana Emergente</button>
-        <button id="btn-abrir-popup2" class="btn-abrir-popup2">Ventana Emergente2</button>
-        <button id="btn-abrir-popup3" class="btn-abrir-popup3">El universo</button>
-
-        <div class="overlay" id = "overlay">
-                <div class="popup" id = "popup">
-                    <a href = "#" class = "btn-cerrar-popup" id = "btn-cerrar-popup"> <i class="fas fa-times"> </i>
-                    <h3> IMAGEN Y TITULO</h3>
-                    <img class="modal-content" id="OTRO" style="height:auto" src="https://www.istockphoto.com/resources/images/PhotoFTLP/998044806.jpg?raw=true">
+        <!--Inicio pop-ups-->
+        <div class="overlay01" id = "overlay01">
+                <div class="popup01" id = "popup01">
+                    <a href = "#" class = "btn-cerrar-popup01" id = "btn-cerrar-popup01"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/001_Juguetes.PNG?raw=true">
                     </a>
                 </div>
         </div>
 
-        <div class="overlay2" id = "overlay2">
-                <div class="popup2" id = "popup2">
-                    <a href = "#" class = "btn-cerrar-popup2" id = "btn-cerrar-popup2"> <i class="fas fa-times"> </i>
-                    <h3> IMAGEN Y TITULO</h3>
-                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/Pop-ups/001_Juguetes.PNG?raw=true">
+        <div class="overlay02" id = "overlay02">
+                <div class="popup02" id = "popup02">
+                    <a href = "#" class = "btn-cerrar-popup02" id = "btn-cerrar-popup02"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/002_Vinilos.PNG?raw=true">
                     </a>
                 </div>
         </div>
 
         <div class="overlay3" id = "overlay3">
-                <div class="popup3" id = "popup3">
+                <div class="popup3" id = "popup03">
                     <a href = "#" class = "btn-cerrar-popup3" id = "btn-cerrar-popup3"> <i class="fas fa-times"> </i>
                     <img class="modal-content" id="UNIVERSO" style="height:auto" src="https://www.muycomputer.com/wp-content/uploads/2016/01/Universo.jpg?raw=true">
                     </a>
@@ -99,7 +97,7 @@
         </div>
 
                 <div class="overlay4" id = "overlay4">
-                <div class="popup4" id = "popup4">
+                <div class="popup4" id = "popup04">
                     <a href = "#" class = "btn-cerrar-popup4" id = "btn-cerrar-popup4"> <i class="fas fa-times"> </i>
                     <img class="modal-content" id="UNIVERSO" style="height:auto" src="https://ichef.bbci.co.uk/news/800/cpsprodpb/15665/production/_107435678_perro1.jpg?raw=true">
                     </a>

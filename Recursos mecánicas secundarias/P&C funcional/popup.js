@@ -1,12 +1,12 @@
-var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
-	overlay = document.getElementById('overlay'),
-	popup = document.getElementById('popup'),
-	btnCerrarPopup = document.getElementById('btn-cerrar-popup');
+var btnAbrirPopup01 = document.getElementById('btn-abrir-popup01'),
+	overlay01 = document.getElementById('overlay01'),
+	popup01 = document.getElementById('popup01'),
+	btnCerrarPopup01 = document.getElementById('btn-cerrar-popup01');
 
-	btnAbrirPopup2 = document.getElementById('btn-abrir-popup2'),
-	overlay2 = document.getElementById('overlay2'),
-	popup2 = document.getElementById('popup2'),
-	btnCerrarPopup2 = document.getElementById('btn-cerrar-popup2');
+	btnAbrirPopup02 = document.getElementById('btn-abrir-popup02'),
+	overlay02 = document.getElementById('overlay02'),
+	popup02 = document.getElementById('popup02'),
+	btnCerrarPopup02 = document.getElementById('btn-cerrar-popup02');
 
 	btnAbrirPopup3 = document.getElementById('btn-abrir-popup3'),
 	overlay3 = document.getElementById('overlay3'),
@@ -18,14 +18,14 @@ var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
 	popup4 = document.getElementById('popup4'),
 	btnCerrarPopup4 = document.getElementById('btn-cerrar-popup4');
 
-btnAbrirPopup.addEventListener('click', function(){
-	overlay.classList.add('active');
-	popup.classList.add('active');
+btnAbrirPopup01.addEventListener('click', function(){
+	overlay01.classList.add('active');
+	popup01.classList.add('active');
 });
 
-btnAbrirPopup2.addEventListener('click', function(){
-	overlay2.classList.add('active');
-	popup2.classList.add('active');
+btnAbrirPopup02.addEventListener('click', function(){
+	overlay02.classList.add('active');
+	popup02.classList.add('active');
 });
 
 btnAbrirPopup3.addEventListener('click', function(){
@@ -38,16 +38,16 @@ btnAbrirPopup4.addEventListener('click', function(){
 	popup4.classList.add('active');
 });
 
-btnCerrarPopup.addEventListener('click', function(e){
+btnCerrarPopup01.addEventListener('click', function(e){
 	e.preventDefault();
-	overlay.classList.remove('active');
-	popup.classList.remove('active');
+	overlay01.classList.remove('active');
+	popup01.classList.remove('active');
 });
 
-btnCerrarPopup2.addEventListener('click', function(e){
+btnCerrarPopup02.addEventListener('click', function(e){
 	e.preventDefault();
-	overlay2.classList.remove('active');
-	popup2.classList.remove('active');
+	overlay02.classList.remove('active');
+	popup02.classList.remove('active');
 });
 
 btnCerrarPopup3.addEventListener('click', function(e){

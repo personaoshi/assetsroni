@@ -7,8 +7,10 @@
 }
 
 body {
-	background: #312d2d;
+	background: #000;
 	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 0px;
+	margin: 0px;
 }
 
 .contenedor {
@@ -40,7 +42,7 @@ body {
 	color: #fff;
 	background: #5E7DE3;
 	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Mochiy Pop One', sans-serif;
 	font-size: 16px;
 	cursor: pointer;
 	transition: .3s ease all;
@@ -52,10 +54,10 @@ body {
 }
 
 /* ------------------------- */
-/* POPUP */
+/* POPUP 01 */
 /* ------------------------- */
 
-.overlay {
+.overlay01 {
 	background: rgba(0,0,0,.3);
 	position: fixed;
 	top: 0;
@@ -68,25 +70,25 @@ body {
 	visibility: hidden;
 }
 
-.overlay.active {
+.overlay01.active {
 	visibility: visible;
 }
 
-.popup {
-	background: #F8F8F8;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	padding: 20px;
+.popup01 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 5px;
 	text-align: center;
 	width: 600px;
+	height: auto;
 	
-	transition: .3s ease all;
+	transition: 0.3s ease all;
 	transform: scale(0.7);
 	opacity: 0;
 }
 
-.popup .btn-cerrar-popup {
+.popup01 .btn-cerrar-popup01 {
 	font-size: 16px;
 	line-height: 16px;
 	display: block;
@@ -95,14 +97,14 @@ body {
 	color: #BBBBBB;
 }
 
-.popup .btn-cerrar-popup:hover {
+.popup01 .btn-cerrar-popup01:hover {
 	color: #000;
 }
 
 /* ------------------------- */
-/* POPUP2 */
+/* POPUP02 */
 /* ------------------------- */
-.overlay2 {
+.overlay02 {
 	background: rgba(0,0,0,.3);
 	position: fixed;
 	top: 0;
@@ -115,25 +117,25 @@ body {
 	visibility: hidden;
 }
 
-.overlay2.active {
+.overlay02.active {
 	visibility: visible;
 }
 
-.popup2 {
-	background: #F8F8F8;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
+.popup02 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
 	padding: 20px;
 	text-align: center;
 	width: 600px;
+	height: auto;
 	
 	transition: .3s ease all;
 	transform: scale(0.7);
 	opacity: 0;
 }
 
-.popup2 .btn-cerrar-popup2 {
+.popup02 .btn-cerrar-popup02 {
 	font-size: 16px;
 	line-height: 16px;
 	display: block;
@@ -142,7 +144,7 @@ body {
 	color: #BBBBBB;
 }
 
-.popup2 .btn-cerrar-popup2:hover {
+.popup02 .btn-cerrar-popup02:hover {
 	color: #000;
 }
 
@@ -167,13 +169,13 @@ body {
 }
 
 .popup3 {
-	background: #F8F8F8;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
 	padding: 20px;
 	text-align: center;
 	width: 600px;
+	height: auto;
 	
 	transition: .3s ease all;
 	transform: scale(0.7);
@@ -215,13 +217,13 @@ body {
 }
 
 .popup4 {
-	background: #F8F8F8;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
 	padding: 20px;
 	text-align: center;
 	width: 600px;
+	height: auto;
 	
 	transition: .3s ease all;
 	transform: scale(0.7);
@@ -246,10 +248,10 @@ body {
 /* ------------------------- */
 /* ANIMACIONES */
 /* ------------------------- */
-.popup.active {	transform: scale(1); opacity: 1; }
-.popup2.active {	transform: scale(1); opacity: 1; }
-.popup3.active {	transform: scale(1); opacity: 1; }
-.popup4.active {	transform: scale(1); opacity: 1; }
+.popup01.active {	transform: scale(1); opacity: 1; }
+.popup02.active {	transform: scale(1); opacity: 1; }
+.popup03.active {	transform: scale(1); opacity: 1; }
+.popup04.active {	transform: scale(1); opacity: 1; }
 
 @keyframes entradaTitulo {
 	from {
