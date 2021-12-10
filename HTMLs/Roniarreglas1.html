@@ -1,0 +1,1017 @@
+<html>
+	<head>
+		<title>RONI: Dialogos alternativos 1.0</title>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130174335-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-130174335-2');
+		</script>
+		
+		<meta charset="UTF-8">
+
+		<link rel="stylesheet" href="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/engine/core/monogatari.css">
+		<link rel="stylesheet" href="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/style/error.css">
+		<link rel="stylesheet" href="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/style/main.css">
+
+		<!-- Third Party JavaScript Libraries -->
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/js/vendor/jquery.min.js"></script>
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/js/vendor/js-yaml.min.js"></script>
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/js/vendor/lodash.min.js"></script>
+
+		<!-- Monogatari JavaScript Libraries -->
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/engine/debug/debug.js"></script>
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/engine/core/monogatari.js"></script>
+		
+		<!-- Twison -->
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//twison.js"></script>
+		
+		<!-- Twine-Monogatari -->
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//twine-monogatari.js"></script>
+		
+	</head>
+	<body>
+		<noscript>
+			<div class="middle text--center">
+				<h2>JavaScript Disabled or not Supported.</h2>
+				<small>To play this game, please enable JavaScript executing or use a different browser.</small>
+			</div>
+		</noscript>
+		
+		<pre id="output" style="display: none;">
+		
+		</pre>
+		
+		<div id="storyData" style="display: none;">
+			<tw-storydata name="RONI: Dialogos alternativos 1.0" startnode="7" creator="Twine" creator-version="2.3.14" ifid="BB3EB29C-803E-401A-9781-09CC04A78B53" zoom="0.6" format="twine-monogatari" format-version="0.2.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+body {
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: white;
+  font-size: 1.5rem;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="[Storage]" tags="" position="1881,15" size="100,200">player:
+  name: Roni
+juana_name: &quot;Juana&quot;
+otto_name: &quot;Otto&quot;
+gema_name: &quot;Gema&quot;
+testCounter: 0
+</tw-passagedata><tw-passagedata pid="2" name="[Scenes]" tags="" position="2096,12" size="200,100">Tenderos: Tenderos.png
+TenderosA: TenderosA.png
+IntGema: interiorcasagema.png
+ExtGema: exteriorcasagema.png
+Correos: Correos.jpeg
+TodoAMil: todoamil.png
+TodoAMilA: todoamilA.png
+IntTodoAMil: intTodoamil.png
+
+Scroll: scrollB.gif
+Legend: legend.png
+Arm: aimtothesky.jpeg
+Flotando: chongueado.png</tw-passagedata><tw-passagedata pid="3" name="[Settings]" tags="" position="1988,13" size="100,200">AssetsPath:
+ root: https://personaoshi.github.io/assetsroni/</tw-passagedata><tw-passagedata pid="4" name="[Music]" tags="" position="2306,11" size="100,100">Alarma: Alarma.mp3
+Pueblo: fondo-music.wav
+P&amp;C: p&amp;c-music.wav</tw-passagedata><tw-passagedata pid="5" name="[Sound]" tags="" position="2305,117" size="100,100">Ambientecampo: ambienterural.mp3
+AmbienteCorreos: office_2.mp3
+AmbienteTenderos: calleTenderos.mp3
+Drone: drone.mp3
+Tienda: tienda_1.mp3
+
+Cerrarpuerta: cerrarpuerta.mp3
+Escribir: paper_1.mp3
+Golpearpuerta: knockdoor.mp3
+Inventario: inventory_1.mp3
+Slap: slap.mp3
+Tiembla: Terremoto.mp3
+Timbre: bell_1.mp3</tw-passagedata><tw-passagedata pid="6" name="[Images]" tags="" position="2412,12" size="100,200">A1: A1_fondo.png
+A2: A2_fondo.png
+A3: A3_fondo.png
+D1: placeholder_cartadoncella1.png
+P: papers.png
+IB: bolso-objetos-2.jpg</tw-passagedata><tw-passagedata pid="7" name="Start" tags="" position="10,3" size="100,100">show background #000 fadeIn
+[[Vamos -&gt;LeyendaI]]
+show background #000 fadeOut</tw-passagedata><tw-passagedata pid="8" name="LeyendaI" tags="Escena-1" position="11,120" size="100,100">(Para avanzar, presiona la barra espaciadora o haz click en la pantalla)
+
+show background Scroll loop
+play sound Drone fadeIn loop
+
+centered ...
+centered En lo más alto de los altos
+centered Cinco hebras sobre el risco
+centered Cada hilo es una cara
+centered Cada hebra es de tres hilos
+centered Y la boca de cada rostro
+centered Nos separa del abismo
+
+jump LeyendaII</tw-passagedata><tw-passagedata pid="9" name="LeyendaII" tags="Escena-1" position="8,234" size="100,100">centered 
+
+centered Uno para el coraje
+centered Otro que sabe cuidar
+centered El siguiente previene el ultraje
+centered Y el que viene podrá organizar
+centered El último para adornar lo cierto
+centered Y así concluye el danzar
+
+jump LeyendaIII</tw-passagedata><tw-passagedata pid="10" name="LeyendaIII" tags="Escena-1" position="8,349" size="100,100">centered 
+
+centered Quien más tema a lo distinto
+centered O más lejos quiera estar
+centered Más será atraído
+centered A juntar la variedad
+centered Y con ello será evidente
+centered Y comprenderá su lugar
+
+centered ...
+
+jump LeyendaIV</tw-passagedata><tw-passagedata pid="11" name="2" tags="Escena-2" position="121,119" size="100,100">play sound Ambientecampo loop
+show background IntGema fadeIn
+
+&lt;pause&gt;
+
+show character r RNormal left fadeIn
+show character j JNormal left fadeIn
+show character g GNormal2 right fadeIn
+
+g El Chongui tiene las respuestas marcadas hace cientos de años, solo hay que salir a buscarlas...
+
+show character g GNormal right fadeIn
+show character j JNormal2 left fadeIn
+
+j ¡Wow, que bien! No suena para nada como una locura de tus grupos conspiranoicos de facebrook, abue :)
+
+show character j JNormal left
+show character r RNormal2 left
+
+r Sí, bueno, suerte con tu aventura, Gema.
+r Con su permiso voy a recluirme en mi pieza.
+
+show character r RNormal left
+show character g GNormal2 right
+
+g Alto ahí, Roni
+
+show character g GNormal right
+
+show image A1 center fadeIn
+&lt;pause&gt;
+hide image A1
+show image A2 center fadeIn
+&lt;pause&gt;
+hide image A2
+show image A3 center fadeIn
+&lt;pause&gt;
+
+show character g GNormal2 right
+
+g Primero tendrás que entregar estas alpargatas a mis clientes.
+
+show character g GNormal
+hide character r
+hide character j
+show character r1 RFear2 left
+show character j JNormal left
+
+r ¡Pero si no teníamos nada que hacer hoy!
+
+hide character r1
+hide character j
+show character r RNormal left
+show character j JNormal left
+
+show character g GNormal2
+
+g Pues ahora sí, visto y considerando tu actitud.
+
+show character r RMad left
+
+g ¡Ya, fuera! ¡Va a empezar la comedia de los lunes!
+
+hide image A3
+hide character g
+hide character r
+hide character j
+
+show background #000 fadeIn
+
+play sound Cerrarpuerta
+
+&lt;pause&gt;
+
+jump 3</tw-passagedata><tw-passagedata pid="12" name="[Characters]" tags="" position="2098,117" size="200,100">p:
+  Name: &quot;{{player.name}}&quot;
+  Color: &quot;#ff3951&quot;
+
+r:
+  Name: &quot;Roni&quot;
+  Color: &quot;#00bfff&quot;
+  Directory: Roni
+  Images:
+    RNormal: RNeutral.png
+	RNormal2: RNeutralT.png
+	RMad: REnojo.png
+	RMad2: REnojoT.png
+	RFear: RMiedo.png
+	
+r1:
+  Name: &quot;Roni1&quot;
+  Color: &quot;#00bfff&quot;
+  Directory: Roni
+  Images:
+    RFear2: RMiedoT.png
+	RFear3: RMiedo3.png
+
+g:
+  Name: &quot;Gema&quot;
+  Color: &quot;#ffbfbf&quot;
+  Directory: Gema
+  Images:
+    GNormal: G1.png
+    GNormal2: G1b.png
+    GMad: GEnojo.png
+    GMad2: GEnojoT.png
+
+j:
+  Name: &quot;Juana&quot;
+  Color: &quot;#bf00bf&quot;
+  Directory: Juana
+  Images:
+    JNormal: J1.png
+    JNormal2: J1B.png
+    JDoubt: J3.png
+    JDoubt2: J3B.png
+    JHappy: J5.png
+	
+j1:
+  Name: &quot;Juana1&quot;
+  Color: &quot;#bf00bf&quot;
+  Directory: Juana
+  Images:
+    JHappy2: J5B.png
+	
+c:
+  Name: &quot;Chasqui&quot;
+  Color: &quot;#ef280f&quot;
+  Directory: Chasqui
+  Images:
+    CNormal: C1.png
+	
+m:
+  Name: &quot;Mile&quot;
+  Color: &quot;#4073ff&quot;
+  Directory: Mile
+  Images:
+    MNormal: MNeutral.png</tw-passagedata><tw-passagedata pid="13" name="LeyendaIV" tags="Escena-1" position="10,464" size="100,100">stop sound Drone fadeOut
+show background #000
+
+&lt;pause&gt;
+
+centered Roni, una chiquilla que apenas sale de su pieza, acaba de llegar al pueblo de El Chongui, obligada a ayudar a su accidentada abuela Gema. 
+
+play sound Tiembla fadeIn
+
+centered Sin embargo, un gran terremoto marca el inicio del Chonguimiento, una catástrofe que levanta el pueblo, del suelo hacia los cielos. 
+centered Gema instruye a Roni: Para detener el Chonguimiento debe ENCONTRAR en el pueblo a las 5 DONCELLAS profetizadas.
+centered Y realizar el ritual que devolverá el pueblo a su sitio.
+
+stop sound Tiembla fadeOut
+
+jump 2
+</tw-passagedata><tw-passagedata pid="14" name="3" tags="Escena-3" position="232,121" size="100,100">show background ExtGema fadeIn
+
+show character r RMad2 left fadeIn
+show character j JNormal right fadeIn
+
+r Tsch...
+
+show character r RMad left
+
+¡Se han añadido nuevos objetos a tu inventario!
+
+hide character r
+hide character j
+show background #000
+show image IB center fadeIn
+
+&lt;pause&gt;
+
+hide image IB
+show background ExtGema fadeIn
+
+Tendrás disponibles los objetos de tu inventario en ciertos momentos de tu aventura.
+
+show character r RMad2 left fadeIn
+show character j JNormal right fadeIn
+
+r Uggggghhh...
+
+show character r RMad left
+hide character j
+show character j1 JHappy2 left
+
+j ¿Y bien? ¿Qué harás ahora?
+
+[[Funar a la anciana -&gt;Hinchar]]
+[[Entregar las alpargatas-&gt;4]]</tw-passagedata><tw-passagedata pid="15" name="Hinchar" tags="Escena-3" position="228,231" size="100,100">play sound Golpearpuerta
+&lt;pause&gt;
+g ¡No creo que seas tan rápida!
+
+show character r RNormal2 left
+
+r Ay Dios santo
+
+show character r RNormal left
+show character j JNormal2 right
+
+j ¿Vamos?
+
+show character j JNormal right
+
+[[Hinchar-&gt;Hinchar2]] 
+[[Virarse -&gt;4]]
+</tw-passagedata><tw-passagedata pid="16" name="4" tags="Escena-4" position="440,124" size="100,100">show character r RNormal2 left
+
+r Ya, vamos a dejar estas chalas.
+
+show character r RNormal left
+show character j JNormal2 right
+
+j Alpargatas, Roni.
+
+show character r RNormal2 left
+show character j JNormal right
+
+r Eso.
+
+show character r RNormal left
+show character j JNormal2 right
+
+j Ah, las entregamos en un ratito :)
+j ¡Ven!
+
+stop sound Ambientecampo
+hide character r
+hide character j
+show background Tenderos fadeIn
+play sound AmbienteTenderos fadeIn loop
+
+
+r ¡¿...!?
+
+
+show character r1 RFear2 left fadeIn
+show character j JHappy right fadeIn
+
+j ¡Bienvenida a la gran Avenida Alberto D&#39;Chong!
+
+show character r1 RFear3 left
+
+r ¡¿Qué onda esta gente?! 
+
+hide character r1
+show character r RFear left
+show character j JDoubt2 right
+
+j Pero si se ven la raja esas grietas abiertas en la tierra.
+
+hide character j
+show character j1 JHappy2 right
+
+j ¡Vendrán más turistas!
+
+hide character j1
+show character j JHappy right
+show character r RFear2 left
+
+(Claramente Juana está loca)
+
+[[Preguntar cómo se enterarían los turistas de esto si se cayeron todas las antenas -&gt;4_1]]
+[[Preguntar por la gracia de este cochino pueblo -&gt;4_2]]</tw-passagedata><tw-passagedata pid="17" name="4_1" tags="Escena-4" position="326,358" size="100,100">r Pero no hay señal, ¿cómo se van a enterar los turistas de esto?
+
+show character RFear left
+show character j JDoubt right
+
+j Supongo que el Chasqui irá a entregar el mensaje a la ciudad.
+
+show character r RDoubt left
+
+r (¿Quién?)
+
+[[Preguntar quién es ese-&gt;Temblor1]] 
+[[Fingir conocimiento-&gt;Temblor1]] </tw-passagedata><tw-passagedata pid="18" name="4_2" tags="Escena-4" position="521,373" size="100,100">r ¿Y qué compran acá? ¿Puras alpargatas?
+
+show character r RFear left
+show character j JMad right
+
+j ¡Hey! ¡Respeta el cáñamo, sirve para hacer cualquier cosa!
+
+[[Pedir perdón-&gt;Temblor1]] 
+[[Ignorar su enojo-&gt;Temblor1]] </tw-passagedata><tw-passagedata pid="19" name="Temblor1" tags="Escena-4" position="453,493" size="100,100">hide character r
+hide character j
+
+show background Tenderos shake
+stop sound AmbienteTenderos
+play sound Tiembla
+
+&lt;pause&gt;
+
+show background TenderosA
+
+&lt;pause&gt;
+
+Oh no...
+¡Roni entró en pánico!
+
+show character r RFear2 left fadeIn
+
+r ¡AAAAAA AYUDAAA! 
+
+hide character r
+
+play music Alarma x3 loop
+
+&lt;set: $ayuda to 0&gt;
+
+[[¡¡¡CLICKEA RÁPIDO ANTES QUE ME MUERAAAA!!! -&gt;Temblor2]]</tw-passagedata><tw-passagedata pid="20" name="Temblor2" tags="Escena-4" position="333,571" size="100,100">centered (Aquí hay un point and click, pero aún no lo programamos)
+
+¡Oh!
+Parece que algo se asoma entre una de las nuevas grietas en el piso...
+
+&lt;pause&gt;
+
+Examinándola más de cerca puedes ver que se trata de...
+¡Una carta!
+¡Como las de mitos y leyendas!
+
+[[Ni mi primo más viejo se acuerda de esas cartas-&gt;CartaDoncella]] 
+[[¡He escuchado grandes cosas de esa franquicia!-&gt;CartaDoncella]]</tw-passagedata><tw-passagedata pid="21" name="CartaDoncella" tags="Escena-4" position="329,678" size="100,100">stop music
+show background Tenderos
+show image D1 center fadeIn
+
+
+
+&lt;pause&gt;
+
+centered La cuerda primera encuentra
+centered En el bagaje de su viaje
+centered Lo constitutivo de su esencia
+centered Y lo que la salva del desgaste
+centered Para llamarla tendrá la altura
+centered La doncella de la aventura
+
+&lt;pause&gt;
+
+hide image D1
+play sound AmbienteTenderos fadeIn loop
+
+show character r RNormal left fadeIn
+show character j JHappy right fadeIn
+
+Bueno, eso decía la carta por detrás.
+Sea lo que sea que signifique.
+
+[[Leerle el texto a Juana-&gt;4_3]] [[Ir a dejar las alpargatas de una vez por todas-&gt;4_4]]</tw-passagedata><tw-passagedata pid="22" name="4_3" tags="Escena-4" position="208,798" size="100,100">show character j JDoubt right
+show character r RNormal2 left
+
+r &quot;...Y para llamarla tendrá la anchura
+r La doncella de la aventura&quot;
+
+show character r RNormal left
+
+(Mientras intentas quitarte el sonrojo piensas en por qué este texto tenía que estar escrito de forma tan cursi)
+
+j Parece que Gema no está del todo loca. ¡Las doncellas existen! ¡Vamos por la doncella!
+
+show character r RFear2
+
+r ¿¡...!?
+r Juana, esto no tiene ningún sentido.
+
+show character r RFear
+
+j ¡Cómo que no! ¡Pero si salió de la tierra!
+
+show character r RFear2
+
+r PERO ESO QUÉ TIENE QUE VER JUANA.
+
+(Juana se encoge de hombros)
+show character r RFear
+
+j ¿...?
+
+...
+
+jump AVer</tw-passagedata><tw-passagedata pid="23" name="4_4" tags="Escena-4" position="436,793" size="100,100">show character r RNormal2 left
+
+r ¿Podemos ir a dejar estas chalas? Quiero volver a la casa.
+
+show character r RNormal
+show character j JNormal2
+
+j ¡Pero Roni! ¡Recogiste un objeto misterioso del suelo y ahora actúas como si nada!
+
+show character j JHappy
+
+Sin que puedas hacer mucho, Juana te quita la carta de mitos y le... La carta de la doncella de las manos.
+
+j ...
+
+Ves lentamente como la expresión de su rostro va cambiando a medida que avanza en la lectura.
+
+j ¡¡¡RONI ESTO ES MUY LOCO!!!
+j ¿¿¿POR QUÉ NO ME DIJISTE NADA???
+
+show character r RFear2
+
+r NO SÉ ME PUSE NERVIOSA NO ME GRITES POR FAVOR
+
+show character r RFear
+
+j AHORA TENEMOS QUE IR POR LAS DONCELLAS
+
+show character j JHappy left
+
+j ES VITAL RONI ES VITAL
+
+Juana te toma de los hombros y te sacude.
+
+r PERO LAS ALPARGATAS
+
+Finalmente Juana se detiene.
+
+show character j JDoubt right
+show character r RFear left
+
+j ¿Y las doncellas?
+
+show character r RNormal2 left
+
+r Primero entreguemos las chalas, sino Gema no me dejará volver.
+
+j Pero después iremos por las doncellas.
+
+jump AVer</tw-passagedata><tw-passagedata pid="24" name="AVer" tags="Escena-4" position="326,895" size="100,100">show character r RNormal2 left
+
+r Como digas…
+
+show character r RNormal left
+show character j JNormal2 right
+
+j A ver esas alpargatas.
+
+[[Mostrar alpargatas con toperoles -&gt;4_5]]
+[[Mostrar alpargatas negras -&gt;4_5]]
+[[Mostrar alpargatas rojas -&gt;4_6]]</tw-passagedata><tw-passagedata pid="25" name="4_5" tags="Escena-4" position="211,1048" size="100,100">show character j JDoubt right
+
+j Ni idea de quién es. ¿A ver las rojas?
+
+[[Mostrar alpargatas rojas -&gt;4_6]] </tw-passagedata><tw-passagedata pid="26" name="4_6" tags="Escena-4" position="438,1037" size="100,100">show character j JNormal2 right
+
+j Esa dice que es para tu papá Hugo, vamos al tiro a dejarlas a su casa.
+
+show character r RFear 2 left
+show character j JNormal right
+
+[[NO ... Es que...no nos deberíamos juntar con él… -&gt;4_7]] [[Queda muy lejos, vamos a perder tiempo...con el chonguimiento más encima. -&gt;4_8]]</tw-passagedata><tw-passagedata pid="27" name="4_7" tags="Escena-4" position="556,1138" size="100,100">show character r RFear left
+show character j JNormal2 right
+
+j Igual me pueden castigar después...podemos mandarlas por delivery.
+
+jump PreCorreos</tw-passagedata><tw-passagedata pid="28" name="4_8" tags="" position="551,912" size="100,100">show character r RFear left
+show character j JNormal2 right
+
+j Ahora po. Podemos mandarla por correo.
+
+jump PreCorreos</tw-passagedata><tw-passagedata pid="29" name="PreCorreos" tags="Escena-4" position="649,1023" size="100,100">show character r RNormal2 left
+show character j JNormal right
+
+r Buena, ¿dónde queda?
+
+show character r RNormal left
+show character j JNormal2 right
+
+j En la oficina de correos.
+
+hide character r
+hide character j
+
+[[Ir a la oficina de correos -&gt;5]]</tw-passagedata><tw-passagedata pid="30" name="5" tags="Escena-5" position="754,358" size="100,100">stop sound AmbienteTenderos
+show background Correos fadeIn
+play sound AmbienteCorreos fadeIn loop
+
+&lt;pause&gt;
+
+[[Tocar timbre -&gt;Timbre]]</tw-passagedata><tw-passagedata pid="31" name="Timbre" tags="Escena-5" position="878,484" size="100,100">play sound Timbre
+&lt;pause&gt;
+
+show character c CNormal right fadeIn
+show character r RNormal left fadeIn
+show character j JNormal left fadeIn
+
+c Hola chiquillas, ¿Qué desean enviar?
+
+show character r RNormal2 left
+
+r Unas alpargatas.
+
+show character r RNormal left
+
+show image P center fadeIn
+
+&lt;pause&gt;
+
+c Necesito que rellenes estos papeles.
+c Y si quieres puedes dejarle una notita en este hermoso papel Bond.
+
+hide image P
+
+&lt;pause&gt;
+
+play sound Escribir
+
+&lt;pause&gt;
+
+show character j JNormal2 left
+
+j Te falta la nota.
+
+show character r RNormal2 left
+show character j JNormal left
+
+r [[No es necesario. -&gt;5_1]] [[¿Qué nota? -&gt;5_2]]</tw-passagedata><tw-passagedata pid="32" name="5_1" tags="Escena-5" position="756,623" size="100,100">show character r RNormal left
+show character j JNormal2 left
+
+j Obvio que sí, sabe que estai aquí, ponle una excusa.
+
+jump YaEstá</tw-passagedata><tw-passagedata pid="33" name="5_2" tags="Escena-5" position="932,624" size="100,100">show character r RNormal left
+show character j JNormal2 left
+
+j Esta del papel bonito, creo que deberías decirle porqué no podemos ir.
+
+jump YaEstá</tw-passagedata><tw-passagedata pid="34" name="YaEstá" tags="Escena-5" position="844,731" size="100,100">hide character r
+hide character j
+hide character c
+
+show image P center
+
+centered MINIJUEGO: Se despliega en la pantalla una carta de color crema en blanco con un texto borrable que dice: “redacta aquí la carta para Hugo”. En la esquina inferior derecha hay un botón que dice “Listo”, para así continuar con la historia.
+
+play sound Escribir
+
+&lt;pause&gt;
+
+[[Listo]]</tw-passagedata><tw-passagedata pid="35" name="Listo" tags="Escena-5" position="848,843" size="100,100">hide image P
+
+show character r RNormal2 left fadeIn
+show character j JNormal left fadeIn
+show character c CNormal right fadeIn
+
+r Ya, ahí está.
+
+show character r RNormal left
+
+play sound Inventario
+Le entregas los papeles y las alpargatas al Chasqui.
+
+&lt;pause&gt;
+
+c ¡Qué bien! Voy a preparar esto.
+
+show character j JDoubt left
+
+j Oie, ¿tu cachai para quién pueden ser estas otras alpargatas?
+
+show image A0 center
+
+&lt;pause&gt;
+
+c Mmmmhhhh…
+c Creo que éstas negras las puede saber una amiga.
+
+hide image A0
+
+show character j JHappy left
+
+j Genial, ¿nos puedes llevar con ella?
+
+c Tengo que entregar unas cosilas primero, las dejamos y luego vamos con Mile.
+
+show character j JDoubt left
+
+j ¿Mile? Ay no...
+
+show character r RNormal2 left
+
+r [[¿No podemos esperar aquí? -&gt;5_3]] [[¿Qué tiene? -&gt;5_4]]</tw-passagedata><tw-passagedata pid="36" name="5_3" tags="Escena-5" position="774,966" size="100,100">show character r RNormal left
+
+c No, me desviaría mucho de la ruta. Es más fácil que me acompañen.
+
+show character r RNormal2 left
+
+r Oh...bueno…
+
+jump ¿Listas?</tw-passagedata><tw-passagedata pid="37" name="5_4" tags="Escena-5" position="938,968" size="100,100">show character r RNormal left
+show character j JMad left
+
+j Es la archienemiga de Otto. Creo que él le dijo algo sobre la banda del pueblo.
+
+jump ¿Listas?</tw-passagedata><tw-passagedata pid="38" name="¿Listas?" tags="Escena-5" position="861,1079" size="100,100">show character r RNormal left
+show character j JNormal left
+
+c ¿Están listas?
+
+&lt;set: $timbre to 0&gt;
+
+[[Tocar timbre -&gt;Insistir]]
+[[¡Vamos! -&gt;Minijuego]]</tw-passagedata><tw-passagedata pid="39" name="Insistir" tags="" position="874,1208" size="100,100">&lt;set: $timbre to $timbre + 1&gt;
+play sound Timbre
+
+&lt;if: $timbre is 1&gt;
+
+c ¿Están rellenando el libro de sugerencias? 
+
+&lt;if: $timbre is &gt;2&gt;
+
+c Tengo que hacer las entregas, ¡vamos!
+
+[[Tocar timbre -&gt;Insistir]] 
+[[¡Vamos! -&gt;Minijuego]] </tw-passagedata><tw-passagedata pid="40" name="Minijuego" tags="Escena-6" position="1042,1241" size="100,100">hide character r
+hide character j
+hide character c
+
+stop sound AmbienteCorreos
+
+centered MINIJUEGO DINOSAURIO
+
+&lt;pause&gt;
+
+jump 6</tw-passagedata><tw-passagedata pid="41" name="7" tags="Escena-7" position="1151,998" size="100,100">hide character r
+hide character j
+hide character c
+
+stop sound AmbienteTenderos
+show background TodoAMil fadeIn
+play sound Tienda fadeIn loop
+
+&lt;pause&gt;
+
+show character r RNormal left fadeIn
+show character j JNormal left fadeIn
+
+show character c CNormal right fadeIn
+show character m MNormal right fadeIn
+
+&lt;pause&gt;
+
+m ...
+
+show character r RNormal2 left
+
+r ... ¿Hola?
+
+show character r RNormal left
+
+m ¿Quién eres?
+
+show character r RNormal2 left
+
+&lt;set: $teOdio to 0&gt;
+
+r [[Mi papá es Hugo -&gt;7_1]] [[Mi abuela es Gema -&gt;7_2]] [[Mi prima es Juana -&gt;7_3]]</tw-passagedata><tw-passagedata pid="42" name="7_1" tags="Escena-7" position="1023,857" size="100,100">&lt;set: $teOdio to 1&gt;
+
+show character r RNormal
+
+m Iugh, tampoco perteneces aquí entonces.
+
+jump Ok...</tw-passagedata><tw-passagedata pid="43" name="7_2" tags="Escena-7" position="1146,858" size="100,100">show character r RNormal left
+
+m Ah, me cae bien, va al bingo con mi abuelo.
+
+jump ¡Bacán!</tw-passagedata><tw-passagedata pid="44" name="7_3" tags="Escena-7" position="1273,859" size="100,100">&lt;set: $teOdio to 1&gt;
+
+show character r RNormal left
+
+m Se nota...
+
+jump Ok...</tw-passagedata><tw-passagedata pid="45" name="Ok..." tags="Escena-7" position="1085,749" size="100,100">show character r RMad left
+show character j JMad left
+
+c … El asunto es que queríamos saber si estas alpargatas te pertenecen.
+m Ya bueno, déjame verlas.
+
+jump Alpargata</tw-passagedata><tw-passagedata pid="46" name="¡Bacán!" tags="Escena-7" position="1208,747" size="100,100">c ¡Qué bueno! Justo Roni tiene algo que creo que es para ti.
+m ¿En serio? A ver.
+
+jump Alpargata</tw-passagedata><tw-passagedata pid="47" name="Alpargata" tags="Escena-7" position="1139,638" size="100,100">show image A0 center fadeIn
+
+m ¡Oh, dios santo!
+m No es para mí…
+
+show character r RNormal2 left
+show character j JNormal left
+
+r Oh, rayos…
+
+m Es para Fatal Flea.
+
+r ¿Fatal qué?
+
+hide image A0
+
+&lt;if: $teOdio is 1&gt;
+m Se nota que eres foránea.
+c Es el cantante de la banda del pueblo, “Calcetín Sucio” .
+
+&lt;if: $teOdio is 0&gt;
+m Es el líder de la banda del Chongui “Calcetín Sucio&quot;. Debe ser para que combine con su nuevo álbum.
+
+show character r RNormal2 left
+
+r [[Genial, ¿Se lo puedes entregar tú? -&gt;7_4]] [[¿Y dónde está? -&gt;7_5]]</tw-passagedata><tw-passagedata pid="48" name="7_4" tags="Escena-7" position="1055,519" size="100,100">show character r RNormal left
+show character j JNormal2 left
+
+j No tan rápido Roni, ¿Y si se las queda?
+
+show character j JNormal left
+
+m ¿Me estai diciendo ladrona?
+
+show character r RMad left
+show character j JMad left
+
+c ¿Y si le dices donde está Fatal Flea?
+
+&lt;if: $teOdio is 1&gt;
+m ¿A Ellas? No gratis.
+
+&lt;if: $teOdio is 0&gt;
+m ¡Buena idea!, pero necesito que Roni me ayude primero.
+
+jump Ayuda</tw-passagedata><tw-passagedata pid="49" name="7_5" tags="Escena-7" position="1229,521" size="100,100">show character r RNormal left
+
+m Necesito una pequeña ayuda primero.
+
+jump Ayuda</tw-passagedata><tw-passagedata pid="50" name="Ayuda" tags="Escena-7" position="1143,407" size="100,100">show character r RMad left
+
+r Aayyy….bueno… ¿qué quieres?
+
+m Tienes que entrar en esta tienda y sacar el CD exclusivo de una banda muy bakán, que el dueño de la tienda no le caigo muy bien. 
+
+show character r RFear left
+
+r MHHHHHHHHHHHHHHHH
+
+No estás muy segura de si lo que te está pidiendo es...
+
+show character j JMad left
+
+j ¿Le estás pidiendo que robe?
+
+show background TodoAMilA
+play music Alarma x3 loop
+
+m ¿Quieren mi ayuda o no?
+
+[[Entrar a la tienda-&gt;Tienda-P&amp;C]]</tw-passagedata><tw-passagedata pid="51" name="[Video]" tags="" position="2516,11" size="100,200">Scroll: scroll.mp4</tw-passagedata><tw-passagedata pid="52" name="Tienda-P&amp;C" tags="" position="987,351" size="100,100">hide characters
+show background #000
+
+centered JAVASCRIPT PARA METER EL P&amp;C DE LA TIENDA
+
+</tw-passagedata><tw-passagedata pid="53" name="6" tags="" position="1114,1120" size="100,100">show background Tenderos fadeIn
+play sound AmbienteTenderos
+show character r RFear left fadeIn
+show character j JHappy left fadeIn
+show character c CNormal right fadeIn
+
+&lt;pause&gt;
+
+c Aaa, ¿qué vigorizante no? Mejor que un café.
+r ¡¿...?!
+j ¡Sí!, vamos con Mile ahora.
+
+jump 7</tw-passagedata><tw-passagedata pid="54" name="7_6" tags="Escena-7" position="1101,247" size="100,100">show background TodoAMil fadeIn
+play sound Tienda fadeIn loop
+
+show character r1 RFear2 left fadeIn
+show character j JHappy left fadeIn
+show character c CNormal right fadeIn
+show character m MNormal right fadeIn
+
+r ¡LO LOGRÉ!
+
+hide character r1
+hide character j
+show character r RFear left
+show character j1 JHappy2 left
+
+j ¡Buena Roni!
+
+hide character j1
+show character j JHappy left
+
+Roni no quiso decirle a nadie, pero de hecho pagó por el CD.
+Robar está mal, jóvenes.
+
+m Wena.
+m Pueden encontrar al Flea en la Galería Abandonada.
+m Cualquier cosa voy a estar por aquí buscando banderines.
+
+c ¡Adiós, niñas! Si necesitan energías, vayan donde Fabio Fitness.
+c ¡Si dicen que vienen de mi parte les dará barritas!
+
+hide character m
+hide character c
+
+&lt;pause&gt;
+
+hide character j
+show character j1 JHappy2 right fadeIn
+
+j ¿Ahora qué? :)
+
+[[Ir a la Avenida-&gt;8]]
+[[Ir donde Gema-&gt;7_7]]
+[[Ir donde Fabio Fitness-&gt;7_8]]</tw-passagedata><tw-passagedata pid="55" name="8" tags="" position="1313,255" size="100,100">show background Tenderos fadeIn
+play music Pueblo loop
+play sound AmbienteTenderos 0.8 loop
+
+&lt;pause&gt;
+
+show character r RNormal left fadeIn
+show character j JNormal2 right fadeIn
+</tw-passagedata><tw-passagedata pid="56" name="7_7" tags="Escena-7" position="766,138" size="100,100">show character r RNormal2
+
+r Aún no podemos ir, me queda una alpargata.
+
+show character r RNormal
+
+[[Ir donde Fabio Fitness-&gt;7_8]]
+[[Ir a la Avenida-&gt;8]] </tw-passagedata><tw-passagedata pid="57" name="7_8" tags="" position="974,21" size="100,100">show character r RMad2 left
+
+r ¡No quiero barritas!
+
+show character r RMad left
+
+[[Ir donde Gema-&gt;7_7]]
+[[Ir a la Avenida-&gt;8]]</tw-passagedata><tw-passagedata pid="58" name="Hinchar2" tags="" position="164.33333333333331,351" size="100,100">play sound Golpearpuerta
+&lt;pause&gt;
+...
+&lt;pause&gt;
+
+show character r RNormal2 left
+
+r Pucha.
+
+show character r RNormal left
+show character j JNormal2 right
+
+j :)
+
+show character j JNormal right
+
+[[Hinchar-&gt;Hinchar2]] 
+[[Virarse -&gt;4]]
+</tw-passagedata></tw-storydata>
+		</div>
+		
+		<div id="monogatari">
+			<visual-novel>
+				<loading-screen></loading-screen>
+				<main-screen>
+					<main-menu></main-menu>
+				</main-screen>
+				<game-screen>
+					<dialog-log></dialog-log>
+					<text-box></text-box>
+					<quick-menu></quick-menu>
+				</game-screen>
+				<gallery-screen></gallery-screen>
+				<load-screen></load-screen>
+				<save-screen></save-screen>
+				<settings-screen></settings-screen>
+				<help-screen></help-screen>
+			</visual-novel>
+		</div>
+		
+		<div id="tw-errors">
+			<div class="icon" title="The script has errors">&#x26A0;&#xFE0F;</div>
+			<ul class="errors"></ul>
+		</div>
+		
+		<script>
+			window.twineStory = TwineMonogatari.convert();
+			console.log('Parsed story', window.twineStory);
+			if (window.twineStory.errors) {
+				console.error('Story contains errors', window.twineStory.errors);
+			}
+		</script>
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/js/options-twine.js"></script>
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/js/storage-twine.js"></script>
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/js/script-twine.js"></script>
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/js/main.js"></script>
+	</body>
+</html>
