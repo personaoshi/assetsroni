@@ -142,7 +142,7 @@ g El Chongui tiene las respuestas marcadas hace cientos de años, solo hay que s
 show character g GNormal right fadeIn
 show character j JNormal2 left fadeIn
 
-j ¡Wow, que bien! No suena para nada como una locura de tus grupos conspiranoicos de facebrook, abue :)
+j ¡Wow, que bien! No suena para nada como una locura de tus grupos conspiranoicos de facebake, abue :)
 
 show character j JNormal left
 show character r RNormal2 left
@@ -182,15 +182,13 @@ show character g GNormal2 right
 
 g Pues ahora sí, visto y considerando tu actitud.
 
-hide character j
-hide character r
-show character r1 RMad2 left
+show character r RFear2 left
 show character j JNormal left
 show character g GNormal right
 
 r Pero si ni sé dónde están las cosas acá.
 
-show character r1 RMad left
+show character r RFear left
 show character g GNormal2 right
 
 g Que te acompañe tu prima entonces.
@@ -210,7 +208,7 @@ g ¡Ya, fuera! ¡Va a empezar la comedia de los lunes!
 
 hide image A3
 hide character g
-hide character r1
+hide character r
 hide character j
 
 show background #000 fadeIn
@@ -241,16 +239,18 @@ r1:
   Images:
 	RMad: REnojo.png
 	RMad2: REnojoT.png
+	RHappy: R8.png
+	RHappy2: R8B.png
 
 g:
   Name: &quot;Gema&quot;
-  Color: &quot;#ffbfbf&quot;
+  Color: &quot;#ed4b6f&quot;
   Directory: Gema
   Images:
     GNormal: G1.png
     GNormal2: G1b.png
-    GMad: GEnojo.png
-    GMad2: GEnojoT.png
+    GMad: G2.png
+    GMad2: G2B.png
 
 j:
   Name: &quot;Juana&quot;
@@ -269,6 +269,8 @@ j1:
   Directory: Juana
   Images:
     JHappy2: J5B.png
+	JMad: J2.png
+	JMad2: J2B.png
 	
 c:
   Name: &quot;Chasqui&quot;
@@ -352,7 +354,7 @@ show character j JNormal right
 
 [[Hinchar-&gt;Hinchar2]] 
 [[Virarse -&gt;pre4]]
-</tw-passagedata><tw-passagedata pid="16" name="pre4" tags="Escena-3" position="426.6666666666667,132.33333333333334" size="100,100">show character r RNormal2 left
+</tw-passagedata><tw-passagedata pid="16" name="pre4" tags="Escena-3" position="426,132" size="100,100">show character r RNormal2 left
 
 r Ya, vamos a dejar estas chalas.
 
@@ -426,9 +428,9 @@ play music Alarma x3 loop
 
 &lt;set: $ayuda to 0&gt;
 
-[[¡¡¡CLICKEA RÁPIDO ANTES QUE ME MUERAAAA!!! -&gt;Temblor2]]</tw-passagedata><tw-passagedata pid="20" name="Temblor2" tags="Escena-4" position="261.3333333333333,482.6666666666667" size="100,100">centered (Aquí hay un point and click, pero aún no lo programamos)
+[[¡¡¡CLICKEA RÁPIDO ANTES QUE ME MUERAAAA!!! -&gt;Temblor2]]</tw-passagedata><tw-passagedata pid="20" name="Temblor2" tags="Escena-4" position="261,482" size="100,100">centered (Aquí hay un point and click, pero aún no lo programamos)
 
-jump Temblor3</tw-passagedata><tw-passagedata pid="21" name="CartaDoncella" tags="Escena-4" position="325.6666666666667,716.3333333333333" size="100,100">stop music
+jump Temblor3</tw-passagedata><tw-passagedata pid="21" name="CartaDoncella" tags="Escena-4" position="325,716" size="100,100">stop music
 show background Tenderos
 show image D1 center fadeIn
 
@@ -470,6 +472,8 @@ hide character j
 show character j1 JHappy2 right
 
 j ¡Vamos por la doncella!
+
+play music Pueblo fadeIn loop
 
 hide character j1
 show character j JHappy right
@@ -526,6 +530,8 @@ show character j1 JHappy2 right
 j ¡¡¡RONI ESTO ES MUY LOCO!!!
 j ¿¿¿POR QUÉ NO ME DIJISTE NADA???
 
+play music Pueblo fadeIn loop
+
 hide character j1
 show character j JHappy right
 show character r RFear3 left
@@ -569,6 +575,7 @@ show character j JNormal2 right
 j Pero después iremos por las doncellas.
 
 jump AVer</tw-passagedata><tw-passagedata pid="24" name="AVer" tags="Escena-4" position="326,895" size="100,100">show character r RNormal2 left
+stop music Pueblo
 
 r Como digas…
 
@@ -665,13 +672,13 @@ j A la oficina de correos :)
 hide character r
 hide character j
 
-[[Ir a la oficina de correos -&gt;5]]</tw-passagedata><tw-passagedata pid="30" name="5" tags="Escena-5" position="560.6666666666667,206.33333333333334" size="100,100">stop sound AmbienteTenderos
+[[Ir a la oficina de correos -&gt;5]]</tw-passagedata><tw-passagedata pid="30" name="5" tags="Escena-5" position="560,206" size="100,100">stop sound AmbienteTenderos
 show background Correos fadeIn
 play sound AmbienteCorreos fadeIn loop
 
 &lt;pause&gt;
 
-[[Tocar timbre -&gt;Timbre]]</tw-passagedata><tw-passagedata pid="31" name="Timbre" tags="Escena-5" position="703.0000000000001,257.33333333333337" size="100,100">play sound Timbre
+[[Tocar timbre -&gt;Timbre]]</tw-passagedata><tw-passagedata pid="31" name="Timbre" tags="Escena-5" position="703,257" size="100,100">play sound Timbre
 &lt;pause&gt;
 
 show character c CNormal right fadeIn
@@ -709,7 +716,7 @@ show character j JNormal2 left
 j Obvio que sí, sabe que estai aquí. 
 j Ponle una excusa por lo menos.
 
-jump YaEstá</tw-passagedata><tw-passagedata pid="33" name="5_2" tags="Escena-5" position="890.3333333333334,610.6666666666666" size="100,100">show character r RNormal2 left
+jump YaEstá</tw-passagedata><tw-passagedata pid="33" name="5_2" tags="Escena-5" position="890,610" size="100,100">show character r RNormal2 left
 
 r ¿Qué nota?
 
@@ -826,6 +833,7 @@ hide character j
 hide character c
 
 stop sound AmbienteCorreos
+play music P&amp;C fadeIn loop
 
 centered MINIJUEGO DINOSAURIO
 
@@ -834,6 +842,7 @@ centered MINIJUEGO DINOSAURIO
 jump 6</tw-passagedata><tw-passagedata pid="41" name="7" tags="Escena-7" position="1151,998" size="100,100">hide character r
 hide character j1
 hide character c
+stop music Pueblo
 
 stop sound AmbienteTenderos
 show background TodoAMil fadeIn
@@ -865,17 +874,16 @@ m ¿Quién eres?
 
 [[&quot;Mi papá es Hugo&quot; -&gt;7_1]]
 [[&quot;Mi abuela es Gema&quot; -&gt;7_2]]
-[[&quot;Mi prima es Juana&quot; -&gt;7_3]]</tw-passagedata><tw-passagedata pid="42" name="7_1" tags="Escena-7" position="1023,857" size="100,100">show character r RNormal2 left
+[[&quot;Mi prima es Juana&quot; -&gt;7_3]]</tw-passagedata><tw-passagedata pid="42" name="7_1" tags="Escena-7" position="1023,857" size="100,100">hide character r
+show character r1 RHappy left
 
 r Eh... Mi papá es Hugo.
 
 (Intentas sonreir de forma natural)
 
-show character r RNormal2 left
+show character r1 RHappy2 left
 
 r ¿ :] ?
-
-show character r RNormal left
 
 m Iugh, tampoco perteneces aquí entonces.
 
@@ -899,43 +907,67 @@ show character r RNormal left
 
 m Se nota...
 
+hide character r
+show character r1 RHappy2 left
 (¿Qué significará eso?)
 
 jump Ok...</tw-passagedata><tw-passagedata pid="45" name="Ok..." tags="Escena-7" position="1085,749" size="100,100">show character r RFear left
 show character j JNormal left
 
-c … El asunto es que queríamos saber si estas alpargatas te pertenecen.
+c Eh, bueno... 
+c ... Queríamos saber si estas alpargatas son tuyas.
 m Ya bueno, déjame verlas.
 
 jump Alpargata</tw-passagedata><tw-passagedata pid="46" name="¡Bacán!" tags="Escena-7" position="1208,747" size="100,100">c ¡Qué bueno! Justo Roni tiene algo que creo que es para ti.
 m ¿En serio? A ver.
 
-jump Alpargata</tw-passagedata><tw-passagedata pid="47" name="Alpargata" tags="Escena-7" position="1139,638" size="100,100">show image A0 center fadeIn
+jump Alpargata</tw-passagedata><tw-passagedata pid="47" name="Alpargata" tags="Escena-7" position="1139,638" size="100,100">show image A1 center fadeIn
 
-m ¡Oh, dios santo!
-m No es para mí…
+m Oooooooohhhhhh...
+m No son mías...
 
+hide character r1
 show character r RNormal2 left
 show character j JNormal left
 
-r Oh, rayos…
+r Pucha...
 
-m Es para Fatal Flea.
+show character r RNormal left
 
-r ¿Fatal qué?
+m Son del Flea.
 
-hide image A0
+r ¿Quién?
 
-&lt;if: $teOdio is 1&gt;
-m Se nota que eres foránea.
+hide image A1
+
+m Se nota que no eres de por acá.
+c Fatal Flea.
 c Es el cantante de la banda del pueblo, “Calcetín Sucio” .
-
-&lt;if: $teOdio is 0&gt;
-m Es el líder de la banda del Chongui “Calcetín Sucio&quot;. Debe ser para que combine con su nuevo álbum.
 
 show character r RNormal2 left
 
-r [[Genial, ¿Se lo puedes entregar tú? -&gt;7_4]] [[¿Y dónde está? -&gt;7_5]]</tw-passagedata><tw-passagedata pid="48" name="7_4" tags="Escena-7" position="1055,519" size="100,100">show character r RNormal left
+r ¿Y por qué se llama así?
+
+show character r RNormal left
+show character j JNormal2 left
+
+j Son punks, Roni.
+
+show character j JNormal left
+
+m SON MÁS QUE PUNKS, &quot;JUANA&quot;.
+
+(Puedes escuchar las comillas en la forma en que dice el nombre de tu prima)
+
+m SON LA CABEZA DE UN MOVIMIENTO QUE MEZCLA JAPANOISE CON PUNKFOLK ALTERNATIVO HACIENDO UNA REINTERPRETACIÓN DE LA SUBCULTURA PUNK TRADICIONAL TOMANDO ELEMENTOS DEL TECHNO UNDERGROUND INDUSTRIAL DE LOS AÑOS NOVENTA SUBVIRTIENDO LA EXPECTATIVA DEL GÉNERO PARA REINVENTAR LOS CONCEPTOS FUNDACIONALES DE ESTA SOCIEDAD USANDO EL NOMBRE &quot;CALCETÍN SUCIO&quot; COMO ESTANDARTE DE SU REBELDÍA Y ASÍ
+
+(Te cuesta escuchar más allá de eso)
+
+[[Preguntarle si ella puede entregar las alpargatas-&gt;7_4]] [[Preguntar por el paradero de este tipo-&gt;7_5]]</tw-passagedata><tw-passagedata pid="48" name="7_4" tags="Escena-7" position="1055,519" size="100,100">show character r RNormal2 left
+
+r Oye, y... ¿No se las puedes pasar tú?
+
+show character r RNormal left
 show character j JNormal2 left
 
 j No tan rápido Roni, ¿Y si se las queda?
@@ -944,37 +976,47 @@ show character j JNormal left
 
 m ¿Me estai diciendo ladrona?
 
-show character r RMad left
-show character j JMad left
+hide character r
+show character r1 RMad left
 
-c ¿Y si le dices donde está Fatal Flea?
+c ¿Y si les dices donde está el Flea mejor?
 
-&lt;if: $teOdio is 1&gt;
 m ¿A Ellas? No gratis.
 
-&lt;if: $teOdio is 0&gt;
-m ¡Buena idea!, pero necesito que Roni me ayude primero.
+jump Ayuda</tw-passagedata><tw-passagedata pid="49" name="7_5" tags="Escena-7" position="1229,521" size="100,100">show character r RNormal2 left
 
-jump Ayuda</tw-passagedata><tw-passagedata pid="49" name="7_5" tags="Escena-7" position="1229,521" size="100,100">show character r RNormal left
+r Y ¿dónde está el Flea?
 
-m Necesito una pequeña ayuda primero.
+show character r RNormal left
 
-jump Ayuda</tw-passagedata><tw-passagedata pid="50" name="Ayuda" tags="Escena-7" position="1143,407" size="100,100">show character r RMad left
+m Fatal Flea para ti, foránea.
 
-r Aayyy….bueno… ¿qué quieres?
+hide character r
+show character r1 RMad left
+
+m Bueno, te diré, pero necesito una pequeña ayuda primero.
+
+jump Ayuda</tw-passagedata><tw-passagedata pid="50" name="Ayuda" tags="Escena-7" position="1143,407" size="100,100">show character r1 RMad2 left
+
+r Mh, ya.
+r ¿Qué quieres?
+
+show character r1 RMad left
 
 m Tienes que entrar en esta tienda y sacar el CD exclusivo de una banda muy bakán, que el dueño de la tienda no le caigo muy bien. 
 
-show character r RFear left
+hide character r1
+show character r RFear2 left
 
-r MHHHHHHHHHHHHHHHH
+r MHHHHHHHHHHHHHHHH...
 
 No estás muy segura de si lo que te está pidiendo es...
 
-show character j JMad left
+show character j JNormal2 left
 
 j ¿Le estás pidiendo que robe?
 
+show character j JNormal left
 show background TodoAMilA
 play music Alarma x3 loop
 
@@ -986,10 +1028,12 @@ hide character c
 hide character m
 show background #000
 
-centered JAVASCRIPT PARA METER EL P&amp;C DE LA TIENDA
-
+centered JAVASCRIPT PARA METER EL PnC DE LA TIENDA
+ 
 jump 7_6</tw-passagedata><tw-passagedata pid="53" name="6" tags="" position="1114,1120" size="100,100">show background Tenderos fadeIn
+stop sound AmbienteCorreos
 play sound AmbienteTenderos
+play music Pueblo fadeIn loop
 show character r RFear3 left fadeIn
 show character j JHappy left fadeIn
 show character c CNormal right fadeIn
@@ -1045,9 +1089,10 @@ show character j1 JHappy2 right fadeIn
 
 j ¿Ahora qué? :)
 
-[[Ir a la Avenida-&gt;8]]
+[[Ir a buscar al man-&gt;8]]
 [[Ir donde Gema-&gt;7_7]]
-[[Ir donde Fabio Fitness-&gt;7_8]]</tw-passagedata><tw-passagedata pid="55" name="8" tags="" position="1313,255" size="100,100">show background Tenderos fadeIn
+[[Ir donde Fabio Fitness-&gt;7_8]]</tw-passagedata><tw-passagedata pid="55" name="8" tags="Escena-8" position="1316.3333333333333,128.33333333333331" size="100,100">stop sound Tienda
+show background Tenderos fadeIn
 play music Pueblo loop
 play sound AmbienteTenderos 0.8 loop
 
@@ -1055,21 +1100,43 @@ play sound AmbienteTenderos 0.8 loop
 
 show character r RNormal left fadeIn
 show character j JNormal2 right fadeIn
-</tw-passagedata><tw-passagedata pid="56" name="7_7" tags="Escena-7" position="766,138" size="100,100">show character r RNormal2
+
+j ¡Espera, Roni!
+
+show character j JNormal right
+
+&lt;pause&gt;
+
+show character r RNormal2 left
+
+r ¿Qué pasó?
+
+show character r RNormal left
+show character j JNormal2 right
+
+j ¿No crees que alguna de las personas que hemos conocido hasta ahora puede ser la doncella?
+
+show character r RFear left
+show character j JNormal right
+
+(Genial, Juana sigue estando loca)
+
+[[Decir que no crees que sea nadie para que se calle-&gt;8_1]]
+[[Preguntarle por qué cree que el Chasqui o la niña desagradable pueden ser una doncella-&gt;8_2]]</tw-passagedata><tw-passagedata pid="56" name="7_7" tags="Escena-7" position="766,138" size="100,100">show character r RNormal2
 
 r Aún no podemos ir, me queda una alpargata.
 
 show character r RNormal
 
 [[Ir donde Fabio Fitness-&gt;7_8]]
-[[Ir a la Avenida-&gt;8]] </tw-passagedata><tw-passagedata pid="57" name="7_8" tags="" position="974,21" size="100,100">show character r RMad2 left
+[[Ir por el man-&gt;8]] </tw-passagedata><tw-passagedata pid="57" name="7_8" tags="" position="974,21" size="100,100">show character r RMad2 left
 
 r ¡No quiero barritas!
 
 show character r RMad left
 
 [[Ir donde Gema-&gt;7_7]]
-[[Ir a la Avenida-&gt;8]]</tw-passagedata><tw-passagedata pid="58" name="Hinchar2" tags="" position="164.33333333333331,351" size="100,100">play sound Golpearpuerta
+[[Ir por el punki-&gt;8]]</tw-passagedata><tw-passagedata pid="58" name="Hinchar2" tags="" position="164,351" size="100,100">play sound Golpearpuerta
 &lt;pause&gt;
 ...
 &lt;pause&gt;
@@ -1086,7 +1153,7 @@ j :)
 show character j JNormal right
 
 [[Hinchar-&gt;Hinchar2]] 
-[[Virarse -&gt;pre4]]</tw-passagedata><tw-passagedata pid="59" name="4" tags="Escena-4" position="437.3333333333333,247.5" size="100,100">stop sound Ambientecampo
+[[Virarse -&gt;pre4]]</tw-passagedata><tw-passagedata pid="59" name="4" tags="Escena-4" position="437,247" size="100,100">stop sound Ambientecampo
 hide character r
 hide character j
 show background Tenderos fadeIn
@@ -1099,7 +1166,7 @@ r ¡¿...!?
 show character r RFear2 left fadeIn
 show character j1 JHappy2 right fadeIn
 
-j ¡Sabía!
+j ¡Sabía, se ve hermoso!
 j ¡Bienvenida a la gran Avenida Alberto D&#39;Chong!
 
 show character r RFear3 left
@@ -1124,12 +1191,12 @@ show character j JHappy right
 (Claramente Juana está loca)
 
 [[Preguntar cómo se enterarían los turistas de esto si se cayeron todas las antenas -&gt;4_1]]
-[[Preguntar por la gracia de este cochino pueblo -&gt;4_2]]</tw-passagedata><tw-passagedata pid="60" name="Test" tags="" position="122.33333333333331,5.833333333333314" size="100,100">show character r1 RMad center
+[[Preguntar por la gracia de este cochino pueblo -&gt;4_2]]</tw-passagedata><tw-passagedata pid="60" name="Test" tags="" position="122,5" size="100,100">show character r1 RMad center
 
 &lt;pause&gt;
 
 hide character r1
-show character r RNormal2</tw-passagedata><tw-passagedata pid="61" name="Temblor3" tags="Escena4" position="285.0000000000001,596.3333333333334" size="100,100">¡Oh!
+show character r RNormal2</tw-passagedata><tw-passagedata pid="61" name="Temblor3" tags="Escena4" position="285,596" size="100,100">¡Oh!
 Parece que algo se asoma entre una de las nuevas grietas en el piso...
 
 &lt;pause&gt;
@@ -1139,7 +1206,7 @@ Examinándola más de cerca puedes ver que se trata de...
 ¡Como las de mitos y leyendas!
 
 [[Ni mi primo más viejo se acuerda de esas cartas-&gt;CartaDoncella]] 
-[[¡He escuchado grandes cosas de esa franquicia!-&gt;CartaDoncella]]</tw-passagedata><tw-passagedata pid="62" name="5_00" tags="Escena-5" position="713.6666666666666,391" size="100,100">show character r RNormal2 left
+[[¡He escuchado grandes cosas de esa franquicia!-&gt;CartaDoncella]]</tw-passagedata><tw-passagedata pid="62" name="5_00" tags="Escena-5" position="713,391" size="100,100">show character r RNormal2 left
 
 r Jaja, sí... Y tú... ¿Trabajas hace mucho aquí?
 
@@ -1173,7 +1240,7 @@ show character r RNormal2 left
 
 r Sí, estas rojas...
 
-jump Papeles</tw-passagedata><tw-passagedata pid="63" name="5_01" tags="Escena-5" position="857,360.66666666666663" size="100,100">show character r RNormal2 left
+jump Papeles</tw-passagedata><tw-passagedata pid="63" name="5_01" tags="Escena-5" position="857,360" size="100,100">show character r RNormal2 left
 
 r Uh...
 
@@ -1200,7 +1267,7 @@ show character j1 JHappy2 left
 hide character j1
 show character j JHappy left
 
-jump Papeles</tw-passagedata><tw-passagedata pid="64" name="Papeles" tags="Escena-5" position="823.9999999999999,474.33333333333337" size="100,100">show character j JNormal left
+jump Papeles</tw-passagedata><tw-passagedata pid="64" name="Papeles" tags="Escena-5" position="823,474" size="100,100">show character j JNormal left
 
 c Ningún problema, amiga.
 
@@ -1230,7 +1297,135 @@ show character j JNormal left
 c Tengo que hacer las entregas, ¡vamos!
 
 [[Hinchar más-&gt;Insistir2]]
-[[Ir-&gt;Minijuego]]</tw-passagedata></tw-storydata>
+[[Ir-&gt;Minijuego]]</tw-passagedata><tw-passagedata pid="66" name="8_1" tags="" position="1259.6666666666667,285" size="100,100">show character r RNormal2 left
+
+r No sé, Juana. No creo que sea nadie.
+
+jump 8_3</tw-passagedata><tw-passagedata pid="67" name="8_2" tags="" position="1389.6666666666667,281.66666666666663" size="100,100">show character r RNormal2 left
+
+r ¿Por qué sería el Chasqui?
+
+hide character r
+show character r1 RMad2 left
+
+r O esa... Mile.
+
+hide character r1
+
+jump 8_3</tw-passagedata><tw-passagedata pid="68" name="8_3" tags="" position="1323.9999898274739,401.6666666666667" size="100,100">show character r RNormal left
+show character j JNormal2 right
+
+j Creo que estás siendo muy cerrada de mente, Roni.
+
+show character j JNormal right
+
+(Juana levanta una ceja como si tuviera algo inconmesurablemente inteligente que decir)
+
+show character j JNormal2 right
+
+j Piénsalo. &quot;La cuerda primera encuentra | En el bagaje de su viaje | Lo constitutivo de su esencia | Y lo que la salva del desgaste&quot;
+
+show character r RFear left
+
+j &quot;Para llamarla tendrá la altura | La doncella de la aventura&quot;
+
+show character j JNormal right
+
+(Vaya, realmente se está tomando eso en serio)
+
+show character j JNormal2 right
+
+j ¡El Chasqui siempre está haciendo viajes para todos lados, Roni!
+j Es la persona más aventurera que conozco.
+
+show character j JNormal right
+show character r RFear2 left
+
+r ¿Ya?
+
+show character r RFear left
+show character j JNormal2 right
+
+j Y Mile, bueno... No es la persona que más me agrada en el pueblo.
+j Pero debo admitir que tiene bastante bagaje... Cultural al menos.
+j Y siempre está en busca de cosas nuevas que escuchar.
+
+show character r RFear2 left
+
+r ¿Y por qué tendría que ser uno de ellos y no otra de las 400 personas que viven en el pueblo?
+
+hide character j
+show character j1 JHappy2 right
+
+j JAJAJAJAJA ¡¡¡RONI!!! ¡¡¡QUE ERES CHISTOSA!!!
+j JAJAJAJAJAJAJAJAJAJA
+
+(Juana finge secarse un par de lágrimas)
+
+hide character j1
+show character j JNormal2 right
+
+j Somos por lo menos cinco mil, Roni.
+
+show character j JNormal right
+show character r RNormal2 left
+
+r Lo siento, Juana.
+
+show character r RNormal left
+show character j JNormal2 right
+
+j Errores citadinos :)
+
+show character j JNormal right
+show character r RNormal2 left
+
+r Ya, pero ¿por qué no puede ser otro de los
+r MÁS DE CINCO MIL HABITANTES
+r del Chongui?
+
+show character j JNormal2 right
+show character r RNormal left
+
+j Roni, yo conozco a casi todas las personas que viven en este pueblo.
+j Te puedo asegurar que nadie se ajusta mejor a la descripción.
+
+show character j JDoubt2 right
+
+j Bueno, quizás Fabio Fitness también serviría.
+j Digo, nadie pensó que se aventuraría en su aventura fitness cuando recién comenzó.
+
+show character j JNormal2 right
+
+j Ahora es la persona más fuerte del pueblo :)
+
+show character j JNormal right
+show character r RNormal2 left
+
+r ¿Entonces serían Mile, el Chasqui o ese tal Fabio?
+
+show character j JNormal2 right
+show character r RNormal left
+
+j ¡Claro! He estado pensando todo el tiempo en esto y nada me hace más sentido :)
+
+show character j JNormal right
+
+(¿Te convence el argumento de Juana)
+[[Sí]]
+[[No del todo-&gt;No]]
+[[Creo que todo esto es una estupidez-&gt;LOL]]</tw-passagedata><tw-passagedata pid="69" name="Sí" tags="" position="1612.3333333333335,438" size="100,100">stop music Pueblo</tw-passagedata><tw-passagedata pid="70" name="No" tags="" position="1520.6666666666667,568.3333333333334" size="100,100">stop music Pueblo</tw-passagedata><tw-passagedata pid="71" name="LOL" tags="" position="1408.9999898274739,723.3333333333335" size="100,100">stop music Pueblo
+
+show character r RNormal2 left
+
+r Juana, creo que todo esto es una estupidez. Digo, solo fue un...
+
+hide character r
+hide character j
+show background Tenderos shake
+play sound Tiembla
+
+</tw-passagedata></tw-storydata>
 		</div>
 		
 		<div id="monogatari">
