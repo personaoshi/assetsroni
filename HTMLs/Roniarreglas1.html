@@ -549,7 +549,7 @@ hide character j1
 show character j JHappy left
 show character r RFear3 left
 
-r PERO LAS ALPARGATAS
+r PERO LAS CHALAS
 
 Finalmente Juana se detiene.
 
@@ -756,7 +756,7 @@ show character j JDoubt2 left
 
 j Oie, ¿tu cachai para quién pueden ser estas otras alpargatas?
 
-show character j JNormal left
+show character j JDoubt left
 
 show image A2 center fadeIn
 
@@ -792,7 +792,8 @@ r ¿No puedes ir a dejarlas tú y te esperamos?
 
 show character r RNormal left
 
-c No, me desviaría mucho de la ruta. Es más fácil que me acompañen.
+c No, si fuera por mí me dedicaría a mis encargos no más.
+c Si quieren que les haga este favor acompáñenme.
 
 show character r RNormal2 left
 
@@ -979,12 +980,15 @@ play music Alarma x3 loop
 
 m ¿Quieren mi ayuda o no?
 
-[[Entrar a la tienda-&gt;Tienda-P&amp;C]]</tw-passagedata><tw-passagedata pid="51" name="[Video]" tags="" position="2516,11" size="100,200">Scroll: scroll.mp4</tw-passagedata><tw-passagedata pid="52" name="Tienda-P&amp;C" tags="" position="987,351" size="100,100">hide characters
+[[Entrar a la tienda-&gt;TiendaPnC]]</tw-passagedata><tw-passagedata pid="51" name="[Video]" tags="" position="2516,11" size="100,200">Scroll: scroll.mp4</tw-passagedata><tw-passagedata pid="52" name="TiendaPnC" tags="" position="987,351" size="100,100">hide character j
+hide character r
+hide character c
+hide character m
 show background #000
 
 centered JAVASCRIPT PARA METER EL P&amp;C DE LA TIENDA
 
-</tw-passagedata><tw-passagedata pid="53" name="6" tags="" position="1114,1120" size="100,100">show background Tenderos fadeIn
+jump 7_6</tw-passagedata><tw-passagedata pid="53" name="6" tags="" position="1114,1120" size="100,100">show background Tenderos fadeIn
 play sound AmbienteTenderos
 show character r RFear3 left fadeIn
 show character j JHappy left fadeIn
@@ -1001,6 +1005,7 @@ show character j1 JHappy2 left
 j ¡Sí!, vamos con Mile ahora.
 
 jump 7</tw-passagedata><tw-passagedata pid="54" name="7_6" tags="Escena-7" position="1101,247" size="100,100">show background TodoAMil fadeIn
+stop music Alarma
 play sound Tienda fadeIn loop
 
 show character r1 RFear2 left fadeIn
@@ -1020,8 +1025,8 @@ j ¡Buena Roni!
 hide character j1
 show character j JHappy left
 
-Roni no quiso decirle a nadie, pero de hecho pagó por el CD.
-Robar está mal, jóvenes.
+(Roni no quiso decirle a nadie, pero de hecho pagó por el CD)
+(Robar está mal, jóvenes)
 
 m Wena.
 m Pueden encontrar al Flea en la Galería Abandonada.
