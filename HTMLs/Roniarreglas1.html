@@ -65,7 +65,7 @@ testCounter: 0
 TenderosA: TenderosA.png
 IntGema: interiorcasagema.png
 ExtGema: exteriorcasagema.png
-Correos: Correos.jpeg
+Correos: Correos.jpg
 TodoAMil: todoamil.png
 TodoAMilA: todoamilA.png
 IntTodoAMil: intTodoamil.png
@@ -153,7 +153,7 @@ r Con su permiso voy a recluirme en mi pieza.
 show character r RNormal left
 show character g GNormal2 right
 
-g Alto ahí, Roni
+g Alto ahí, Roni.
 
 show character g GNormal right
 
@@ -170,30 +170,47 @@ show character g GNormal2 right
 
 g Primero tendrás que entregar estas alpargatas a mis clientes.
 
-show character g GNormal
-hide character r
-hide character j
-show character r1 RFear2 left
+show character g GNormal right
+show character r RFear2 left
 show character j JNormal left
 
 r ¡Pero si no teníamos nada que hacer hoy!
 
-hide character r1
-hide character j
-show character r RNormal left
+show character r RFear left
 show character j JNormal left
-
-show character g GNormal2
+show character g GNormal2 right
 
 g Pues ahora sí, visto y considerando tu actitud.
 
-show character r RMad left
+hide character j
+hide character r
+show character r1 RMad2 left
+show character j JNormal left
+show character g GNormal right
+
+r Pero si ni sé dónde están las cosas acá.
+
+show character r1 RMad left
+show character g GNormal2 right
+
+g Que te acompañe tu prima entonces.
+
+hide character j
+show character j1 JHappy2 left
+show character g GNormal right
+
+j ¡Qué bacán, Roni!
+j ¡Hace tiempo no hacemos cosas juntas! :)
+
+hide character j1
+show character j JHappy left
+show character g GNormal2 right
 
 g ¡Ya, fuera! ¡Va a empezar la comedia de los lunes!
 
 hide image A3
 hide character g
-hide character r
+hide character r1
 hide character j
 
 show background #000 fadeIn
@@ -212,18 +229,18 @@ r:
   Directory: Roni
   Images:
     RNormal: RNeutral.png
-	RNormal2: RNeutralT.png
-	RMad: REnojo.png
-	RMad2: REnojoT.png
-	RFear: RMiedo.png
-	
+    RNormal2: RNeutralT.png
+    RFear: RMiedo.png
+    RFear2: RMiedoT.png
+	RFear3: RMiedo3.png
+
 r1:
   Name: &quot;Roni1&quot;
   Color: &quot;#00bfff&quot;
   Directory: Roni
   Images:
-    RFear2: RMiedoT.png
-	RFear3: RMiedo3.png
+	RMad: REnojo.png
+	RMad2: REnojoT.png
 
 g:
   Name: &quot;Gema&quot;
@@ -283,16 +300,16 @@ stop sound Tiembla fadeOut
 jump 2
 </tw-passagedata><tw-passagedata pid="14" name="3" tags="Escena-3" position="232,121" size="100,100">show background ExtGema fadeIn
 
-show character r RMad2 left fadeIn
+show character r1 RMad2 left fadeIn
 show character j JNormal right fadeIn
 
 r Tsch...
 
-show character r RMad left
+show character r1 RMad left
 
 ¡Se han añadido nuevos objetos a tu inventario!
 
-hide character r
+hide character r1
 hide character j
 show background #000
 show image IB center fadeIn
@@ -302,26 +319,29 @@ show image IB center fadeIn
 hide image IB
 show background ExtGema fadeIn
 
-Tendrás disponibles los objetos de tu inventario en ciertos momentos de tu aventura.
+Tendrás disponibles estos objetos en ciertos momentos de tu aventura.
 
-show character r RMad2 left fadeIn
+show character r1 RMad2 left fadeIn
 show character j JNormal right fadeIn
 
 r Uggggghhh...
 
-show character r RMad left
+show character r1 RMad left
 show character j JNormal2 right
 
 j ¿Y bien? ¿Qué harás ahora?
 
 [[Funar a la anciana -&gt;Hinchar]]
-[[Entregar las alpargatas-&gt;4]]</tw-passagedata><tw-passagedata pid="15" name="Hinchar" tags="Escena-3" position="228,231" size="100,100">play sound Golpearpuerta
+[[Entregar las alpargatas-&gt;pre4]]</tw-passagedata><tw-passagedata pid="15" name="Hinchar" tags="Escena-3" position="228,231" size="100,100">hide character r1
+show character r RNormal left
+
+play sound Golpearpuerta
 &lt;pause&gt;
 g ¡No creo que seas tan rápida!
 
 show character r RNormal2 left
 
-r Ay Dios santo
+r Ay, Dios santo.
 
 show character r RNormal left
 show character j JNormal2 right
@@ -331,8 +351,8 @@ j ¿Vamos?
 show character j JNormal right
 
 [[Hinchar-&gt;Hinchar2]] 
-[[Virarse -&gt;4]]
-</tw-passagedata><tw-passagedata pid="16" name="4" tags="Escena-4" position="440,124" size="100,100">show character r RNormal2 left
+[[Virarse -&gt;pre4]]
+</tw-passagedata><tw-passagedata pid="16" name="pre4" tags="Escena-3" position="426.6666666666667,132.33333333333334" size="100,100">show character r RNormal2 left
 
 r Ya, vamos a dejar estas chalas.
 
@@ -349,64 +369,35 @@ r Eso.
 show character r RNormal left
 show character j JNormal2 right
 
-j Ah, las entregamos en un ratito :)
-j ¡Ven!
+j Ah, las entregamos en un segundito :)
+j ¡Ven! Tengo que ver algo.
 
-stop sound Ambientecampo
-hide character r
-hide character j
-show background Tenderos fadeIn
-play sound AmbienteTenderos fadeIn loop
+&lt;pause&gt;
 
+jump 4</tw-passagedata><tw-passagedata pid="17" name="4_1" tags="Escena-4" position="326,358" size="100,100">r Pero no hay señal, ¿cómo se van a enterar los turistas de esto?
 
-r ¡¿...!?
-
-
-show character r1 RFear2 left fadeIn
-show character j JHappy right fadeIn
-
-j ¡Bienvenida a la gran Avenida Alberto D&#39;Chong!
-
-show character r1 RFear3 left
-
-r ¡¿Qué onda esta gente?! 
-
-hide character r1
 show character r RFear left
 show character j JDoubt2 right
 
-j Pero si se ven la raja esas grietas abiertas en la tierra.
-
-hide character j
-show character j1 JHappy2 right
-
-j ¡Vendrán más turistas!
-
-hide character j1
-show character j JHappy right
-show character r RFear2 left
-
-(Claramente Juana está loca)
-
-[[Preguntar cómo se enterarían los turistas de esto si se cayeron todas las antenas -&gt;4_1]]
-[[Preguntar por la gracia de este cochino pueblo -&gt;4_2]]</tw-passagedata><tw-passagedata pid="17" name="4_1" tags="Escena-4" position="326,358" size="100,100">r Pero no hay señal, ¿cómo se van a enterar los turistas de esto?
-
-show character RFear left
-show character j JDoubt right
-
 j Supongo que el Chasqui irá a entregar el mensaje a la ciudad.
 
-show character r RDoubt left
+show character j JDoubt right
 
 r (¿Quién?)
 
-[[Preguntar quién es ese-&gt;Temblor1]] 
-[[Fingir conocimiento-&gt;Temblor1]] </tw-passagedata><tw-passagedata pid="18" name="4_2" tags="Escena-4" position="521,373" size="100,100">r ¿Y qué compran acá? ¿Puras alpargatas?
+[[Preguntar quién es ese, como una boba-&gt;Temblor1]] 
+[[Fingir conocimiento-&gt;Temblor1]] </tw-passagedata><tw-passagedata pid="18" name="4_2" tags="Escena-4" position="521,373" size="100,100">show character r RFear2 left
+
+r ¿Y qué compran acá? ¿Puras chalas?
 
 show character r RFear left
-show character j JMad right
+show character j JNormal2 right
 
 j ¡Hey! ¡Respeta el cáñamo, sirve para hacer cualquier cosa!
+
+show character j JNormal right
+
+(GENIAL AHORA DE SEGURO TE ODIA)
 
 [[Pedir perdón-&gt;Temblor1]] 
 [[Ignorar su enojo-&gt;Temblor1]] </tw-passagedata><tw-passagedata pid="19" name="Temblor1" tags="Escena-4" position="453,493" size="100,100">hide character r
@@ -418,16 +409,16 @@ play sound Tiembla
 
 &lt;pause&gt;
 
-show background TenderosA
+show background TenderosA fadeIn
 
 &lt;pause&gt;
 
 Oh no...
 ¡Roni entró en pánico!
 
-show character r RFear2 left fadeIn
+show character r RFear3 left fadeIn
 
-r ¡AAAAAA AYUDAAA! 
+r ¡AAAAAA EL FIN DEL MUNDOOOOO! 
 
 hide character r
 
@@ -435,23 +426,11 @@ play music Alarma x3 loop
 
 &lt;set: $ayuda to 0&gt;
 
-[[¡¡¡CLICKEA RÁPIDO ANTES QUE ME MUERAAAA!!! -&gt;Temblor2]]</tw-passagedata><tw-passagedata pid="20" name="Temblor2" tags="Escena-4" position="333,571" size="100,100">centered (Aquí hay un point and click, pero aún no lo programamos)
+[[¡¡¡CLICKEA RÁPIDO ANTES QUE ME MUERAAAA!!! -&gt;Temblor2]]</tw-passagedata><tw-passagedata pid="20" name="Temblor2" tags="Escena-4" position="261.3333333333333,482.6666666666667" size="100,100">centered (Aquí hay un point and click, pero aún no lo programamos)
 
-¡Oh!
-Parece que algo se asoma entre una de las nuevas grietas en el piso...
-
-&lt;pause&gt;
-
-Examinándola más de cerca puedes ver que se trata de...
-¡Una carta!
-¡Como las de mitos y leyendas!
-
-[[Ni mi primo más viejo se acuerda de esas cartas-&gt;CartaDoncella]] 
-[[¡He escuchado grandes cosas de esa franquicia!-&gt;CartaDoncella]]</tw-passagedata><tw-passagedata pid="21" name="CartaDoncella" tags="Escena-4" position="329,678" size="100,100">stop music
+jump Temblor3</tw-passagedata><tw-passagedata pid="21" name="CartaDoncella" tags="Escena-4" position="325.6666666666667,716.3333333333333" size="100,100">stop music
 show background Tenderos
 show image D1 center fadeIn
-
-
 
 &lt;pause&gt;
 
@@ -468,7 +447,7 @@ hide image D1
 play sound AmbienteTenderos fadeIn loop
 
 show character r RNormal left fadeIn
-show character j JHappy right fadeIn
+show character j JNormal right fadeIn
 
 Bueno, eso decía la carta por detrás.
 Sea lo que sea que signifique.
@@ -483,38 +462,57 @@ show character r RNormal left
 
 (Mientras intentas quitarte el sonrojo piensas en por qué este texto tenía que estar escrito de forma tan cursi)
 
-j Parece que Gema no está del todo loca. ¡Las doncellas existen! ¡Vamos por la doncella!
+show character j JDoubt2 right
 
-show character r RFear2
+j Parece que la Gema no está del todo loca. ¡Las doncellas existen!
+
+hide character j
+show character j1 JHappy2 right
+
+j ¡Vamos por la doncella!
+
+hide character j1
+show character j JHappy right
+show character r RFear2 left
 
 r ¿¡...!?
 r Juana, esto no tiene ningún sentido.
 
-show character r RFear
+hide character j
+show character r RFear left
+show character j1 JHappy2 right
 
 j ¡Cómo que no! ¡Pero si salió de la tierra!
 
-show character r RFear2
+hide character j1
+show character j JHappy right
+show character r RFear2 left
 
 r PERO ESO QUÉ TIENE QUE VER JUANA.
 
 (Juana se encoge de hombros)
-show character r RFear
 
-j ¿...?
+hide character j
+show character r RFear left
+show character j1 JHappy2 right
+
+j ¿... :)?
 
 ...
+
+hide character j1
+show character j JNormal right
 
 jump AVer</tw-passagedata><tw-passagedata pid="23" name="4_4" tags="Escena-4" position="436,793" size="100,100">show character r RNormal2 left
 
 r ¿Podemos ir a dejar estas chalas? Quiero volver a la casa.
 
-show character r RNormal
-show character j JNormal2
+show character r RNormal left
+show character j JNormal2 right
 
 j ¡Pero Roni! ¡Recogiste un objeto misterioso del suelo y ahora actúas como si nada!
 
-show character j JHappy
+show character j JNormal right
 
 Sin que puedas hacer mucho, Juana te quita la carta de mitos y le... La carta de la doncella de las manos.
 
@@ -522,35 +520,51 @@ j ...
 
 Ves lentamente como la expresión de su rostro va cambiando a medida que avanza en la lectura.
 
+hide character j
+show character j1 JHappy2 right
+
 j ¡¡¡RONI ESTO ES MUY LOCO!!!
 j ¿¿¿POR QUÉ NO ME DIJISTE NADA???
 
-show character r RFear2
+hide character j1
+show character j JHappy right
+show character r RFear3 left
 
 r NO SÉ ME PUSE NERVIOSA NO ME GRITES POR FAVOR
 
-show character r RFear
+hide character j
+show character r RFear left
+show character j1 JHappy2 right
 
 j AHORA TENEMOS QUE IR POR LAS DONCELLAS
 
-show character j JHappy left
+hide character j1
+show character j1 JHappy2 left
 
 j ES VITAL RONI ES VITAL
 
 Juana te toma de los hombros y te sacude.
 
+hide character j1
+show character j JHappy left
+show character r RFear3 left
+
 r PERO LAS ALPARGATAS
 
 Finalmente Juana se detiene.
 
-show character j JDoubt right
+hide character j
+show character j JDoubt right fadeIn
 show character r RFear left
 
 j ¿Y las doncellas?
 
 show character r RNormal2 left
+show character j JNormal right
 
-r Primero entreguemos las chalas, sino Gema no me dejará volver.
+r Primero entreguemos las chalas, sino la abue no me dejará volver.
+
+show character j JNormal2 right
 
 j Pero después iremos por las doncellas.
 
@@ -565,47 +579,99 @@ j A ver esas alpargatas.
 
 [[Mostrar alpargatas con toperoles -&gt;4_5]]
 [[Mostrar alpargatas negras -&gt;4_5]]
-[[Mostrar alpargatas rojas -&gt;4_6]]</tw-passagedata><tw-passagedata pid="25" name="4_5" tags="Escena-4" position="211,1048" size="100,100">show character j JDoubt right
+[[Mostrar alpargatas rojas -&gt;4_6]]</tw-passagedata><tw-passagedata pid="25" name="4_5" tags="Escena-4" position="211,1048" size="100,100">show character j JDoubt2 right
 
-j Ni idea de quién es. ¿A ver las rojas?
+j Ni idea de quién es.
+j Esas rojas me suenan... ¿A verlas?
 
 [[Mostrar alpargatas rojas -&gt;4_6]] </tw-passagedata><tw-passagedata pid="26" name="4_6" tags="Escena-4" position="438,1037" size="100,100">show character j JNormal2 right
 
-j Esa dice que es para tu papá Hugo, vamos al tiro a dejarlas a su casa.
+j Esa dice que es para tu papá, Hugo
+j Vamos al tiro a dejarlas a su casa.
 
-show character r RFear 2 left
+show character r RFear3 left
 show character j JNormal right
 
-[[NO ... Es que...no nos deberíamos juntar con él… -&gt;4_7]] [[Queda muy lejos, vamos a perder tiempo...con el chonguimiento más encima. -&gt;4_8]]</tw-passagedata><tw-passagedata pid="27" name="4_7" tags="Escena-4" position="556,1138" size="100,100">show character r RFear left
+r NO.
+
+show character r RFear left
+show character j JDoubt right
+
+&lt;pause&gt;
+
+show character j JDoubt2 right
+
+j Uh... ¿...?
+
+(RÁPIDO DI ALGO POR FAVOR DEBE ESTAR PENSANDO MAL DE TI)
+
+[[Ser sincera y decir que no quieres verlo-&gt;4_7]] [[Excusarte con que van a perder tiempo-&gt;4_8]]</tw-passagedata><tw-passagedata pid="27" name="4_7" tags="Escena-4" position="556,1138" size="100,100">show character r RFear2 left
+
+r Es que no quiero verlo.
+
+show character r RFear left
 show character j JNormal2 right
 
-j Igual me pueden castigar después...podemos mandarlas por delivery.
+j Ay Roni... Por qué le haces eso :(
 
-jump PreCorreos</tw-passagedata><tw-passagedata pid="28" name="4_8" tags="" position="551,912" size="100,100">show character r RFear left
+show character j JNormal right
+show character r RFear2 left
+
+r Me da vergüenza Juana, es demasiado raro.
+
+show character r RFear left
+
+(Juana pone los ojos en blanco)
+(Te da un poco de miedo que ahora te odie y te empieza a doler la guata)
+
 show character j JNormal2 right
 
-j Ahora po. Podemos mandarla por correo.
+j Ya bueno Roni, como quieras.
+j ...Podemos mandarlas por delivery si no quieres verlo.
 
-jump PreCorreos</tw-passagedata><tw-passagedata pid="29" name="PreCorreos" tags="Escena-4" position="649,1023" size="100,100">show character r RNormal2 left
+jump PreCorreos</tw-passagedata><tw-passagedata pid="28" name="4_8" tags="" position="551,912" size="100,100">show character r RFear2 left
+show character j JDoubt right
+
+r Es que vamos a perder tiempo... Más encima está todo chongueado...
+
+show character r RFear left
+show character j JNormal2 right
+
+j Mmm... Bueno, supongo que eso tiene sentido.
+
 show character j JNormal right
 
-r Buena, ¿dónde queda?
+(Te sientes aliviada por tu mentira, al menos Juana no cree que eres una pésima persona que merece la muerte)
+
+show character r RNormal2 left
+
+r Sí, Juana. Hay que ser inteligentes.
 
 show character r RNormal left
 show character j JNormal2 right
 
-j En la oficina de correos.
+j Podríamos enviarlas por correo...
+
+jump PreCorreos</tw-passagedata><tw-passagedata pid="29" name="PreCorreos" tags="Escena-4" position="649,1023" size="100,100">show character r RNormal2 left
+show character j JNormal right
+
+r Buena, ¿a dónde hay que ir?
+
+show character r RNormal left
+show character j JNormal2 right
+
+j A la oficina de correos :)
 
 hide character r
 hide character j
 
-[[Ir a la oficina de correos -&gt;5]]</tw-passagedata><tw-passagedata pid="30" name="5" tags="Escena-5" position="754,358" size="100,100">stop sound AmbienteTenderos
+[[Ir a la oficina de correos -&gt;5]]</tw-passagedata><tw-passagedata pid="30" name="5" tags="Escena-5" position="560.6666666666667,206.33333333333334" size="100,100">stop sound AmbienteTenderos
 show background Correos fadeIn
 play sound AmbienteCorreos fadeIn loop
 
 &lt;pause&gt;
 
-[[Tocar timbre -&gt;Timbre]]</tw-passagedata><tw-passagedata pid="31" name="Timbre" tags="Escena-5" position="878,484" size="100,100">play sound Timbre
+[[Tocar timbre -&gt;Timbre]]</tw-passagedata><tw-passagedata pid="31" name="Timbre" tags="Escena-5" position="703.0000000000001,257.33333333333337" size="100,100">play sound Timbre
 &lt;pause&gt;
 
 show character c CNormal right fadeIn
@@ -614,49 +680,54 @@ show character j JNormal left fadeIn
 
 c Hola chiquillas, ¿Qué desean enviar?
 
-show character r RNormal2 left
-
-r Unas alpargatas.
-
-show character r RNormal left
-
-show image P center fadeIn
-
-&lt;pause&gt;
-
-c Necesito que rellenes estos papeles.
-c Y si quieres puedes dejarle una notita en este hermoso papel Bond.
-
-hide image P
-
-&lt;pause&gt;
-
-play sound Escribir
-
-&lt;pause&gt;
-
 show character j JNormal2 left
 
-j Te falta la nota.
+j Holi Chasqui, ¿cómo va?
+
+show character j JNormal left
+
+c Ah, tan fresco como siempre.
+
+[[Intentar conversar como un ser humano normal-&gt;5_00]]
+[[Ir al grano-&gt;5_01]]</tw-passagedata><tw-passagedata pid="32" name="5_1" tags="Escena-5" position="756,623" size="100,100">show character r RNormal2 left
+
+r Nah, para qué.
+
+show character r RNormal left
+show character j JNormal2 left
+
+j Yo creo que deberías, Roni
 
 show character r RNormal2 left
 show character j JNormal left
 
-r [[No es necesario. -&gt;5_1]] [[¿Qué nota? -&gt;5_2]]</tw-passagedata><tw-passagedata pid="32" name="5_1" tags="Escena-5" position="756,623" size="100,100">show character r RNormal left
+r ¿Sí?
+
+show character r RNormal left
 show character j JNormal2 left
 
-j Obvio que sí, sabe que estai aquí, ponle una excusa.
+j Obvio que sí, sabe que estai aquí. 
+j Ponle una excusa por lo menos.
 
-jump YaEstá</tw-passagedata><tw-passagedata pid="33" name="5_2" tags="Escena-5" position="932,624" size="100,100">show character r RNormal left
+jump YaEstá</tw-passagedata><tw-passagedata pid="33" name="5_2" tags="Escena-5" position="890.3333333333334,610.6666666666666" size="100,100">show character r RNormal2 left
+
+r ¿Qué nota?
+
+show character r RNormal left
 show character j JNormal2 left
 
 j Esta del papel bonito, creo que deberías decirle porqué no podemos ir.
+
+show character r RNormal2 left
+show character j JNormal left
+
+r Mmm... Bueno.
 
 jump YaEstá</tw-passagedata><tw-passagedata pid="34" name="YaEstá" tags="Escena-5" position="844,731" size="100,100">hide character r
 hide character j
 hide character c
 
-show image P center
+show image P center fadeIn
 
 centered MINIJUEGO: Se despliega en la pantalla una carta de color crema en blanco con un texto borrable que dice: “redacta aquí la carta para Hugo”. En la esquina inferior derecha hay un botón que dice “Listo”, para así continuar con la historia.
 
@@ -681,32 +752,45 @@ Le entregas los papeles y las alpargatas al Chasqui.
 
 c ¡Qué bien! Voy a preparar esto.
 
-show character j JDoubt left
+show character j JDoubt2 left
 
 j Oie, ¿tu cachai para quién pueden ser estas otras alpargatas?
 
-show image A0 center
+show character j JNormal left
+
+show image A2 center fadeIn
+
+&lt;pause&gt;
+
+hide image A2
+show image A1 center fadeIn
 
 &lt;pause&gt;
 
 c Mmmmhhhh…
 c Creo que éstas negras las puede saber una amiga.
 
-hide image A0
+hide image A1
 
-show character j JHappy left
+show character j JNormal2 left
 
 j Genial, ¿nos puedes llevar con ella?
 
-c Tengo que entregar unas cosilas primero, las dejamos y luego vamos con Mile.
+c Tengo que entregar unas cosas primero, las dejamos y luego vamos con Mile.
+
+show character j JDoubt2 left
+
+j ¿Mile?
+j Ay no...
 
 show character j JDoubt left
 
-j ¿Mile? Ay no...
+[[Ignorar a Juana-&gt;5_3]]
+[[Preguntar cuál es el rollo con esa tal &quot;Mile&quot;-&gt;5_4]]</tw-passagedata><tw-passagedata pid="36" name="5_3" tags="Escena-5" position="774,966" size="100,100">show character r RNormal2 left
 
-show character r RNormal2 left
+r ¿No puedes ir a dejarlas tú y te esperamos?
 
-r [[¿No podemos esperar aquí? -&gt;5_3]] [[¿Qué tiene? -&gt;5_4]]</tw-passagedata><tw-passagedata pid="36" name="5_3" tags="Escena-5" position="774,966" size="100,100">show character r RNormal left
+show character r RNormal left
 
 c No, me desviaría mucho de la ruta. Es más fácil que me acompañen.
 
@@ -714,31 +798,28 @@ show character r RNormal2 left
 
 r Oh...bueno…
 
-jump ¿Listas?</tw-passagedata><tw-passagedata pid="37" name="5_4" tags="Escena-5" position="938,968" size="100,100">show character r RNormal left
-show character j JMad left
+jump ¿Listas?</tw-passagedata><tw-passagedata pid="37" name="5_4" tags="Escena-5" position="938,968" size="100,100">show character r RNormal2 left
+
+r ¿Quién es esta &quot;Mile&quot;?
+
+show character r RNormal left
+show character j JNormal2 left
 
 j Es la archienemiga de Otto. Creo que él le dijo algo sobre la banda del pueblo.
+
+(Siempre has escuchado a tu prima hablando de Otto y todavía no sabes quién es)
 
 jump ¿Listas?</tw-passagedata><tw-passagedata pid="38" name="¿Listas?" tags="Escena-5" position="861,1079" size="100,100">show character r RNormal left
 show character j JNormal left
 
 c ¿Están listas?
 
-&lt;set: $timbre to 0&gt;
-
 [[Tocar timbre -&gt;Insistir]]
-[[¡Vamos! -&gt;Minijuego]]</tw-passagedata><tw-passagedata pid="39" name="Insistir" tags="" position="874,1208" size="100,100">&lt;set: $timbre to $timbre + 1&gt;
-play sound Timbre
+[[¡Vamos! -&gt;Minijuego]]</tw-passagedata><tw-passagedata pid="39" name="Insistir" tags="Escena-5" position="874,1208" size="100,100">play sound Timbre
 
-&lt;if: $timbre is 1&gt;
+c ¿Están rellenando el libro de sugerencias?
 
-c ¿Están rellenando el libro de sugerencias? 
-
-&lt;if: $timbre is &gt;2&gt;
-
-c Tengo que hacer las entregas, ¡vamos!
-
-[[Tocar timbre -&gt;Insistir]] 
+[[Tocar timbre -&gt;Insistir2]] 
 [[¡Vamos! -&gt;Minijuego]] </tw-passagedata><tw-passagedata pid="40" name="Minijuego" tags="Escena-6" position="1042,1241" size="100,100">hide character r
 hide character j
 hide character c
@@ -750,7 +831,7 @@ centered MINIJUEGO DINOSAURIO
 &lt;pause&gt;
 
 jump 6</tw-passagedata><tw-passagedata pid="41" name="7" tags="Escena-7" position="1151,998" size="100,100">hide character r
-hide character j
+hide character j1
 hide character c
 
 stop sound AmbienteTenderos
@@ -775,30 +856,52 @@ r ... ¿Hola?
 
 show character r RNormal left
 
+(Mile te mira con desprecio)
+
 m ¿Quién eres?
+
+(DIOS MÍO DI ALGO PARA QUE DEJE DE MIRARTE ASÍ)
+
+[[&quot;Mi papá es Hugo&quot; -&gt;7_1]]
+[[&quot;Mi abuela es Gema&quot; -&gt;7_2]]
+[[&quot;Mi prima es Juana&quot; -&gt;7_3]]</tw-passagedata><tw-passagedata pid="42" name="7_1" tags="Escena-7" position="1023,857" size="100,100">show character r RNormal2 left
+
+r Eh... Mi papá es Hugo.
+
+(Intentas sonreir de forma natural)
 
 show character r RNormal2 left
 
-&lt;set: $teOdio to 0&gt;
+r ¿ :] ?
 
-r [[Mi papá es Hugo -&gt;7_1]] [[Mi abuela es Gema -&gt;7_2]] [[Mi prima es Juana -&gt;7_3]]</tw-passagedata><tw-passagedata pid="42" name="7_1" tags="Escena-7" position="1023,857" size="100,100">&lt;set: $teOdio to 1&gt;
-
-show character r RNormal
+show character r RNormal left
 
 m Iugh, tampoco perteneces aquí entonces.
 
-jump Ok...</tw-passagedata><tw-passagedata pid="43" name="7_2" tags="Escena-7" position="1146,858" size="100,100">show character r RNormal left
+(Genial, de seguro te odia)
+
+jump Ok...</tw-passagedata><tw-passagedata pid="43" name="7_2" tags="Escena-7" position="1146,858" size="100,100">show character r RNormal2 left
+
+r Eh... Mi abuela es Gema
+
+show character r RNormal left
 
 m Ah, me cae bien, va al bingo con mi abuelo.
 
-jump ¡Bacán!</tw-passagedata><tw-passagedata pid="44" name="7_3" tags="Escena-7" position="1273,859" size="100,100">&lt;set: $teOdio to 1&gt;
+(Éxito B-) )
+
+jump ¡Bacán!</tw-passagedata><tw-passagedata pid="44" name="7_3" tags="Escena-7" position="1273,859" size="100,100">show character r RNormal2 left
+
+r Eh... Mi prima es Juana.
 
 show character r RNormal left
 
 m Se nota...
 
-jump Ok...</tw-passagedata><tw-passagedata pid="45" name="Ok..." tags="Escena-7" position="1085,749" size="100,100">show character r RMad left
-show character j JMad left
+(¿Qué significará eso?)
+
+jump Ok...</tw-passagedata><tw-passagedata pid="45" name="Ok..." tags="Escena-7" position="1085,749" size="100,100">show character r RFear left
+show character j JNormal left
 
 c … El asunto es que queríamos saber si estas alpargatas te pertenecen.
 m Ya bueno, déjame verlas.
@@ -883,7 +986,7 @@ centered JAVASCRIPT PARA METER EL P&amp;C DE LA TIENDA
 
 </tw-passagedata><tw-passagedata pid="53" name="6" tags="" position="1114,1120" size="100,100">show background Tenderos fadeIn
 play sound AmbienteTenderos
-show character r RFear left fadeIn
+show character r RFear3 left fadeIn
 show character j JHappy left fadeIn
 show character c CNormal right fadeIn
 
@@ -891,6 +994,10 @@ show character c CNormal right fadeIn
 
 c Aaa, ¿qué vigorizante no? Mejor que un café.
 r ¡¿...?!
+
+hide character j
+show character j1 JHappy2 left
+
 j ¡Sí!, vamos con Mile ahora.
 
 jump 7</tw-passagedata><tw-passagedata pid="54" name="7_6" tags="Escena-7" position="1101,247" size="100,100">show background TodoAMil fadeIn
@@ -974,8 +1081,151 @@ j :)
 show character j JNormal right
 
 [[Hinchar-&gt;Hinchar2]] 
-[[Virarse -&gt;4]]
-</tw-passagedata><tw-passagedata pid="59" name="Test" tags="" position="137.33333333333331,10.833333333333314" size="100,100">show character r RMad</tw-passagedata></tw-storydata>
+[[Virarse -&gt;pre4]]</tw-passagedata><tw-passagedata pid="59" name="4" tags="Escena-4" position="437.3333333333333,247.5" size="100,100">stop sound Ambientecampo
+hide character r
+hide character j
+show background Tenderos fadeIn
+play sound AmbienteTenderos fadeIn loop
+
+
+r ¡¿...!?
+
+
+show character r RFear2 left fadeIn
+show character j1 JHappy2 right fadeIn
+
+j ¡Sabía!
+j ¡Bienvenida a la gran Avenida Alberto D&#39;Chong!
+
+show character r RFear3 left
+
+r ¡¿Qué onda esta gente?! 
+
+hide character j1
+show character r RFear left
+show character j JDoubt2 right
+
+j Pero si se ven la raja esas grietas abiertas en la tierra.
+
+hide character j
+show character j1 JHappy2 right
+
+j ¡Vendrán más turistas!
+j ¡Esto es muy bueno Roni!
+
+hide character j1
+show character j JHappy right
+
+(Claramente Juana está loca)
+
+[[Preguntar cómo se enterarían los turistas de esto si se cayeron todas las antenas -&gt;4_1]]
+[[Preguntar por la gracia de este cochino pueblo -&gt;4_2]]</tw-passagedata><tw-passagedata pid="60" name="Test" tags="" position="122.33333333333331,5.833333333333314" size="100,100">show character r1 RMad center
+
+&lt;pause&gt;
+
+hide character r1
+show character r RNormal2</tw-passagedata><tw-passagedata pid="61" name="Temblor3" tags="Escena4" position="285.0000000000001,596.3333333333334" size="100,100">¡Oh!
+Parece que algo se asoma entre una de las nuevas grietas en el piso...
+
+&lt;pause&gt;
+
+Examinándola más de cerca puedes ver que se trata de...
+¡Una carta!
+¡Como las de mitos y leyendas!
+
+[[Ni mi primo más viejo se acuerda de esas cartas-&gt;CartaDoncella]] 
+[[¡He escuchado grandes cosas de esa franquicia!-&gt;CartaDoncella]]</tw-passagedata><tw-passagedata pid="62" name="5_00" tags="Escena-5" position="713.6666666666666,391" size="100,100">show character r RNormal2 left
+
+r Jaja, sí... Y tú... ¿Trabajas hace mucho aquí?
+
+show character r RNormal left
+
+c Desde que tengo memoria.
+
+(El Chasqui mira hacia arriba con añoranza)
+
+c Mis primeros pasos los di en esta oficina de Correos.
+
+(Ibas a reirte, pero te das cuenta de que lo dice muy en serio)
+
+show character j JNormal2 left
+
+j Sí, Roni. Y ha sido empleado del mes desde que YO tengo memoria.
+
+show character j JNormal left
+
+(Te das cuenta de los numerosos carteles de &quot;empleado del mes&quot; que hay repartidos en las paredes)
+(Todos son del Chasqui)
+
+c Bueno, suficiente palabrerío. ¿A qué vienen?
+
+show character j JNormal2 left
+
+r La Roni quería enviarle unas alpargatas a su papá.
+
+show character j JNormal left
+show character r RNormal2 left
+
+r Sí, estas rojas...
+
+jump Papeles</tw-passagedata><tw-passagedata pid="63" name="5_01" tags="Escena-5" position="857,360.66666666666663" size="100,100">show character r RNormal2 left
+
+r Uh...
+
+show character r RNormal left
+
+&lt;pause&gt;
+
+show character r RNormal2 left
+
+r Queremos enviar unas alpargatas.
+
+show character r RNormal left
+
+c ¡Claro, amiga! Nuestro lema es &quot;Todo donde debe ir, sin importar que llueva o tiemble&quot;...
+c ¡O chonguee!
+
+hide character j
+show character j1 JHappy2 left
+
+(Juana y el Chasqui se ríen)
+
+&lt;pause&gt;
+
+hide character j1
+show character j JHappy left
+
+jump Papeles</tw-passagedata><tw-passagedata pid="64" name="Papeles" tags="Escena-5" position="823.9999999999999,474.33333333333337" size="100,100">show character j JNormal left
+
+c Ningún problema, amiga.
+
+show image P center fadeIn
+
+&lt;pause&gt;
+
+c Eso sí, necesito que rellenes estos papeles.
+
+hide image P
+
+&lt;pause&gt;
+
+play sound Escribir
+
+&lt;pause&gt;
+
+show character j JNormal2 left
+
+j ¿No le vas a dejar una notita?
+
+show character j JNormal left
+
+[[Decir que no sin hacer preguntas-&gt;5_1]]
+[[Preguntar a cuál nota se refiere-&gt;5_2]]</tw-passagedata><tw-passagedata pid="65" name="Insistir2" tags="Escena-5" position="874,1358" size="100,100">play sound Timbre
+
+c Tengo que hacer las entregas, ¡vamos!
+
+[[Hinchar más-&gt;Insistir2]]
+[[Ir-&gt;Minijuego]]</tw-passagedata></tw-storydata>
 		</div>
 		
 		<div id="monogatari">
