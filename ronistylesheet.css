@@ -243,18 +243,28 @@ input[type=range]::-ms-fill-upper {
 
 game-screen [data-sprite].right {
     left: auto;
-    right: 110px;
+    right: 9rem;
+    top: auto;
+    bottom: 20px;
+    max-height: 58rem;
 }
+
 game-screen [data-sprite].left {
-    left: 110px;
+    left: 9rem;
     right: auto;
+    top: auto;
+    bottom: 20px;
+    max-height: 58rem; 
 }
+
 choice-container button {
-     color: 
+    color: 
 }
+
 [data-content=dialog], [data-ui=say] {
     padding: 2rem 5rem 2rem 5rem;
 }
+
 text-box p {
     display: block;
     width: 75rem;
