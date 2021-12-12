@@ -195,14 +195,12 @@ show character g GMad2 right
 
 g Que te acompañe tu prima entonces.
 
-hide character j
-show character j1 JHappy2 left
+show character j JHappy2 left
 show character g GNormal right
 
 j ¡Qué bacán, Roni!
 j ¡Hace tiempo no hacemos cosas juntas! :)
 
-hide character j1
 show character j JHappy left
 show character g GMad2 right
 hide image A3
@@ -243,12 +241,6 @@ r:
     RFear: RMiedo.png
     RFear2: RMiedoT.png
     RFear3: RMiedo3.png
-
-r1:
-  Name: &quot;Roni1&quot;
-  Color: &quot;#00bfff&quot;
-  Directory: Roni
-  Images:
     RMad: REnojo.png
     RMad2: REnojoT.png
     RHappy: R8.png
@@ -281,12 +273,6 @@ j:
     JDoubt: J3.png
     JDoubt2: J3B.png
     JHappy: J5.png
-	
-j1:
-  Name: &quot;Juana1&quot;
-  Color: &quot;#bf00bf&quot;
-  Directory: Juana
-  Images:
     JHappy2: J5B.png
     JMad: J2.png
     JMad2: J2B.png
@@ -309,18 +295,8 @@ m:
     MMad: M2.png
     MMad2: M2B.png
     MFear: M3.png
-	
-m1:
-  Name: &quot;Mile1&quot;
-  Color: &quot;#4073ff&quot;
-  Directory: Mile
-  Images:
     MFear2: M3B.png
-	
-t:
-  Name: &quot;Transeúnte despavorido:&quot;
-  Color: &quot;#3399ff&quot;
-  
+
 o:
   Name: &quot;Otto:&quot;
   Color: &quot;#712a95&quot;
@@ -345,18 +321,18 @@ stop sound Tiembla fadeOut
 jump 2
 </tw-passagedata><tw-passagedata pid="14" name="3" tags="Escena-3" position="232,121" size="100,100">show background ExtGema fadeIn
 
-show character r1 RMad2 left fadeIn
+show character r RMad2 left fadeIn
 show character j JNormal right fadeIn
 
 r Tsch...
 
-show character r1 RMad left
+show character r RMad left
 show character j JNormal2 right
 
 j ¿Y bien? ¿Qué harás ahora?
 
 [[Ver si la abue te abre la puerta-&gt;Hinchar]]
-[[Entregar las alpargatas-&gt;pre4]]</tw-passagedata><tw-passagedata pid="15" name="Hinchar" tags="Escena-3" position="228,231" size="100,100">hide character r1
+[[Entregar las alpargatas-&gt;pre4]]</tw-passagedata><tw-passagedata pid="15" name="Hinchar" tags="Escena-3" position="228,231" size="100,100">
 show character r RNormal left
 
 play sound Golpearpuerta
@@ -473,7 +449,7 @@ show character j JNormal right fadeIn
 Bueno, eso decía la carta por detrás.
 Sea lo que sea que signifique.
 
-[[Leerle el texto a la Juana-&gt;4_3]] [[Ir a dejar las alpargatas de una vez por todas-&gt;4_4]]</tw-passagedata><tw-passagedata pid="22" name="4_3" tags="Escena-4" position="208,798" size="100,100">show character j JDoubt right
+[[Leerle el texto a Juana-&gt;4_3]] [[Ir a dejar las alpargatas de una vez por todas-&gt;4_4]]</tw-passagedata><tw-passagedata pid="22" name="4_3" tags="Escena-4" position="208,798" size="100,100">show character j JDoubt right
 show character r RNormal2 left
 
 r &quot;...Y para llamarla tendrá la altura
@@ -485,45 +461,39 @@ show character r RNormal left
 
 show character j JDoubt2 right
 
-j Parece que la Gema no está del todo loca. ¡Las doncellas existen!
+j Parece que Gema no está del todo loca. ¡Las doncellas existen!
 
-hide character j
-show character j1 JHappy2 right
+show character j JHappy2 right
 
 j ¡Vamos por la doncella!
 
 play music Pueblo fadeIn loop
 
-hide character j1
 show character j JHappy right
 show character r RFear2 left
 
 r ¿¡...!?
 r Juana, esto no tiene ningún sentido.
 
-hide character j
 show character r RFear left
-show character j1 JHappy2 right
+show character j JHappy2 right
 
 j ¡Cómo que no! ¡Pero si salió de la tierra!
 
-hide character j1
 show character j JHappy right
 show character r RFear2 left
 
 r PERO ESO QUÉ TIENE QUE VER JUANA.
 
-(La Juana se encoge de hombros)
+(Juana se encoge de hombros)
 
-hide character j
 show character r RFear left
-show character j1 JHappy2 right
+show character j JHappy2 right
 
 j ¿... :)?
 
 ...
 
-hide character j1
 show character j JNormal right
 
 jump AVer</tw-passagedata><tw-passagedata pid="23" name="4_4" tags="Escena-4" position="436,793" size="100,100">show character r RNormal2 left
@@ -537,40 +507,35 @@ j ¡Pero Roni! ¡Recogiste un objeto misterioso del suelo y ahora actúas como s
 
 show character j JNormal right
 
-(Sin que puedas hacer mucho, la Juana te quita la carta de mitos y le... La carta de la doncella de las manos)
+(Sin que puedas hacer mucho, Juana te quita la carta de mitos y le... La carta de la doncella de las manos)
 
 j ...
 
 (Ves lentamente como la expresión de su rostro va cambiando a medida que avanza en la lectura)
 
-hide character j
-show character j1 JHappy2 right
+show character j JHappy2 right
 
 j ¡¡¡RONI ESTO ES MUY LOCO!!!
 j ¿¿¿POR QUÉ NO ME DIJISTE NADA???
 
 play music Pueblo fadeIn loop
 
-hide character j1
 show character j JHappy right
 show character r RFear3 left
 
 r NO SÉ ME PUSE NERVIOSA NO ME GRITES POR FAVOR
 
-hide character j
 show character r RFear left
-show character j1 JHappy2 right
+show character j JHappy2 right
 
 j AHORA TENEMOS QUE IR POR LAS DONCELLAS
 
-hide character j1
-show character j1 JHappy2 left
+show character j JHappy2 left
 
 j ES VITAL RONI ES VITAL
 
-(La Juana te toma de los hombros y te sacude)
+(Juana te toma de los hombros y te sacude)
 
-hide character j1
 show character j JHappy left
 show character r RFear3 left
 
@@ -578,9 +543,8 @@ r PERO LAS CHALAS
 
 show character r RFear left
 
-(Finalmente, la Juana se detiene)
+(Finalmente, Juana se detiene)
 
-hide character j
 show character j JDoubt right fadeIn
 
 j ¿Y las doncellas?
@@ -613,7 +577,7 @@ j Esas rojas me suenan... ¿A verlas?
 
 [[Mostrar alpargatas rojas -&gt;4_6]] </tw-passagedata><tw-passagedata pid="26" name="4_6" tags="Escena-4" position="381.3333333333333,1045.3333333333333" size="100,100">show character j JNormal2 right
 
-j Esa dice que es para tu papá, el Hugo.
+j Esa dice que es para tu papá, Hugo.
 j Vamos al tiro a dejarlas a su casa.
 
 show character r RFear3 left
@@ -637,28 +601,31 @@ j Uh... ¿...?
 
 r Es que no quiero verlo.
 
-hide character j
 show character r RFear left
-show character j1 JMad2 right
+show character j JMad2 right
 
-j Ay Roni... Por qué le haces eso.
+j Ay Roni...
 
-show character j1 JMad right
+show character j JHappy2 right
+
+j Es súper raro, ¿verdad?
+j Jijijijiji
+
+show character j JNormal2 right
+
+j ¿Quién es bailarín contemporáneo en esta época?
+
+show character j JNormal right
 show character r RFear2 left
 
-r Me da vergüenza Juana, es demasiado raro.
+r Sí...
 
 show character r RFear left
-
-(La Juana pone los ojos en blanco)
-(Te da un poco de miedo que ahora te odie y te empieza a doler la guata)
-
-show character j1 JMad2 right
+show character j JNormal2 right
 
 j Ya bueno Roni, como quieras.
-j ...Podemos mandarlas por delivery si no quieres verlo.
+j Podemos mandarlas por delivery si no quieres verlo.
 
-hide character j1
 jump PreCorreos</tw-passagedata><tw-passagedata pid="28" name="4_8" tags="" position="497.6666666666667,914.6666666666667" size="100,100">show character r RFear2 left
 show character j JDoubt right
 
@@ -671,7 +638,7 @@ j Mmm... Bueno, supongo que eso tiene sentido.
 
 show character j JNormal right
 
-(Te sientes aliviada por tu mentira, al menos la Juana no cree que eres una pésima persona que merece la muerte)
+(Te sientes aliviada por tu mentira, al menos Juana no cree que eres una pésima persona que merece la muerte)
 
 show character r RNormal2 left
 
@@ -829,7 +796,7 @@ j Ay no...
 
 show character j JDoubt left
 
-[[Ignorar a la Juana-&gt;5_3]]
+[[Ignorar a Juana-&gt;5_3]]
 [[Preguntar cuál es el rollo con esa tal &quot;Mile&quot;-&gt;5_4]]</tw-passagedata><tw-passagedata pid="36" name="5_3" tags="Escena-5" position="739,1174.3333333333333" size="100,100">show character r RNormal2 left
 
 r ¿No puedes ir a dejarlas tú y te esperamos?
@@ -852,9 +819,9 @@ r ¿Quién es esta &quot;Mile&quot;?
 show character r RNormal left
 show character j JNormal2 left
 
-j Es la archienemiga del Otto. Creo que él le dijo algo sobre la banda del pueblo.
+j Es la archienemiga de Otto. Creo que él le dijo algo sobre la banda del pueblo.
 
-(Siempre has escuchado a tu prima hablando del Otto y todavía no sabes quién es)
+(Siempre has escuchado a tu prima hablando de Otto y todavía no sabes quién es)
 
 jump ¿Listas?</tw-passagedata><tw-passagedata pid="38" name="¿Listas?" tags="Escena-5" position="856,1247.3333333333333" size="100,100">show character r RNormal left
 show character j JNormal left
@@ -886,7 +853,6 @@ centered MINIJUEGO DINOSAURIO
 &lt;pause&gt;
 
 jump 6</tw-passagedata><tw-passagedata pid="41" name="7" tags="Escena-7" position="1151,998" size="100,100">hide character r
-hide character j1
 hide character c
 stop music Pueblo fadeOut
 stop sound AmbienteTenderos fadeOut
@@ -918,16 +884,16 @@ show character m MNormal right
 
 (DIOS MÍO DI ALGO PARA QUE DEJE DE MIRARTE TAN FRÍAMENTE)
 
-[[&quot;Mi papá es el Hugo&quot; -&gt;7_1]]
-[[&quot;Mi abuela es la Gema&quot; -&gt;7_2]]
-[[&quot;Mi prima es la Juana&quot; -&gt;7_3]]</tw-passagedata><tw-passagedata pid="42" name="7_1" tags="Escena-7" position="1023,857" size="100,100">hide character r
-show character r1 RHappy left
+[[&quot;Mi papá es Hugo&quot; -&gt;7_1]]
+[[&quot;Mi abuela es Gema&quot; -&gt;7_2]]
+[[&quot;Mi prima es Juana&quot; -&gt;7_3]]</tw-passagedata><tw-passagedata pid="42" name="7_1" tags="Escena-7" position="1023,857" size="100,100">
+show character r RHappy left
 
-r Eh... Mi papá es el Hugo.
+r Eh... Mi papá es Hugo.
 
 (Intentas sonreir de forma natural)
 
-show character r1 RHappy2 left
+show character r RHappy2 left
 
 r ¿ :] ?
 
@@ -941,7 +907,7 @@ show character m MMad right
 
 jump Ok...</tw-passagedata><tw-passagedata pid="43" name="7_2" tags="Escena-7" position="1146,858" size="100,100">show character r RNormal2 left
 
-r Eh... Mi abuela es la Gema
+r Eh... Mi abuela es Gema
 
 show character r RNormal left
 show character m MNormal2 right
@@ -954,15 +920,14 @@ show character m MNormal right
 
 jump ¡Bacán!</tw-passagedata><tw-passagedata pid="44" name="7_3" tags="Escena-7" position="1273,859" size="100,100">show character r RNormal2 left
 
-r Eh... Mi prima es la Juana.
+r Eh... Mi prima es Juana.
 
 show character r RNormal left
 show character m MMad2 right
 
 m Se nota...
 
-hide character r
-show character r1 RHappy2 left
+show character r RHappy2 left
 show character m MMad right
 (¿Qué significará eso?)
 
@@ -989,27 +954,22 @@ m ¿En serio? A ver.
 
 jump Alpargata</tw-passagedata><tw-passagedata pid="47" name="Alpargata" tags="Escena-7" position="1139,638" size="100,100">show image A1 center fadeIn
 
-hide character m
-show character m1 MFear2 right
+show character m MFear2 right
 
 m Oooooooohhhhhh...
 m No son mías...
 
-hide character m1
 show character m MFear right
-hide character r1
 show character r RNormal2 left
 show character j JNormal left
 
 r Pucha...
 
 show character r RNormal left
-hide character m
-show character m1 MFear2 right
+show character m MFear2 right
 
 m Son del Flea.
 
-hide character m1
 show character m MFear right
 show character r RNormal2 left
 
@@ -1039,24 +999,21 @@ show character j JNormal2 left
 j Son punks, Roni.
 
 show character j JNormal left
-hide character m
-show character m1 MFear2 right
+show character m MFear2 right
 
 m SON MÁS QUE PUNKS, &quot;JUANA&quot;.
 
-hide character m1
 show character m MFear right
 
 (Puedes escuchar las comillas en la forma en que dice el nombre de tu prima)
 
-hide character m
-show character m1 MFear2 right
+show character m MFear2 right
 
 m SON LA CABEZA DE UN MOVIMIENTO QUE MEZCLA JAPANOISE CON PUNKFOLK ALTERNATIVO HACIENDO UNA REINTERPRETACIÓN DE LA SUBCULTURA PUNK TRADICIONAL TOMANDO ELEMENTOS DEL TECHNO UNDERGROUND INDUSTRIAL DE LOS AÑOS NOVENTA SUBVIRTIENDO LA EXPECTATIVA DEL GÉNERO PARA REINVENTAR LOS CONCEPTOS FUNDACIONALES DE ESTA SOCIEDAD USANDO EL NOMBRE &quot;CALCETÍN SUCIO&quot; COMO ESTANDARTE DE SU REBELDÍA Y ASÍ
 
 (Te cuesta escuchar más allá de eso)
 
-[[Preguntarle si puede ella entregar las alpargatas-&gt;7_4]] [[Preguntar por el paradero de este tipo-&gt;7_5]]</tw-passagedata><tw-passagedata pid="48" name="7_4" tags="Escena-7" position="1055,519" size="100,100">hide character m1
+[[Preguntarle si puede ella entregar las alpargatas-&gt;7_4]] [[Preguntar por el paradero de este tipo-&gt;7_5]]</tw-passagedata><tw-passagedata pid="48" name="7_4" tags="Escena-7" position="1055,519" size="100,100">
 show character m MFear right
 show character r RNormal2 left
 
@@ -1072,10 +1029,8 @@ show character j JNormal left
 
 m ¿Me estai diciendo ladrona?
 
-hide character j
-show character j1 JMad left
-hide character r
-show character r1 RMad left
+show character j JMad left
+show character r RMad left
 show character c CNormal2 right
 
 c ¿Y si les dices donde está el Flea mejor?
@@ -1087,7 +1042,7 @@ m ¿A Ellas? No gratis.
 
 show character m MMad right
 
-jump Ayuda</tw-passagedata><tw-passagedata pid="49" name="7_5" tags="Escena-7" position="1229,521" size="100,100">hide character m1
+jump Ayuda</tw-passagedata><tw-passagedata pid="49" name="7_5" tags="Escena-7" position="1229,521" size="100,100">
 show character m MFear right
 show character r RNormal2 left
 
@@ -1098,27 +1053,24 @@ show character m MMad2 right
 
 m Fatal Flea para ti, foránea.
 
-hide character r
-show character r1 RMad left
+show character r RMad left
 
 m Bueno, te diré, pero necesito una pequeña ayuda primero.
 
 show character m MMad right
 
-jump Ayuda</tw-passagedata><tw-passagedata pid="50" name="Ayuda" tags="Escena-7" position="1143,407" size="100,100">show character r1 RMad2 left
+jump Ayuda</tw-passagedata><tw-passagedata pid="50" name="Ayuda" tags="Escena-7" position="1143,407" size="100,100">show character r RMad2 left
 
 r Mh, ya.
 r ¿Qué quieres?
 
-show character r1 RMad left
+show character r RMad left
 
 show character m MNormal2 right
 
 m Tienes que entrar en esta tienda y sacar el CD exclusivo de una banda muy bakán, que al dueño de la tienda no le caigo muy bien. 
 
-hide character j1
 show character j JNormal left
-hide character r1
 show character r RFear2 left
 show character m MNormal right
 
@@ -1162,10 +1114,9 @@ show character c CNormal right fadeIn
 c Aaa, ¿qué vigorizante no? Mejor que un café.
 r ¡¿...?!
 
-hide character j
-show character j1 JHappy2 left
+show character j JHappy2 left
 
-j ¡Sí!, vamos con la Mile ahora.
+j ¡Sí!, vamos con Mile ahora.
 
 jump 7</tw-passagedata><tw-passagedata pid="54" name="7_6" tags="Escena-7" position="1101,247" size="100,100">show background TodoAMil fadeIn
 stop music Alarma fadeOut
@@ -1178,13 +1129,11 @@ show character m MNormal right fadeIn
 
 r ¡LO LOGRÉ!
 
-hide character j
 show character r RFear left
-show character j1 JHappy2 left
+show character j JHappy2 left
 
 j ¡Buena Roni!
 
-hide character j1
 show character j JHappy left
 
 (Roni no quiso decirle a nadie, pero de hecho pagó por el CD)
@@ -1206,8 +1155,7 @@ hide character c fadeOut
 
 &lt;pause&gt;
 
-hide character j
-show character j1 JHappy2 right fadeIn
+show character j JHappy2 right fadeIn
 
 j ¿Ahora qué? :)
 
@@ -1219,7 +1167,6 @@ play sound AmbienteTenderos 0.8 loop
 
 &lt;pause&gt;
 
-hide character r1
 show character r RNormal left fadeIn
 show character j JNormal2 right fadeIn
 
@@ -1243,12 +1190,11 @@ j ¿No crees que alguna de las personas que hemos conocido hasta ahora puede ser
 show character r RFear left
 show character j JNormal right
 
-(Genial, la Juana sigue estando loca)
+(Genial, Juana sigue estando loca)
 
 [[Decir que no crees que sea nadie para que se calle-&gt;8_1]]
 [[Preguntarle por qué cree que el Chasqui o la niña desagradable pueden ser una doncella-&gt;8_2]]</tw-passagedata><tw-passagedata pid="56" name="7_7" tags="Escena-7" position="766,138" size="100,100">
 
-hide character r1
 show character r RNormal2 left
 
 r Aún no podemos ir, me queda una alpargata.
@@ -1258,12 +1204,11 @@ show character r RNormal
 [[Ir donde Fabio Fitness-&gt;7_8]]
 [[Ir por el man-&gt;8]] </tw-passagedata><tw-passagedata pid="57" name="7_8" tags="" position="974,21" size="100,100">
 
-hide character r
-show character r1 RMad2 left
+show character r RMad2 left
 
 r ¡No quiero barritas!
 
-show character r1 RMad left
+show character r RMad left
 
 [[Ir donde Gema-&gt;7_7]]
 [[Ir por el punki-&gt;8]]</tw-passagedata><tw-passagedata pid="58" name="Hinchar2" tags="" position="164,351" size="100,100">play sound Golpearpuerta
@@ -1294,7 +1239,7 @@ r ¡¿...!?
 
 
 show character r RFear2 left fadeIn
-show character j1 JHappy2 right fadeIn
+show character j JHappy2 right fadeIn
 
 j ¡Sabía, se ve increíble!
 j ¡Bienvenida a la gran Avenida Alberto D&#39;Chong!
@@ -1303,20 +1248,17 @@ show character r RFear3 left
 
 r ¡¿Qué onda esta gente?! 
 
-hide character j1
 show character r RFear left
 show character j JDoubt2 right
 
 j Pero si se ven la raja esas grietas abiertas en la tierra.
 
-hide character j
-show character j1 JHappy2 right
+show character j JHappy2 right
 
 j ¡Vendrán más turistas!
 j ¡Esto es muy bueno Roni!
 j ¡El chonguimiento es genial!
 
-hide character j1
 show character j JHappy right
 
 (Claramente tu prima está loca)
@@ -1333,11 +1275,11 @@ Examinándola más de cerca puedes ver que se trata de...
 
 [[Ni tu primo más viejo se acuerda de esas cartas-&gt;CartaDoncella]] 
 [[¡Se dicen grandes cosas de esa franquicia!-&gt;CartaDoncella]]</tw-passagedata><tw-passagedata pid="61" name="5_00" tags="Escena-5" position="713,391" size="100,100">hide character r
-show character r1 RHappy left
+show character r RHappy left
 
 r Jaja, sí... Y tú... ¿Trabajas hace mucho aquí?
 
-show character r1 RHappy left
+show character r RHappy left
 show character c CNormal2 right
 
 c Desde que tengo memoria.
@@ -1350,7 +1292,7 @@ show character c CNormal2 right
 
 c Mis primeros pasos los di en esta oficina de Correos.
 
-show character r1 RHappy2 left
+show character r RHappy2 left
 show character c CNormal right
 show character j JNormal2 left
 
@@ -1362,7 +1304,6 @@ show character j JNormal left
 (Todos son del Chasqui)
 
 show character c CNormal2 right
-hide character r1
 show character r RNormal left
 
 c Bueno, suficiente palabrerío. ¿A qué vienen?
@@ -1370,7 +1311,7 @@ c Bueno, suficiente palabrerío. ¿A qué vienen?
 show character c CNormal right
 show character j JNormal2 left
 
-r La Roni quería enviarle unas alpargatas a su papá.
+r Roni quería enviarle unas alpargatas a su papá.
 
 show character j JNormal left
 show character r RNormal2 left
@@ -1385,8 +1326,7 @@ show character r RNormal left
 
 &lt;pause&gt;
 
-hide character r
-show character r1 RHappy left
+show character r RHappy left
 
 r Queremos enviar unas alpargatas.
 
@@ -1398,15 +1338,13 @@ c ¡O chonguee!
 show character c CNormal right
 
 show character c CNormal2 right
-hide character j
-show character j1 JHappy2 left
+show character j JHappy2 left
 
-(La Juana y el Chasqui se ríen)
+(Juana y el Chasqui se ríen)
 
 &lt;pause&gt;
 
-show character r1 RHappy2 left
-hide character j1
+show character r RHappy2 left
 show character j JHappy left
 
 jump Papeles</tw-passagedata><tw-passagedata pid="63" name="Papeles" tags="Escena-5" position="823,474" size="100,100">show character j JNormal left
@@ -1416,7 +1354,6 @@ show character c CNormal2 right
 c Ningún problema, amiga.
 
 show character c CNormal
-hide character r1
 show character r RNormal left
 show image P center fadeIn
 
@@ -1459,12 +1396,9 @@ jump 8_3</tw-passagedata><tw-passagedata pid="66" name="8_2" tags="" position="1
 
 r ¿Por qué sería el Chasqui?
 
-hide character r
-show character r1 RMad2 left
+show character r RMad2 left
 
 r O esa... Mile.
-
-hide character r1
 
 jump 8_3</tw-passagedata><tw-passagedata pid="67" name="8_3" tags="" position="1323,401" size="100,100">show character r RNormal left
 show character j JNormal2 right
@@ -1473,7 +1407,7 @@ j Creo que estás siendo muy cerrada de mente, Roni.
 
 show character j JNormal right
 
-(La Juana levanta una ceja como si tuviera algo inconmesurablemente inteligente que decir)
+(Juana levanta una ceja como si tuviera algo inconmesurablemente inteligente que decir)
 
 show character j JNormal2 right
 
@@ -1510,15 +1444,13 @@ show character r RFear2 left
 r ¿Y por qué tendría que ser uno de ellos y no otra de las 400 personas que viven en el pueblo?
 
 show character r RFear left
-hide character j
-show character j1 JHappy2 right
+show character j JHappy2 right
 
 j JAJAJAJAJA ¡¡¡RONI!!! ¡¡¡QUE ERES CHISTOSA!!!
 j JAJAJAJAJAJAJAJAJAJA
 
-(La Juana finge secarse un par de lágrimas)
+(Juana finge secarse un par de lágrimas)
 
-hide character j1
 show character j JNormal2 right
 
 j Somos por lo menos cinco mil, Roni.
@@ -1531,7 +1463,7 @@ r Lo siento, Juana.
 show character r RNormal left
 show character j JNormal2 right
 
-j Errores citadinos :)
+j Error de estimación :)
 
 show character j JNormal right
 show character r RNormal2 left
@@ -1578,14 +1510,12 @@ r ¿Sabes qué?
 r Sí, me convence.
 
 show character r RNormal left
-hide character j
-show character j1 JHappy2 right
+show character j JHappy2 right
 
 j Wiiiiii :)
 j ¡Genial, Roni!
 j Ahora vayamos por ellas :)
 
-hide character j1
 show character j JHappy right
 show character r RNormal2 left
 
@@ -1638,10 +1568,10 @@ jump Temblor3</tw-passagedata><tw-passagedata pid="72" name="YaEstá_2" tags="Es
 
 centered &quot;Hugo,
 centered estoy bastante ocupada ayudando a Gema con todo.
-centered Ayer pasé seis horas machacando cáñamos a todo sol, y hoy pasó este terremoto que todo el mundo llama &quot;chonguimiento&quot; y más encima la Gema me mandó a entregar unas chalas.
+centered Ayer pasé seis horas machacando cáñamos a todo sol, y hoy pasó este terremoto que todo el mundo llama &quot;chonguimiento&quot; y más encima Gema me mandó a entregar unas chalas.
 centered Bueno, y entre ellas están las tuyas, que te mando aquí.
 centered Perdón por no poder ir a verte, además de entregar las chalas tengo que hacer algo de buscar unas doncellas para hacer un ritual o algo así.
-centered La verdad no entiendo mucho, pero la Juana está muy emocionada.
+centered La verdad no entiendo mucho, pero Juana está muy emocionada.
 centered Bueno, en fin.
 centered Te mando tus chalas. Ojalá te vaya bien.
 centered -Roni.&quot;
@@ -1651,7 +1581,7 @@ centered -Roni.&quot;
 [[Listo]]</tw-passagedata><tw-passagedata pid="73" name="YaEstá_3" tags="Escena-5" position="849.6666666666667,961.3333333333333" size="100,100">play sound Escribir
 
 centered &quot;Hugo,
-centered te mando estas chalas que la Gema me mandó a entregarte.
+centered te mando estas chalas que Gema me mandó a entregarte.
 centered No pude ir en persona por todo esto del temblor o chonguimiento o como se llame.
 centered Nos vemos,
 centered -Roni.&quot;
@@ -1701,7 +1631,7 @@ show character r RFear2 left fadeIn
 show character j JNormal left fadeIn
 
 j Te lo dije, Roni.
-j La Gema no está tan loca.
+j Gema no está tan loca.
 g ¡RONI!
 
 show character g GMad2 right fadeIn
@@ -1862,14 +1792,13 @@ j Necesitamos ayuda en algo, después te explico.
 j Ah, esta es mi prima, Roni :)
 
 show character j JNormal left
-hide character r
-show character r1 RHappy left
+show character r RHappy left
 
 r H-hola.
 r :]
 
 (No eres muy buena conociendo gente nueva)
-(Ojalá el Otto no piense que eres una sopenca)
+(Ojalá Otto no piense que eres una zopenca)
 
 show character o ONormal2 right
 
@@ -1877,13 +1806,11 @@ o Jaja, qué simpática.
 o Te ves como esos perros chicos que tiritan todo el rato.
 
 show character o ONormal right
-hide character j
-show character j1 JHappy2 left
-show character r1 RHappy2 left
+show character j JHappy2 left
+show character r RHappy2 left
 
 j ¡Síiii! Es súper tierna, ¿verdad?
 
-hide character j1
 show character j JHappy left
 
 r Ya...
@@ -1900,7 +1827,7 @@ j Es como si nos leyéramos la mente :)
 
 show character j JNormal left
 
-(La Juana y el Otto hacen un complicado saludo con las manos)
+(Juana y Otto hacen un complicado saludo con las manos)
 
 show character g GNormal2 right
 
@@ -1908,8 +1835,7 @@ g Me hace feliz saber que escuchabas las historias que les contaba, Otelo.
 
 show character g GNormal right
 show character o ONormal2 right
-hide character j
-show character j1 JHappy2 left
+show character j JHappy2 left
 
 o No me diga así, señora Gema. Porfi.
 
@@ -1917,7 +1843,6 @@ show character o ONormal right
 
 j Qué liiiiindo, el Otelito.
 
-hide character j1
 show character j JHappy left
 
 r ¿Vamos?
@@ -1980,7 +1905,7 @@ j Es como si nos leyéramos la mente :)
 
 show character j JNormal left
 
-(La Juana y el Otto hacen un complicado saludo con las manos)
+(Juana y Otto hacen un complicado saludo con las manos)
 
 show character g GNormal2 right
 
@@ -1988,8 +1913,7 @@ g Me hace feliz saber que escuchabas las historias que les contaba, Otelo.
 
 show character g GNormal right
 show character o ONormal2 right
-hide character j
-show character j1 JHappy2 left
+show character j JHappy2 left
 
 o No me diga así, señora Gema. Porfi.
 
@@ -1997,21 +1921,19 @@ show character o ONormal right
 
 j Qué liiiiindo, el Otelito.
 
-hide character j1
 show character j JHappy left
 show character g GNormal2 right
 
 g Otelo, esta es mi otra nieta, Roni.
 
 show character g GNormal right
-hide character r
-show character r1 RHappy left
+show character r RHappy left
 
 r H-hola.
 r :]
 
 (No eres muy buena conociendo gente nueva)
-(Ojalá el Otto no piense que eres una sopenca)
+(Ojalá Otto no piense que eres una zopenca)
 
 show character o ONormal2 right
 
@@ -2019,13 +1941,11 @@ o Jaja, qué simpática.
 o Te ves como esos perros chicos que tiritan todo el rato.
 
 show character o ONormal right
-hide character j
-show character j1 JHappy2 left
-show character r1 RHappy2 left
+show character j JHappy2 left
+show character r RHappy2 left
 
 j ¡Síiii! Es súper tierna, ¿verdad?
 
-hide character j1
 show character j JHappy left
 
 r Ya...
@@ -2037,11 +1957,10 @@ o ¡Vamos!
 
 show character o ONormal right
 show character j JNormal2 left
-hide character r1
 show character r RNormal left
 
 j Ah, no te dije, Otto.
-j La doncella es la Mile.
+j La doncella es Mile.
 
 show character j JNormal left
 show character o ONormal2 right
@@ -2107,7 +2026,7 @@ j Es como si nos leyéramos la mente :)
 
 show character j JNormal left
 
-(La Juana y el Otto hacen un complicado saludo con las manos)
+(Juana y Otto hacen un complicado saludo con las manos)
 
 show character g GNormal2 right
 
@@ -2115,8 +2034,7 @@ g Me hace feliz saber que escuchabas las historias que les contaba, Otelo.
 
 show character g GNormal right
 show character o ONormal2 right
-hide character j
-show character j1 JHappy2 left
+show character j JHappy2 left
 
 o No me diga así, señora Gema. Porfi.
 
@@ -2124,21 +2042,19 @@ show character o ONormal right
 
 j Qué liiiiindo, el Otelito.
 
-hide character j1
 show character j JHappy left
 show character g GNormal2 right
 
 g Otelo, esta es mi otra nieta, Roni.
 
 show character g GNormal right
-hide character r
-show character r1 RHappy left
+show character r RHappy left
 
 r H-hola.
 r :]
 
 (No eres muy buena conociendo gente nueva)
-(Ojalá el Otto no piense que eres una sopenca)
+(Ojalá Otto no piense que eres una zopenca)
 
 show character o ONormal2 right
 
@@ -2146,13 +2062,11 @@ o Jaja, qué simpática.
 o Te ves como esos perros chicos que tiritan todo el rato.
 
 show character o ONormal right
-hide character j
-show character j1 JHappy2 left
-show character r1 RHappy2 left
+show character j JHappy2 left
+show character r RHappy2 left
 
 j ¡Síiii! Es súper tierna, ¿verdad?
 
-hide character j1
 show character j JHappy left
 
 r Ya...
@@ -2162,10 +2076,9 @@ show character o ONormal2 right
 
 o ¡Vamos!
 
-jump FIN</tw-passagedata><tw-passagedata pid="80" name="FIN" tags="" position="1459.6666463216147,938.6666666666667" size="200,100">hide character r1
+jump FIN</tw-passagedata><tw-passagedata pid="80" name="FIN" tags="" position="1459.6666463216147,938.6666666666667" size="200,100">
 hide character r
 hide character j
-hide character j1
 hide character g
 hide character o
 
