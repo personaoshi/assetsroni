@@ -371,7 +371,7 @@ j ¡Ven! Tengo que ver algo.
 
 &lt;pause&gt;
 
-jump 4</tw-passagedata><tw-passagedata pid="17" name="4_1" tags="Escena-4" position="361,369.6666666666667" size="100,100">r Pero no hay señal, ¿cómo se van a enterar los turistas de esto?
+jump 4</tw-passagedata><tw-passagedata pid="17" name="4_1" tags="Escena-4" position="361,369" size="100,100">r Pero no hay señal, ¿cómo se van a enterar los turistas de esto?
 
 show character r RFear left
 show character j JDoubt2 right
@@ -803,7 +803,7 @@ j Ay no...
 show character j JDoubt left
 
 [[Ignorar a Juana-&gt;5_3]]
-[[Preguntar cuál es el rollo con esa tal &quot;Mile&quot;-&gt;5_4]]</tw-passagedata><tw-passagedata pid="36" name="5_3" tags="Escena-5" position="702.3333333333334,1137.3333333333333" size="100,100">show character r RNormal2 left
+[[Preguntar cuál es el rollo con esa tal &quot;Mile&quot;-&gt;5_4]]</tw-passagedata><tw-passagedata pid="36" name="5_3" tags="Escena-5" position="702,1137" size="100,100">show character r RNormal2 left
 
 r ¿No puedes ir a dejarlas tú y te esperamos?
 
@@ -818,7 +818,7 @@ show character r RNormal2 left
 
 r Oh...bueno…
 
-jump ¿Listas?</tw-passagedata><tw-passagedata pid="37" name="5_4" tags="Escena-5" position="979,1135.6666666666667" size="100,100">show character r RNormal2 left
+jump ¿Listas?</tw-passagedata><tw-passagedata pid="37" name="5_4" tags="Escena-5" position="979,1135" size="100,100">show character r RNormal2 left
 
 r ¿Quién es esta &quot;Mile&quot;?
 
@@ -831,7 +831,7 @@ show character j JNormal left
 
 (Siempre has escuchado a tu prima hablando de Otto y todavía no sabes quién es)
 
-jump ¿Listas?</tw-passagedata><tw-passagedata pid="38" name="¿Listas?" tags="Escena-5" position="844.3333333333334,1213.6666666666667" size="100,100">show character r RNormal left
+jump ¿Listas?</tw-passagedata><tw-passagedata pid="38" name="¿Listas?" tags="Escena-5" position="844,1213" size="100,100">show character r RNormal left
 show character c CNormal2 right
 
 c ¿Están listas?
@@ -839,7 +839,7 @@ c ¿Están listas?
 show character c CNormal right
 
 [[Tocar timbre-&gt;Insistir]]
-[[¡Vamos!-&gt;Minijuego]]</tw-passagedata><tw-passagedata pid="39" name="Insistir" tags="Escena-5" position="997.3333333333334,1339.3333333333333" size="100,100">play sound Timbre
+[[¡Vamos!-&gt;Minijuego]]</tw-passagedata><tw-passagedata pid="39" name="Insistir" tags="Escena-5" position="997,1339" size="100,100">play sound Timbre
 
 show character c CNormal2 right
 
@@ -848,7 +848,7 @@ c ¿Están rellenando el libro de sugerencias?
 show character c CNormal right
 
 [[Tocar timbre -&gt;Insistir2]] 
-[[¡Vamos! -&gt;Minijuego]] </tw-passagedata><tw-passagedata pid="40" name="Minijuego" tags="Escena-6" position="1171.3333333333335,1243.6666666666667" size="100,100">hide character r
+[[¡Vamos! -&gt;Minijuego]] </tw-passagedata><tw-passagedata pid="40" name="Minijuego" tags="Escena-6" position="1171,1243" size="100,100">hide character r
 hide character j
 hide character c
 
@@ -859,7 +859,7 @@ centered MINIJUEGO DINOSAURIO
 
 &lt;pause&gt;
 
-jump 7</tw-passagedata><tw-passagedata pid="41" name="7" tags="Escena-7" position="1186,1106.3333333333333" size="100,100">hide character r
+jump 7</tw-passagedata><tw-passagedata pid="41" name="7" tags="Escena-7" position="1186,1106" size="100,100">hide character r
 hide character c
 stop music P&amp;C fadeOut
 stop sound AmbienteTenderos fadeOut
@@ -1097,8 +1097,21 @@ hide character c
 hide character m
 show background #000
 
-centered JAVASCRIPT PARA METER EL PnC DE LA TIENDA
- 
+hide character j
+hide character r
+hide character c
+hide character m
+show background #000
+
+<!--JAVASCRIPT POINT AND CLICK PNC P&C-->
+
+```js
+
+	loadIframe("/P&C_funcional/P&C_TAM.html");
+
+	```
+
+
 jump 7_6</tw-passagedata><tw-passagedata pid="53" name="7_6" tags="Escena-7" position="1101,247" size="100,100">show background TodoAMil fadeIn
 stop music Alarma fadeOut
 play sound Tienda fadeIn loop
@@ -1191,7 +1204,7 @@ r ¡No quiero barritas!
 show character r RMad left
 
 [[Ir donde Gema-&gt;7_7]]
-[[Ir por el punki-&gt;8]]</tw-passagedata><tw-passagedata pid="57" name="Hinchar2" tags="" position="242.33333333333334,367.66666666666663" size="100,100">play sound Golpearpuerta
+[[Ir por el punki-&gt;8]]</tw-passagedata><tw-passagedata pid="57" name="Hinchar2" tags="" position="242,367" size="100,100">play sound Golpearpuerta
 &lt;pause&gt;
 ...
 &lt;pause&gt;
@@ -1358,7 +1371,7 @@ j ¿No le vas a dejar una notita?
 show character j JNormal left
 
 [[Decir que no sin hacer preguntas-&gt;5_1]]
-[[Preguntar a cuál nota se refiere-&gt;5_2]]</tw-passagedata><tw-passagedata pid="63" name="Insistir2" tags="Escena-5" position="1147.3333333333335,1369.3333333333335" size="100,100">play sound Timbre
+[[Preguntar a cuál nota se refiere-&gt;5_2]]</tw-passagedata><tw-passagedata pid="63" name="Insistir2" tags="Escena-5" position="1147,1369" size="100,100">play sound Timbre
 
 show character c CNormal2 right
 
@@ -1508,7 +1521,9 @@ j Roni, ¡no creo que tengamos tanto tiempo!
 show character r RNormal2 left
 show character j JNormal right
 
-r Pero...</tw-passagedata><tw-passagedata pid="68" name="No" tags="" position="1461,524" size="100,100">stop music Pueblo fadeOut
+r Pero...
+
+jump Chongueado</tw-passagedata><tw-passagedata pid="68" name="No" tags="" position="1461,524" size="100,100">stop music Pueblo fadeOut
 
 show character r RNormal2 left
 
@@ -1571,7 +1586,7 @@ centered awidsajdkaskd
 centered asoqwodaks.
 centered -Roni.&quot;
 
-[[Listo]]</tw-passagedata><tw-passagedata pid="74" name="Insistir3" tags="" position="1302.3333333333335,1359.3333333333335" size="100,100">play sound Timbre
+[[Listo]]</tw-passagedata><tw-passagedata pid="74" name="Insistir3" tags="" position="1302,1359" size="100,100">play sound Timbre
 
 c ...
 
