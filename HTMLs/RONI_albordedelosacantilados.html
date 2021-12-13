@@ -1087,7 +1087,7 @@ j ¿Le estás pidiendo que robe?
 show character j JNormal left
 
 show background TodoAMilA
-play music Alarma x3 loop
+play music Alarma loop
 
 show character m MNormal2 right
 
@@ -1165,6 +1165,9 @@ j ¿Ahora qué? :)
 [[Ir donde Fabio Fitness-&gt;7_8]]</tw-passagedata><tw-passagedata pid="54" name="8" tags="Escena-8" position="1316,128" size="100,100">stop sound Tienda fadeOut
 show background Tenderos fadeIn
 play sound AmbienteTenderos loop
+
+hide character r
+hide character j
 
 &lt;pause&gt;
 
@@ -1410,12 +1413,10 @@ show character c CNormal2 right
 
 c Eso sí, necesito que rellenes estos papeles.
 
-show character c CNormal2 right
+show character c CNormal right
 hide image P
 
 &lt;pause&gt;
-
-show character c CNormal right
 
 play sound Escribir
 
