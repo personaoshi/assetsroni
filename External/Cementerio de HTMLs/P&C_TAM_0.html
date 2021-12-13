@@ -1,0 +1,245 @@
+<html>
+    <!--En este HTML probé algo llamado light box, que encontré en internet en https://lokeshdhakar.com/projects/lightbox2/#getting-started-->
+    <head>
+        <title>RONI: point and click de la tienda</title>
+        <style>
+            body {
+                margin: 0px;
+            }
+            img {
+            width: 100%;
+          }
+          body.lb-disable-scrolling {
+              overflow: hidden;
+          }
+          .lightboxOverlay {
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              z-index: 9999;
+              background-color: rgb(0,0,0,0.4);
+              display: none;
+          }
+          .lightbox {
+              position: absolute;
+              left: 0px;
+              width: 100%;
+              z-index: 10000;
+              text-align: center;
+              outline: none;
+          }
+          .lightbox .lb-image {
+              display: block;
+              height: auto;
+              max-width: inherit;
+              max-height: none;
+              border: 4px solid #3c3535;
+          }
+          .lightbox a img {
+         border: none;
+          }
+
+          .lb-outerContainer {
+         position: relative;
+          *zoom: 1;
+          width: 250px;
+          height: 250px;
+          margin: 0 auto;
+          border-radius: 4px;
+
+        /* Background color behind image.
+          This is visible during transitions. */
+          background-color: #3c3535;
+        }
+
+        .lb-outerContainer:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .lb-loader {
+          position: absolute;
+          top: 43%;
+          left: 0;
+          height: 25%;
+          width: 100%;
+          text-align: center;
+          line-height: 0;
+        }
+
+        .lb-cancel {
+          display: block;
+          width: 32px;
+          height: 32px;
+          margin: 0 auto;
+          background: url(../images/loading.gif) no-repeat;
+        }
+
+        .lb-nav {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          z-index: 10;
+        }
+
+          .lb-container > .nav {
+          left: 0;
+        }
+
+          .lb-nav a {
+          outline: none;
+          background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+        }
+
+          .lb-prev, .lb-next {
+           height: 100%;
+           cursor: pointer;
+           display: block;
+          }
+
+          .lb-nav a.lb-prev {
+          width: 34%;
+          left: 0;
+  float: left;
+  background: url(../images/prev.png) left 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-prev:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-nav a.lb-next {
+  width: 64%;
+  right: 0;
+  float: right;
+  background: url(../images/next.png) right 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-data {
+  padding: 0 4px;
+  color: #ccc;
+}
+
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.lb-data .lb-caption a {
+  color: #4ae;
+}
+
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999;
+}
+
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(../images/close.png) top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+        </style>        
+    </head>
+    <body style="background-color: black;">
+      <!--Aquí va la canción-->
+        <audio autoplay loop>
+            <source src="https://personaoshi.github.io/assetsroni/music/p&c-music.wav?raw=true">
+        </audio>
+
+        <!--Imagen del point and click-->
+        <img src="https://github.com/personaoshi/assetsroni/blob/main/scenes/intTodoamilA.jpg?raw=true" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="" alt="Juguetes a mil" title="Juguetes a mil" href="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/Pop-ups/001_Juguetes.PNG?raw=true" data-lightbox="Juguetes" coords="426,531,447,576,501,765,515,824,515,1079,14,1079,16,824,77,819,85,748,138,714,196,709,226,661,243,637,269,615,289,566,321,532,382,514" shape="poly">
+            <area target="" alt="Poster de Sandro" title="Poster de Sandro" href="EDIT" data-lightbox="Sandro" coords="644,219,569,221,569,284,628,353,666,404,793,406,793,146,644,143" shape="poly">
+            <area target="" alt="Vinilos" title="Vinilos" href="EDIT" data-lightbox="Vinilos" coords="700,453,747,422,924,420,951,412,1142,417,1168,402,1380,398,1400,422,1405,541,1421,593,1093,597,1090,744,679,741,681,592,657,585,696,527" shape="poly">
+            <area target="" alt="Máquina de apuestas" title="Máquina de apuestas" href="EDIT" data-lightbox="Máquina" coords="1495,144,1492,99,1512,65,1575,21,1641,2,1832,2,1861,4,1900,43,1914,63,1919,1074,1758,1079,1763,872,1785,843,1748,818,1709,765,1714,602,1451,594,1503,519,1498,348,1539,326,1571,294,1585,248,1561,192,1527,165" shape="poly">
+            <area target="" alt="Cómics y revistas" title="Cómics y revistas" href="EDIT" data-lightbox="Cómics" coords="1064,878,1069,1078,1744,1078,1749,874" shape="poly">
+            <area target="" alt="Signo de la tienda" title="Signo de la tienda" href="EDIT" data-lightbox="Signo" coords="1241,216,1271,176,1308,149,1359,135,1410,133,1454,135,1492,149,1525,172,1558,203,1566,230,1568,267,1553,298,1512,330,1451,354,1390,354,1327,338,1288,316,1257,291,1246,264" shape="poly">
+            <area target="" alt="Ventilador" title="Ventilador" href="EDIT" data-lightbox="Ventilador" coords="840,171,835,193,859,222,854,246,867,283,893,300,871,322,854,332,874,340,918,339,956,340,974,332,944,322,917,318,917,296,927,283,937,262,944,235,949,200,940,152,905,130,859,130" shape="poly">
+            <area target="" alt="Ventilación" title="Ventilación" href="EDIT" data-lightbox="Ventilación" coords="1098,148,1108,63,1256,61,1256,151" shape="poly">
+            <area target="" alt="Ropa de segunda mano" title="Ropa de segunda mano" href="EDIT" data-lightbox="Ropa" coords="145,531,223,534,231,500,257,497,260,519,289,507,311,516,321,467,347,463,364,463,376,456,386,233,377,183,147,107" shape="poly">
+            <area target="" alt="Pila de vinilos" title="Pila de vinilos" href="EDIT" data-lightbox="Vinilos2" coords="667,737,494,738,455,584,644,570,671,594" shape="poly">
+            <area target="" alt="Dulces de la caja" title="Dulces de la caja" href="EDIT" data-lightbox="Dulces" coords="464,497,604,497,637,482,633,369,564,292,501,286,501,318,467,333" shape="poly">
+            <area target="" alt="Caja" title="Caja" href="EDIT" data-lightbox="Caja" coords="800,343,1047,335,1064,360,1068,404,939,408,918,416,800,413" shape="poly">
+            <area target="" alt="El disco de Mile" title="El disco de Mile" href="EDIT" data-lightbox="FOUND" coords="1521,712,1406,672" shape="rect">
+            <area target="" alt="Clásicos chongueros" title="Clásicos chongueros" href="EDIT" data-lightbox="Clásicos" coords="1274,637,1385,674" shape="rect">
+            <area target="" alt="CD de reggaeton" title="CD de reggaeton" href="EDIT" data-lightbox="PapiGordo" coords="1130,674,1237,702" shape="rect">
+            <area target="" alt="CD infantil" title="CD infantil" href="EDIT" data-lightbox="Infantil" coords="1261,678,1381,703" shape="rect">
+            <area target="" alt="CD romántico" title="CD romántico" href="EDIT" data-lightbox="Romántico" coords="1578,639,1668,670" shape="rect">
+            <area target="" alt="CD con podcast" title="CD con podcast" href="EDIT" data-lightbox="Podcast" coords="1257,710,1383,775" shape="rect">
+            <area target="" alt="CD misterioso" title="CD misterioso" href="EDIT" data-lightbox="Misterio" coords="1410,718,1532,782" shape="rect">
+            <area target="" alt="CD de chistes" title="CD de chistes" href="EDIT" data-lightbox="Chistes" coords="1120,713,1234,769" shape="rect">
+            <area target="" alt="CD de rancheras" title="CD de rancheras" href="EDIT" data-lightbox="Rancheras" coords="1546,718,1668,780" shape="rect">
+            <area target="" alt="CD de música emo" title="CD de música emo" href="EDIT" data-lightbox="Emo" coords="1132,634,1249,670" shape="rect">
+            <area target="" alt="CD de heavy metal" title="CD de black metal" href="EDIT" data-lightbox="BlackMetal" coords="1420,635,1541,667" shape="rect">
+            <area target="" alt="CD del OST de RONI" title="CD del OST de RONI" href="EDIT" data-lightbox="OST" coords="1534,677,1631,711" shape="rect">
+            <area target="" alt="Zona de CDs" title="Zona de CDs" href="EDIT" data-lightbox="CDs" coords="1105,783,1682,820" shape="rect">
+        </map>
+        <script src="path/to/dist/js/lightbox-plus-jquery.js"></script>
+    </body>
+</html>

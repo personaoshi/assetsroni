@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <link rel="stylesheet" href="estilos.css">
+        <title>RONI: point and click de la tienda</title>
+       <style>
+            img {
+            width: 100%;
+          }
+          .modal {
+            position: fixed;
+            background-color: rgba(0,0,0,0.9);
+          }
+          .close {
+              position: fixed;
+              color: white;
+              font-size: large;
+          }
+          .button {
+              visibility: hidden;
+          }
+        </style> 
+
+    </head>
+
+    <body>
+        <audio autoplay loop 0.8>
+            <source src="https://github.com/personaoshi/assetsroni/blob/main/music/p&c-music.wav?raw=true">
+        </audio>
+
+        <!--Mapa de la imagen-->
+        <map name="mapa-pnc">
+            <area alt="Juguetes a mil" shape="POLY" id = "btn-abrir-popup01" class="btn-abrir-popup01" title="Juguetes a mil"  coords="392,516,437,603,501,798,508,1079,14,1074,16,831,89,745,209,704,287,560" href="#" onclick="return false;" >
+
+            <area  alt="Juguetes a mil" shape="RECT" id = "btn-abrir-popup02" class="btn-abrir-popup02" coords="300,0,500,160"  title="Juguete" href="#" onclick="return false;">
+
+           <area alt="Ventilador" id="btn-abrir-popup03" class="btn-abrir-popup03" title="Vinilos" href="#" onclick="return false;" coords="699,409,1403,552" shape="rect">
+            <!--
+            <area target="popup" alt="Ventilador" id="btn-abrir-popup04" class="btn-abrir-popup" title="Ventilador" href="#" onclick="return false;" coords="837,136,973,326" shape="rect">
+        -->
+            <area alt="Ventilación" id="btn-abrir-popup04" title="Ventilación" href="#" onclick="return false;" coords="1098,150,1261,63" shape="rect">
+            <area target="popup" alt="Poster de Sandro" id="btn-abrir-popup05" title="Poster de Sandro" href="#" onclick="return false;" coords="574,140,793,399" shape="rect">
+            <area target="popup" alt="Máquina de apuestas" id="btn-abrir-popup06" title="Máquina de apuestas" href="#" onclick="return false;" coords="1514,140,1912,142,1916,1076,1751,1076,1753,864,1705,824,1707,602,1525,600,1512,323,1566,295,1583,230,1558,183,1510,161" shape="poly">
+            <area target="popup" alt="Cómics y revistas" id="btn-abrir-popup07" title="Cómics y revistas" href="#" onclick="return false;" coords="1120,933,1644,1037" shape="rect">
+            <area target="popup" alt="Signo de la tienda" id="btn-abrir-popup08" title="Signo de la tienda" href="#" onclick="return false;" coords="1241,244,1269,182,1349,143,1424,136,1490,151,1537,185,1561,226,1563,267,1536,304,1488,329,1424,341,1349,334,1278,304" shape="poly">
+            <area target="popup" alt="Dulces de la caja" id="btn-abrir-popup09" title="Dulces de la caja" href="#" onclick="return false;" coords="476,332,552,332,550,366,589,417,608,495,477,500" shape="poly">
+            <area target="popup" alt="Caja" title="Caja" id="btn-abrir-popup10" href="#" onclick="return false;" coords="800,334,1071,405" shape="rect">
+            <area target="popup" alt="Vinilos 2" title="Vinilos 2" id="btn-abrir-popup11" href="#" onclick="return false;" coords="671,610,487,746" shape="rect">
+            <area target="popup" alt="Ropa usada" title="Ropa usada" id="btn-abrir-popup12" href="#" onclick="return false;" coords="121,56,389,174,399,490,148,549" shape="poly">
+            
+            <area target="popup" alt="CD de punk" title="CD de punk" id="btn-abrir-popup13" href="#" onclick="return false;" coords="1538,643,1638,672" shape="rect">
+            <area target="popup" alt="Clásicos chongueros" id="btn-abrir-popup14" title="Clásicos chongueros" href="#" onclick="return false;" coords="1410,708,1505,672" shape="rect">
+            <area target="popup" alt="Papi Gordo" title="Papi Gordo" id="btn-abrir-popup15" href="#" onclick="return false;" coords="1269,714,1380,805" shape="rect">
+            <area target="popup" alt="CD infantil" title="CD infantil" id="btn-abrir-popup16" href="#" onclick="return false;" coords="1412,712,1524,806" shape="rect">
+            <area target="popup" alt="CD romántico" title="CD romántico" id="btn-abrir-popup17" href="#" onclick="return false;" coords="1261,673,1364,710" shape="rect">
+            <area target="popup" alt="Podcast" title="Podcast" href="#" onclick="return false;" id="btn-abrir-popup18" coords="1532,675,1634,704" shape="rect">
+            <area target="popup" alt="CD misterioso" title="CD misterioso" id="btn-abrir-popup19" href="#" onclick="return false;" coords="1419,646,1519,668" shape="rect">
+            <area target="popup" alt="CD de chistes" title="CD de chistes" id="btn-abrir-popup20" href="#" onclick="return false;" coords="1110,677,1215,706" shape="rect">
+            <area target="popup" alt="CD de rancheras" title="CD de rancheras" id="btn-abrir-popup21" href="#" onclick="return false;" coords="1127,645,1229,672" shape="rect">
+            <area target="popup" alt="CD emo" title="CD emo" href="#" onclick="return false;" id="btn-abrir-popup22" coords="1273,646,1375,670" shape="rect">
+            <area target="popup" alt="CD Black Metal" title="CD Black Metal" id="btn-abrir-popup23" href="#" onclick="return false;" coords="1115,717,1227,803" shape="rect">
+            <area target="popup" alt="CD OST Roni" title="CD OST Roni" href="#" onclick="return false;" id="btn-abrir-popup24" coords="1548,714,1656,806" shape="rect">
+            <area target="popup" alt="Zona de CDs" title="Zona de CDs" href="#" onclick="return false;" id="btn-abrir-popup25" coords="1093,597,1705,638" shape="rect"> 
+        </map>
+
+        <!--Imagen de fondo del P&C-->
+        <img src="https://github.com/personaoshi/assetsroni/blob/main/scenes/intTodoamil.png?raw=true" usemap="#mapa-pnc" >
+        
+
+        
+        <button hidden id="btn-abrir-popup01" class="btn-abrir-popup01">Juguetes a mil</button>
+        <button hidden id="btn-abrir-popup02" class="btn-abrir-popup02">Juguetes a mil</button>
+        <button hidden id="btn-abrir-popup03" class="btn-abrir-popup03">Vinilos</button> 
+        <button hidden id="btn-abrir-popup04" class="btn-abrir-popup04">Ventilación</button>
+        <button hidden id="btn-abrir-popup05" class="btn-abrir-popup05">Poster de Sandro</button>
+        <button hidden id="btn-abrir-popup06" class="btn-abrir-popup06">Máquina de apuestas</button> 
+        <button hidden id="btn-abrir-popup07" class="btn-abrir-popup07">Cómics y revistas</button>
+        <button hidden id="btn-abrir-popup08" class="btn-abrir-popup08">Signo de la tienda</button>
+        <button hidden id="btn-abrir-popup09" class="btn-abrir-popup09">Dulces de la caja</button> 
+        <button hidden id="btn-abrir-popup10" class="btn-abrir-popup10">Caja</button>
+        <button hidden id="btn-abrir-popup11" class="btn-abrir-popup11">Vinilos 2</button>
+        <button hidden id="btn-abrir-popup12" class="btn-abrir-popup12">Ropa usada</button> 
+        <button hidden id="btn-abrir-popup13" class="btn-abrir-popup13">CD de punk</button>
+        <button hidden id="btn-abrir-popup14" class="btn-abrir-popup14">Clásicos chongueros</button>
+        <button hidden id="btn-abrir-popup15" class="btn-abrir-popup15">Papi Gordo</button> 
+        <button hidden id="btn-abrir-popup16" class="btn-abrir-popup16">CD Infantil</button>
+        <button hidden id="btn-abrir-popup17" class="btn-abrir-popup17">CD romántico</button>
+        <button hidden id="btn-abrir-popup18" class="btn-abrir-popup18">Podcast</button> 
+        <button hidden id="btn-abrir-popup19" class="btn-abrir-popup19">CD misterioso</button>
+        <button hidden id="btn-abrir-popup20" class="btn-abrir-popup20">CD de chistes</button>
+        <button hidden id="btn-abrir-popup21" class="btn-abrir-popup21">CD de rancheras</button> 
+        <button hidden id="btn-abrir-popup22" class="btn-abrir-popup22">CD emo</button> 
+        <button hidden id="btn-abrir-popup23" class="btn-abrir-popup23">CD Black Metal</button>
+        <button hidden id="btn-abrir-popup24" class="btn-abrir-popup24">CD OST Roni</button> 
+        <button hidden id="btn-abrir-popup25" class="btn-abrir-popup25">Zona de CDs</button> 
+
+
+        <!--Inicio pop-ups-->
+        <!-- Juguetes a mil -->
+        <div class="overlay01" id = "overlay01">
+                <div class="popup01" id = "popup01">
+                    <a href = "#" class = "btn-cerrar-popup01" id = "btn-cerrar-popup01"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/001_Juguetes.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+
+        <!-- Juguetes a mil -->
+        <div class="overlay02" id = "overlay02">
+                <div class="popup02" id = "popup02">
+                    <a href = "#" class = "btn-cerrar-popup02" id = "btn-cerrar-popup02"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/002_Vinilos.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+
+        <!-- Vinilos -->
+        <div class="overlay03" id = "overlay03">
+                <div class="popup03" id = "popup03">
+                    <a href = "#" class = "btn-cerrar-popup03" id = "btn-cerrar-popup03"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/002_Vinilos.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+
+         <!-- Ventilación -->
+         <div class="overlay04" id = "overlay04">
+                <div class="popup04" id = "popup04">
+                    <a href = "#" class = "btn-cerrar-popup04" id = "btn-cerrar-popup04"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/004_Ventilaci%C3%B3n.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+
+         <!-- Poster de Sandro -->
+         <div class="overlay05" id = "overlay05">
+                <div class="popup05" id = "popup05">
+                    <a href = "#" class = "btn-cerrar-popup05" id = "btn-cerrar-popup05"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/005_Sandro.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+
+        <!--  Máquina de apuestas -->
+        <div class="overlay06" id = "overlay06">
+                <div class="popup06" id = "popup06">
+                    <a href = "#" class = "btn-cerrar-popup06" id = "btn-cerrar-popup06"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/006_M%C3%A1quina.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+        
+        <!--  Cómics y revistas -->
+        <div class="overlay07" id = "overlay07">
+                <div class="popup07" id = "popup07">
+                    <a href = "#" class = "btn-cerrar-popup07" id = "btn-cerrar-popup07"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/007_C%C3%B3mics.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+        
+        <!--  Signo de la tienda -->
+        <div class="overlay08" id = "overlay08">
+                <div class="popup08" id = "popup08">
+                    <a href = "#" class = "btn-cerrar-popup08" id = "btn-cerrar-popup08"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/008_Signo.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+        
+        <!--  Dulces de la caja -->
+        <div class="overlay09" id = "overlay09">
+                <div class="popup09" id = "popup09">
+                    <a href = "#" class = "btn-cerrar-popup09" id = "btn-cerrar-popup09"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/009_Dulces.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+        
+        <!--  Caja -->
+        <div class="overlay10" id = "overlay10">
+                <div class="popup10" id = "popup10">
+                    <a href = "#" class = "btn-cerrar-popup10" id = "btn-cerrar-popup10"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/010_Caja.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+        
+        <!--  Vinilos 2 -->
+        <div class="overlay11" id = "overlay11">
+                <div class="popup11" id = "popup11">
+                    <a href = "#" class = "btn-cerrar-popup11" id = "btn-cerrar-popup11"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/011_Vinilos2.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+
+        <!--  Ropa usada -->
+        <div class="overlay12" id = "overlay12">
+                <div class="popup12" id = "popup12">
+                    <a href = "#" class = "btn-cerrar-popup12" id = "btn-cerrar-popup12"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/012_Ropa.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+
+        <!--  CD de punk -->
+        <div class="overlay13" id = "overlay13">
+                <div class="popup13" id = "popup13">
+                    <a href = "#" class = "btn-cerrar-popup13" id = "btn-cerrar-popup13"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/013_FOUND.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+
+        <!--  Clásicos Chongueros -->
+        <div class="overlay14" id = "overlay14">
+                <div class="popup14" id = "popup14">
+                    <a href = "#" class = "btn-cerrar-popup14" id = "btn-cerrar-popup14"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/014_Cl%C3%A1sicos.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+
+        <!--  Papi Gordo -->
+        <div class="overlay15" id = "overlay15">
+                <div class="popup15" id = "popup15">
+                    <a href = "#" class = "btn-cerrar-popup15" id = "btn-cerrar-popup15"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/015_PapiGordo.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+
+        <!--  CD Infantil -->
+        <div class="overlay16" id = "overlay16">
+                <div class="popup16" id = "popup16">
+                    <a href = "#" class = "btn-cerrar-popup16" id = "btn-cerrar-popup16"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/016_Infantil.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+
+        <!--  CD romántico -->
+        <div class="overlay17" id = "overlay17">
+                <div class="popup17" id = "popup17">
+                    <a href = "#" class = "btn-cerrar-popup17" id = "btn-cerrar-popup17"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/017_Romance.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+
+        <!--  Podcast -->
+        <div class="overlay18" id = "overlay18">
+                <div class="popup18" id = "popup18">
+                    <a href = "#" class = "btn-cerrar-popup18" id = "btn-cerrar-popup18"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/018_Podcast.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+
+        <!--  CD misterioso -->
+        <div class="overlay19" id = "overlay19">
+                <div class="popup19" id = "popup19">
+                    <a href = "#" class = "btn-cerrar-popup19" id = "btn-cerrar-popup19"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/019_Misterio.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+
+        <!--  CD Chistes -->
+        <div class="overlay20" id = "overlay20">
+                <div class="popup20" id = "popup20">
+                    <a href = "#" class = "btn-cerrar-popup20" id = "btn-cerrar-popup20"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/020_Chistes.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+
+        <!--  CD de rancheras -->
+        <div class="overlay21" id = "overlay21">
+                <div class="popup21" id = "popup21">
+                    <a href = "#" class = "btn-cerrar-popup21" id = "btn-cerrar-popup21"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/021_Rancheras.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+
+        <!--  CD emo -->
+        <div class="overlay22" id = "overlay22">
+                <div class="popup22" id = "popup22">
+                    <a href = "#" class = "btn-cerrar-popup22" id = "btn-cerrar-popup22"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/022_Emo.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+
+        <!--  CD Black Metal -->
+        <div class="overlay23" id = "overlay23">
+                <div class="popup23" id = "popup23">
+                    <a href = "#" class = "btn-cerrar-popup23" id = "btn-cerrar-popup23"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/023_BlackMetal.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+           <!--  CD OST Roni -->
+        <div class="overlay24" id = "overlay24">
+                <div class="popup24" id = "popup24">
+                    <a href = "#" class = "btn-cerrar-popup24" id = "btn-cerrar-popup24"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/024_OST.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+           <!--  Zona de CDs -->
+        <div class="overlay25" id = "overlay25">
+                <div class="popup25" id = "popup25">
+                    <a href = "#" class = "btn-cerrar-popup25" id = "btn-cerrar-popup25"> <i class="fas fa-times"> </i>
+                    <img class="modal-content" id="OTRO" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/P&C%20funcional/Pop-ups/025_CDs.PNG?raw=true">
+                    </a>
+                </div>
+        </div>
+        <script src="popup.js"> </script>
+        
+    </body>
+
+</html>

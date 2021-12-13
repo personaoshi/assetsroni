@@ -1,0 +1,86 @@
+<html>
+    <!--En este HTML probé usar modales para abrir la img en algo así como un pop-up-->
+    <head>
+        <title>RONI: point and click de la tienda</title>
+        <style>
+            img {
+            width: 100%;
+          }
+          .modal {
+            position: fixed;
+            background-color: rgba(0,0,0,0.9);
+          }
+          .close {
+              position: fixed;
+              color: white;
+              font-size: large;
+          }
+        </style>    
+        <script>
+            // MODAL 1: JUGUETES
+            // Toma el modal
+            var modal = document.getElementById("modalJuguetes");
+            // Toma la img e insértala dentro del modal
+            var img = document.getElementById("Juguetes");
+            var modalImg = document.getElementById("JuguetesImg");
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+            // Toma el <span> que cierra el modal
+            var span = document.getElementsByClassName("close")[0];
+            // Cuando le jugadore haga click en <span> (x), cierra el modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        </script>    
+    </head>
+
+    <body style="background-color: black;">
+        <audio autoplay loop>
+            <source src="https://personaoshi.github.io/assetsroni/music/p&c-music.wav?raw=true">
+        </audio>
+        <!--Imagen de fondo del point & click-->
+        <img src="https://github.com/personaoshi/assetsroni/blob/main/scenes/intTodoamilA.jpg?raw=true" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="popup" alt="Juguetes a mil" title="Juguetes a mil" id="Juguetes" href="EDITAR" coords="426,531,447,576,501,765,515,824,515,1079,14,1079,16,824,77,819,85,748,138,714,196,709,226,661,243,637,269,615,289,566,321,532,382,514" shape="poly">
+            <area target="popup" alt="Poster de Sandro" title="Poster de Sandro" id="Sandro" coords="644,219,569,221,569,284,628,353,666,404,793,406,793,146,644,143" shape="poly">
+            <area target="popup" alt="Vinilos" title="Vinilos" id="Vinilos" coords="700,453,747,422,924,420,951,412,1142,417,1168,402,1380,398,1400,422,1405,541,1421,593,1093,597,1090,744,679,741,681,592,657,585,696,527" shape="poly">
+            <area target="popup" alt="Máquina de apuestas" title="Máquina de apuestas" id="Máquina" coords="1495,144,1492,99,1512,65,1575,21,1641,2,1832,2,1861,4,1900,43,1914,63,1919,1074,1758,1079,1763,872,1785,843,1748,818,1709,765,1714,602,1451,594,1503,519,1498,348,1539,326,1571,294,1585,248,1561,192,1527,165" shape="poly">
+            <area target="popup" alt="Cómics y revistas" title="Cómics y revistas" id="Cómics" coords="1064,878,1069,1078,1744,1078,1749,874" shape="poly">
+            <area target="popup" alt="Signo de la tienda" title="Signo de la tienda" id="Signo" coords="1241,216,1271,176,1308,149,1359,135,1410,133,1454,135,1492,149,1525,172,1558,203,1566,230,1568,267,1553,298,1512,330,1451,354,1390,354,1327,338,1288,316,1257,291,1246,264" shape="poly">
+            <area target="popup" alt="Ventilador" title="Ventilador" id="Ventilador" coords="840,171,835,193,859,222,854,246,867,283,893,300,871,322,854,332,874,340,918,339,956,340,974,332,944,322,917,318,917,296,927,283,937,262,944,235,949,200,940,152,905,130,859,130" shape="poly">
+            <area target="popup" alt="Ventilación" title="Ventilación" id="Ventilación" coords="1098,148,1108,63,1256,61,1256,151" shape="poly">
+            <area target="popup" alt="Ropa de segunda mano" title="Ropa de segunda mano" id="Ropa" coords="145,531,223,534,231,500,257,497,260,519,289,507,311,516,321,467,347,463,364,463,376,456,386,233,377,183,147,107" shape="poly">
+            <area target="popup" alt="Pila de vinilos" title="Pila de vinilos" id="Vinilos2" coords="667,737,494,738,455,584,644,570,671,594" shape="poly">
+            <area target="popup" alt="Dulces de la caja" title="Dulces de la caja" id="Dulces" coords="464,497,604,497,637,482,633,369,564,292,501,286,501,318,467,333" shape="poly">
+            <area target="popup" alt="Caja" title="Caja" id="Caja" coords="800,343,1047,335,1064,360,1068,404,939,408,918,416,800,413" shape="poly">
+            <area target="popup" alt="El disco de Mile" title="El disco de Mile" id="FOUND" coords="1521,712,1406,672" shape="rect">
+            <area target="popup" alt="Clásicos chongueros" title="Clásicos chongueros" id="Clásicos" coords="1274,637,1385,674" shape="rect">
+            <area target="popup" alt="CD de reggaeton" title="CD de reggaeton" id="PapiGordo" coords="1130,674,1237,702" shape="rect">
+            <area target="popup" alt="CD infantil" title="CD infantil" id="Infantil" coords="1261,678,1381,703" shape="rect">
+            <area target="popup" alt="CD romántico" title="CD romántico" id="Romance" coords="1578,639,1668,670" shape="rect">
+            <area target="popup" alt="CD con podcast" title="CD con podcast" id="Podcast" coords="1257,710,1383,775" shape="rect">
+            <area target="popup" alt="CD misterioso" title="CD misterioso" id="Misterio" coords="1410,718,1532,782" shape="rect">
+            <area target="popup" alt="CD de chistes" title="CD de chistes" id="Chistes" coords="1120,713,1234,769" shape="rect">
+            <area target="popup" alt="CD de rancheras" title="CD de rancheras" id="Rancheras" coords="1546,718,1668,780" shape="rect">
+            <area target="popup" alt="CD de música emo" title="CD de música emo" id="Emo" coords="1132,634,1249,670" shape="rect">
+            <area target="popup" alt="CD de heavy metal" title="CD de black metal" id="BlackMetal" coords="1420,635,1541,667" shape="rect">
+            <area target="popup" alt="CD del OST de RONI" title="CD del OST de RONI" id="OST" coords="1534,677,1631,711" shape="rect">
+            <area target="popup" alt="Zona de CDs" title="Zona de CDs"id="CDs" coords="1105,783,1682,820" shape="rect">
+        </map>
+
+        <!--Imágenes pop-up-->
+		<button>"Juguetes a mil"</button>
+        <div class="modal" id="modalJuguetes" >
+            <div class="modal-content" id="Juguetes" style="height:auto" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/Pop-ups/001_Juguetes.PNG?raw=true">
+            <button class="close-button">&times;0 
+
+    </button>
+			<div class="modal-body" src="https://github.com/personaoshi/assetsroni/blob/main/Recursos%20mec%C3%A1nicas%20secundarias/Pop-ups/001_Juguetes.PNG?raw=true">
+			
+        </div>
+		<div id="overlay"></div>
+    </body>
+</html>

@@ -1,0 +1,1285 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+ {
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+
+body {
+	background: #000;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0px;
+}
+
+.contenedor article {
+	line-height: 28px;
+}
+
+.contenedor article h1 {
+	font-size: 30px;
+	text-align: left;
+	padding: 50px 0;
+}
+
+.contenedor article p {
+	margin-bottom: 20px;
+}
+
+.contenedor article .btn-abrir-popup {
+	padding: 0 20px;
+	margin-bottom: 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5E7DE3;
+	border-radius: 3px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+	cursor: pointer;
+}
+
+.contenedor article .btn-abrir-popup:hover {
+	background: rgba(94,125,227, .9);
+}
+
+/* ------------------------- */
+/* POPUP 01 */
+/* ------------------------- */
+
+.overlay01 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay01.active {
+	visibility: visible;
+}
+
+.popup01 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 5px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: 0.3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup01 .btn-cerrar-popup01 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup01 .btn-cerrar-popup01:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP02 */
+/* ------------------------- */
+.overlay02 {
+	background: rgba(0,0,0,1);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay02.active {
+	visibility: visible;
+}
+
+.popup02 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup02 .btn-cerrar-popup02 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup02 .btn-cerrar-popup02:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP3 EL UNIVERSO */
+/* ------------------------- */
+.overlay03 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay03.active {
+	visibility: visible;
+}
+
+.popup03 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup03 .btn-cerrar-popup03 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup03 .btn-cerrar-popup03:hover {
+	color: #000;
+}
+
+
+/* ------------------------- */
+/* POPUP4 EL UNIVERSO */
+/* ------------------------- */
+.overlay04 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay04.active {
+	visibility: visible;
+}
+
+.popup04 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup04 .btn-cerrar-popup04 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup04 .btn-cerrar-popup04:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP05 */
+/* ------------------------- */
+.overlay05 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay05.active {
+	visibility: visible;
+}
+
+.popup05 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup05 .btn-cerrar-popup05 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup05 .btn-cerrar-popup05:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP6					 */
+/* ------------------------- */
+.overlay06 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay06.active {
+	visibility: visible;
+}
+
+.popup06 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup06 .btn-cerrar-popup06 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup06 .btn-cerrar-popup06:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP07					 */
+/* ------------------------- */
+.overlay07 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay07.active {
+	visibility: visible;
+}
+
+.popup07 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup07 .btn-cerrar-popup07 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup07 .btn-cerrar-popup07:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP08					 */
+/* ------------------------- */
+.overlay08 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay08.active {
+	visibility: visible;
+}
+
+.popup08 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup08 .btn-cerrar-popup08 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup08 .btn-cerrar-popup08:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP9					 */
+/* ------------------------- */
+.overlay09 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay09.active {
+	visibility: visible;
+}
+
+.popup09 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup09 .btn-cerrar-popup09 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup09 .btn-cerrar-popup09:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP10					 */
+/* ------------------------- */
+.overlay10 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay10.active {
+	visibility: visible;
+}
+
+.popup10 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup10 .btn-cerrar-popup10 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup10 .btn-cerrar-popup10:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP11					 */
+/* ------------------------- */
+.overlay11 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay11.active {
+	visibility: visible;
+}
+
+.popup11 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup11 .btn-cerrar-popup11 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup11 .btn-cerrar-popup11:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP12					 */
+/* ------------------------- */
+.overlay12 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay12.active {
+	visibility: visible;
+}
+
+.popup12 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup12 .btn-cerrar-popup12 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup12 .btn-cerrar-popup12:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP13					 */
+/* ------------------------- */
+.overlay13 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay13.active {
+	visibility: visible;
+}
+
+.popup13 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup13 .btn-cerrar-popup13 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup13 .btn-cerrar-popup13:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP14					 */
+/* ------------------------- */
+.overlay14 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay14.active {
+	visibility: visible;
+}
+
+.popup14 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup14 .btn-cerrar-popup14 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup14 .btn-cerrar-popup14:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP15					 */
+/* ------------------------- */
+.overlay15 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay15.active {
+	visibility: visible;
+}
+
+.popup15 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup15 .btn-cerrar-popup15 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup15 .btn-cerrar-popup15:hover {
+	color: #000;
+}
+
+
+/* ------------------------- */
+/* POPUP16					 */
+/* ------------------------- */
+.overlay16 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay16.active {
+	visibility: visible;
+}
+
+.popup16 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup16 .btn-cerrar-popup16 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup16 .btn-cerrar-popup16:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP17					 */
+/* ------------------------- */
+.overlay17 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay17.active {
+	visibility: visible;
+}
+
+.popup17 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup17 .btn-cerrar-popup17 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup17 .btn-cerrar-popup17:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP18					 */
+/* ------------------------- */
+.overlay18 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay18.active {
+	visibility: visible;
+}
+
+.popup18 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup18 .btn-cerrar-popup18 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup18 .btn-cerrar-popup18:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP19					 */
+/* ------------------------- */
+.overlay19 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay19.active {
+	visibility: visible;
+}
+
+.popup19 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup19 .btn-cerrar-popup19 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup19 .btn-cerrar-popup19:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP20					 */
+/* ------------------------- */
+.overlay20 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay20.active {
+	visibility: visible;
+}
+
+.popup20 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup20 .btn-cerrar-popup20 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup20 .btn-cerrar-popup20:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP21					 */
+/* ------------------------- */
+.overlay21 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay21.active {
+	visibility: visible;
+}
+
+.popup21 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup21 .btn-cerrar-popup21 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup21 .btn-cerrar-popup21:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP22					 */
+/* ------------------------- */
+.overlay22 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay22.active {
+	visibility: visible;
+}
+
+.popup22 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup22 .btn-cerrar-popup22 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup22 .btn-cerrar-popup22:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP23					 */
+/* ------------------------- */
+.overlay23 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay23.active {
+	visibility: visible;
+}
+
+.popup23 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup23 .btn-cerrar-popup23 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup23 .btn-cerrar-popup23:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP24					 */
+/* ------------------------- */
+.overlay24 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay24.active {
+	visibility: visible;
+}
+
+.popup24 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup24 .btn-cerrar-popup24 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup24 .btn-cerrar-popup24:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/* POPUP25					 */
+/* ------------------------- */
+.overlay25 {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay25.active {
+	visibility: visible;
+}
+
+.popup25 {
+	background: #312D2D;
+	border-radius: 2px;
+	font-family: 'Mochiy Pop One', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	height: auto;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup25 .btn-cerrar-popup25 {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup25 .btn-cerrar-popup25:hover {
+	color: #000;
+}
+/* ------------------------- */
+/* ANIMACIONES */
+/* ------------------------- */
+.popup01.active {	transform: scale(1); opacity: 1; }
+.popup02.active {	transform: scale(1); opacity: 1; }
+.popup03.active {	transform: scale(1); opacity: 1; }
+.popup04.active {	transform: scale(1); opacity: 1; }
+.popup05.active {	transform: scale(1); opacity: 1; }
+.popup06.active {	transform: scale(1); opacity: 1; }
+.popup07.active {	transform: scale(1); opacity: 1; }
+.popup08.active {	transform: scale(1); opacity: 1; }
+.popup09.active {	transform: scale(1); opacity: 1; }
+.popup10.active {	transform: scale(1); opacity: 1; }
+.popup11.active {	transform: scale(1); opacity: 1; }
+.popup12.active {	transform: scale(1); opacity: 1; }
+.popup13.active {	transform: scale(1); opacity: 1; }
+.popup14.active {	transform: scale(1); opacity: 1; }
+.popup15.active {	transform: scale(1); opacity: 1; }
+.popup16.active {	transform: scale(1); opacity: 1; }
+.popup17.active {	transform: scale(1); opacity: 1; }
+.popup18.active {	transform: scale(1); opacity: 1; }
+.popup19.active {	transform: scale(1); opacity: 1; }
+.popup20.active {	transform: scale(1); opacity: 1; }
+.popup21.active {	transform: scale(1); opacity: 1; }
+.popup22.active {	transform: scale(1); opacity: 1; }
+.popup23.active {	transform: scale(1); opacity: 1; }
+.popup24.active {	transform: scale(1); opacity: 1; }
+.popup25.active {	transform: scale(1); opacity: 1; }
+
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaSubtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
