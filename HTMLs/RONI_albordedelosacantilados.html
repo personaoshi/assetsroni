@@ -669,6 +669,7 @@ hide character j
 [[Ir a la oficina de correos -&gt;5]]</tw-passagedata><tw-passagedata pid="30" name="5" tags="Escena-5" position="560,206" size="100,100">stop sound AmbienteTenderos fadeOut
 show background Correos fadeIn
 play sound AmbienteCorreos fadeIn loop
+play sound AmbienteTenderos fadeIn loop
 
 &lt;pause&gt;
 
@@ -852,6 +853,7 @@ hide character j
 hide character c
 
 stop sound AmbienteCorreos fadeOut
+stop sound AmbienteTenderos fadeOut
 play music P&amp;C fadeIn loop
 
 centered MINIJUEGO DINOSAURIO
@@ -861,10 +863,10 @@ centered MINIJUEGO DINOSAURIO
 jump 7</tw-passagedata><tw-passagedata pid="41" name="7" tags="Escena-7" position="1186,1106" size="100,100">hide character r
 hide character c
 stop music P&amp;C fadeOut
-stop sound AmbienteTenderos fadeOut
 
 show background TodoAMil fadeIn
 play sound Tienda fadeIn loop
+play sound AmbienteTenderos fadeIn loop
 
 &lt;pause&gt;
 
@@ -1139,16 +1141,17 @@ m Wena.
 m Pueden encontrar al Flea en la Galería Abandonada.
 m Cualquier cosa voy a estar por aquí buscando banderines.
 
-hide character m fadeOut
+hide character m MNormal right fadeOut
 show character c CNormal2 right
 
 c ¡Adiós, niñas! Si necesitan energías, vayan donde Fabio Fitness.
 c ¡Si dicen que van de mi parte les dará barritas!
 
-hide character c fadeOut
+hide character c CNormal right fadeOut
 
 &lt;pause&gt;
 
+hide character j
 show character j JHappy2 right fadeIn
 
 j ¿Ahora qué? :)
@@ -1157,7 +1160,7 @@ j ¿Ahora qué? :)
 [[Ir donde Gema-&gt;7_7]]
 [[Ir donde Fabio Fitness-&gt;7_8]]</tw-passagedata><tw-passagedata pid="54" name="8" tags="Escena-8" position="1316,128" size="100,100">stop sound Tienda fadeOut
 show background Tenderos fadeIn
-play sound AmbienteTenderos 0.8 loop
+play sound AmbienteTenderos loop
 
 &lt;pause&gt;
 
@@ -1347,12 +1350,31 @@ show character r RNormal left
 show character j JNormal2 left
 
 j ¿Por qué, Roni?
+j Ya sabemos lo que tenemos que hacer :)
 
 show character j JNormal left
+
+(Juana te guiñe el ojo)
+
 show character c CNormal2 right
 
 c Sí, tranquila.
 c No puede ser tan terrible como parece.
+
+show character c CNormal right
+show character r RFear2 left
+
+r Eeeeehhh...
+
+show character r RFear left
+show character c CNormal2 right
+
+c ¡Pero bueno!
+c ¿Quieres delivery para tus alpargatas, cierto?
+
+show character r RFear left
+
+r Eh, sí...
 
 jump Papeles</tw-passagedata><tw-passagedata pid="62" name="Papeles" tags="Escena-5" position="823,474" size="100,100">show character r RNormal left
 show character j JNormal left
@@ -1374,6 +1396,8 @@ show character c CNormal2 right
 hide image P
 
 &lt;pause&gt;
+
+show character c CNormal right
 
 play sound Escribir
 
