@@ -258,7 +258,7 @@ game-screen [data-sprite].left {
 }
 
 game-screen [data-sprite].center {
-    left: 9rem;
+    left: auto;
     right: auto;
     top: auto;
     bottom: 20px;
