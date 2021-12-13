@@ -1,0 +1,3520 @@
+<html>
+	<head>
+		<title>RONI: Dialogos alternativos 1.0</title>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130174335-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-130174335-2');
+		</script>
+		
+		<meta charset="UTF-8">
+
+		<link rel="stylesheet" href="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/engine/core/monogatari.css">
+		<link rel="stylesheet" href="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/style/error.css">
+		<link rel="stylesheet" href="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/style/main.css">
+		<link rel="stylesheet" href="https://personaoshi.github.io/assetsroni/ronistylesheet.css">
+
+		<!-- Third Party JavaScript Libraries -->
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/js/vendor/jquery.min.js"></script>
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/js/vendor/js-yaml.min.js"></script>
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/js/vendor/lodash.min.js"></script>
+
+		<!-- Monogatari JavaScript Libraries -->
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/engine/debug/debug.js"></script>
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/engine/core/monogatari.js"></script>
+		
+		<!-- Twison -->
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//twison.js"></script>
+		
+		<!-- Twine-Monogatari -->
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//twine-monogatari.js"></script>
+		
+	</head>
+	<body>
+		<noscript>
+			<div class="middle text--center">
+				<h2>JavaScript Disabled or not Supported.</h2>
+				<small>To play this game, please enable JavaScript executing or use a different browser.</small>
+			</div>
+		</noscript>
+		
+		<pre id="output" style="display: none;">
+		
+		</pre>
+		
+		<div id="storyData" style="display: none;">
+			<tw-storydata name="RONI: Dialogos alternativos 1.0" startnode="7" creator="Twine" creator-version="2.3.14" ifid="BB3EB29C-803E-401A-9781-09CC04A78B53" zoom="0.6" format="twine-monogatari" format-version="0.2.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+body {
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: white;
+  font-size: 1.5rem;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="[Storage]" tags="" position="1881,15" size="100,200">player:
+  name: Roni
+juana_name: &quot;Juana&quot;
+otto_name: &quot;Otto&quot;
+gema_name: &quot;Gema&quot;
+testCounter: 0
+</tw-passagedata><tw-passagedata pid="2" name="[Scenes]" tags="" position="2096,12" size="200,100">Tenderos: Tenderos.png
+TenderosA: TenderosA.png
+IntGema: interiorcasagema.png
+ExtGema: exteriorcasagema.png
+Correos: Correos.png
+TodoAMil: todoamil.png
+TodoAMilA: todoamilA.png
+IntTodoAMil: intTodoamil.png
+
+Scroll: scrollB.gif
+Legend: legend.png
+Arm: aimtothesky.jpeg
+Flotando: chongueado.png</tw-passagedata><tw-passagedata pid="3" name="[Settings]" tags="" position="1988,13" size="100,200">AssetsPath:
+ root: https://personaoshi.github.io/assetsroni/</tw-passagedata><tw-passagedata pid="4" name="[Music]" tags="" position="2306,11" size="100,100">Alarma: Alarma(-6db).wav
+Pueblo: fondo-music(-6db).wav
+P&amp;C: p_c-music(-6db).wav</tw-passagedata><tw-passagedata pid="5" name="[Sound]" tags="" position="2305,117" size="100,100">Ambientecampo: Fondo_Casa-en-el-campo(4.21).wav
+AmbienteCorreos: Fondo_Correos(4.24).wav
+AmbienteTenderos: Fondo_Pueblo(4.23).wav
+Drone: Dron_Inicio(4.0).wav
+Tienda: Fondo_Todo-a-Mil(4.25).wav
+
+VozC1: Chasqui1.wav
+VozC2: Chasqui2.wav
+VozC3: Chasqui3.wav
+VozG1: Gema1.wav
+VozG2: Gema2.wav
+VozG3: Gema3.wav
+VozJ1: Juana1.wav
+VozJ2: Juana2.wav
+VozJ3: Juana3.wav
+VozM1: Mile1.wav
+VozM2: Mile2.wav
+VozM3: Mile3.wav
+VozN1: Narrador1.wav
+VozN2: Narrador2.wav
+VozN3: Narrador3.wav
+VozO1: Otto1.wav
+VozO2: Otto2.wav
+VozO3: Otto3.wav
+VozR1: Roni1.wav
+VozR2: Roni2.wav
+VozR3: Roni3.wav
+Cerrarpuerta: cerrarpuerta.mp3
+Escribir: paper_1.mp3
+Golpearpuerta: knockdoor.mp3
+Inventario: leather_inventory.wav
+Tiembla: Terremoto.mp3
+Timbre: bell_1.mp3</tw-passagedata><tw-passagedata pid="6" name="[Images]" tags="" position="2412,12" size="100,200">A1: A1_fondo.png
+A2: A2_fondo.png
+A3: A3_fondo.png
+D1: cartadoncella1.png
+P: papers.png
+IB: bolso-objetos-2.jpg
+
+DC: TarotChasqui.png
+DM: TarotMile.png</tw-passagedata><tw-passagedata pid="7" name="Start" tags="" position="10,3" size="100,100">jump LeyendaI</tw-passagedata><tw-passagedata pid="8" name="LeyendaI" tags="Escena-1" position="11,120" size="100,100">play sound VozN3
+
+(Para avanzar, presiona la barra espaciadora o haz click en la pantalla)
+
+stop sound VozN3
+
+show background Scroll loop
+play sound Drone fadeIn loop
+
+centered En lo más alto de los altos
+centered Cinco hebras sobre el risco
+centered Cada hilo es una cara
+centered Cada hebra es de tres hilos
+centered Y la boca de cada rostro
+centered Nos separa del abismo
+
+jump LeyendaII</tw-passagedata><tw-passagedata pid="9" name="LeyendaII" tags="Escena-1" position="8,234" size="100,100">centered 
+
+centered Uno para el coraje
+centered Otro que sabe cuidar
+centered El siguiente previene el ultraje
+centered Y el que viene podrá organizar
+centered El último para adornar lo cierto
+centered Y así concluye el danzar
+
+jump LeyendaIII</tw-passagedata><tw-passagedata pid="10" name="LeyendaIII" tags="Escena-1" position="8,349" size="100,100">centered 
+
+centered Quien más tema a lo distinto
+centered O más lejos quiera estar
+centered Más será atraído
+centered A juntar la variedad
+centered Y con ello será evidente
+centered Y comprenderá su lugar
+
+centered ...
+
+jump LeyendaIV</tw-passagedata><tw-passagedata pid="11" name="2" tags="Escena-2" position="121,119" size="100,100">play sound Ambientecampo loop
+show background IntGema fadeIn
+
+&lt;pause&gt;
+
+show character r RNormal left fadeIn
+show character j JNormal left fadeIn
+show character g GNormal2 right fadeIn
+
+play sound VozG2
+
+g El Chongui tiene las respuestas marcadas hace cientos de años, solo hay que salir a buscarlas...
+
+stop sound VozG2
+
+show character g GNormal right fadeIn
+show character j JNormal2 left fadeIn
+
+play sound VozJ1
+
+j ¡Wow, que bien! Nunca me canso de esta historia.
+
+stop sound VozJ1
+play sound VozJ2
+
+j Y no suena para nada como una locura de tus grupos conspiranoicos de facebake, abue :)
+
+stop sound VozJ2
+
+show character j JNormal left
+show character r RNormal2 left
+
+play sound VozR1
+
+r Sí, bueno, suerte con tu aventura, Gema.
+
+stop sound VozR1
+play sound VozR2
+
+r Con su permiso voy a recluirme en mi pieza.
+
+stop sound VozR2
+
+show character r RNormal left
+show character g GMad2 right
+
+play sound VozG1
+
+g Alto ahí, Roni.
+
+stop sound VozG1
+
+show character g GNormal right
+
+show image A1 center fadeIn
+&lt;pause&gt;
+hide image A1
+show image A2 center fadeIn
+&lt;pause&gt;
+hide image A2
+show image A3 center fadeIn
+&lt;pause&gt;
+
+show character g GNormal2 right
+
+play sound VozG2
+
+g Primero tendrás que entregar estas alpargatas a mis clientes.
+
+stop sound VozG2
+
+show character g GNormal right
+show character r RFear2 left
+show character j JNormal left
+
+play sound VozR1
+
+r ¡Pero si no teníamos nada que hacer hoy!
+
+stop sound VozR1
+
+show character r RFear left
+show character j JNormal left
+show character g GMad2 right
+
+play sound VozG2
+
+g Pues ahora sí, en vista y consideración de tu actitud.
+
+stop sound VozG2
+
+show character r RFear2 left
+show character j JNormal left
+show character g GMad right
+
+play sound VozR1
+
+r Pero si ni sé dónde están las cosas acá.
+
+stop sound VozR1
+
+show character r RFear left
+show character g GMad2 right
+
+play sound VozG1
+
+g Que te acompañe tu prima entonces.
+
+stop sound VozG1
+
+show character j JHappy2 left
+show character g GNormal right
+
+play sound VozJ1
+
+j ¡Qué bacán, Roni!
+
+stop sound VozJ1
+play sound VozJ2
+
+j ¡Hace tiempo no hacemos cosas juntas! :)
+
+stop sound VozJ2
+
+show character j JHappy left
+show character g GMad2 right
+hide image A3
+
+play sound VozG2
+
+g ¡Ya, fuera! ¡Tengo que lavarle las patas a Gaspar!
+
+stop sound VozG2
+
+show character g GMad right
+
+show character ga GaNormal right fadeIn
+&lt;pause&gt;
+
+show character g GMad2 right
+
+play sound VozG1
+
+g Fuchi.
+
+stop sound VozG1
+
+hide character g
+hide character ga
+hide character r
+hide character j
+
+show background #000 fadeIn
+
+play sound Cerrarpuerta
+
+&lt;pause&gt;
+
+jump 3</tw-passagedata><tw-passagedata pid="12" name="[Characters]" tags="" position="2098,117" size="200,100">p:
+  Name: &quot;{{player.name}}&quot;
+  Color: &quot;#ff3951&quot;
+
+r:
+  Name: &quot;Roni:&quot;
+  Color: &quot;#00bfff&quot;
+  Directory: Roni
+  Images:
+    RNormal: RNeutral.png
+    RNormal2: RNeutralT.png
+    RFear: RMiedo.png
+    RFear2: RMiedoT.png
+    RFear3: RMiedo3.png
+    RMad: REnojo.png
+    RMad2: REnojoT.png
+    RHappy: R8.png
+    RHappy2: R8B.png
+
+g:
+  Name: &quot;Gema:&quot;
+  Color: &quot;#ed4b6f&quot;
+  Directory: Gema
+  Images:
+    GNormal: G1.png
+    GNormal2: G1b.png
+    GMad: G2.png
+    GMad2: G2B.png
+
+ga:
+  Name: &quot;Gaspar:&quot;
+  Color: &quot;#31736e&quot;
+  Directory: Gaspar
+  Images:
+    GaNormal: Gaspar1.png
+
+j:
+  Name: &quot;Juana:&quot;
+  Color: &quot;#bf00bf&quot;
+  Directory: Juana
+  Images:
+    JNormal: J1.png
+    JNormal2: J1B.png
+    JDoubt: J3.png
+    JDoubt2: J3B.png
+    JHappy: J5.png
+    JHappy2: J5B.png
+    JMad: J2.png
+    JMad2: J2B.png
+	
+c:
+  Name: &quot;Chasqui:&quot;
+  Color: &quot;#ef280f&quot;
+  Directory: Chasqui
+  Images:
+    CNormal: C1.png
+    CNormal2: C1B.png
+	
+m:
+  Name: &quot;Mile:&quot;
+  Color: &quot;#4073ff&quot;
+  Directory: Mile
+  Images:
+    MNormal: M1.png
+    MNormal2: M1B.png
+    MMad: M2.png
+    MMad2: M2B.png
+    MFear: M3.png
+    MFear2: M3B.png
+
+o:
+  Name: &quot;Otto:&quot;
+  Color: &quot;#712a95&quot;
+  Directory: Otto
+  Images:
+    ONormal: O1.png
+    ONormal2: O1B.png</tw-passagedata><tw-passagedata pid="13" name="LeyendaIV" tags="Escena-1" position="10,464" size="100,100">stop sound Drone fadeOut
+show background #000
+
+play sound VozN3
+
+centered Roni, una chiquilla que apenas sale de su pieza, acaba de llegar al pueblo de El Chongui, obligada a ayudar a su accidentada abuela Gema. 
+
+stop sound VozN2
+play sound Tiembla fadeIn
+play sound VozN3
+
+centered Sin embargo, un gran terremoto marca el inicio del Chonguimiento, una catástrofe que levanta el pueblo, del suelo hacia los cielos. 
+
+stop sound VozN3
+play sound VozN2
+
+centered Gema instruye a Roni: Para detener el Chonguimiento debe ENCONTRAR en el pueblo a las 5 DONCELLAS profetizadas.
+
+stop sound VozN2
+play sound VozN1
+
+centered Y realizar el ritual que devolverá el pueblo a su sitio.
+
+stop sound VozN1
+stop sound Tiembla fadeOut
+
+jump 2
+</tw-passagedata><tw-passagedata pid="14" name="3" tags="Escena-3" position="232,121" size="100,100">show background ExtGema fadeIn
+
+show character r RMad2 left fadeIn
+show character j JNormal right fadeIn
+
+play sound VozR1
+
+r Tsch...
+
+stop sound VozR1
+
+show character r RMad left
+show character j JNormal2 right
+
+play sound VozJ1
+
+j ¿Y bien? ¿Qué harás ahora?
+
+stop sound VozJ1
+
+[[Ver si la abue te abre la puerta-&gt;Hinchar]]
+[[Entregar las alpargatas-&gt;pre4]]</tw-passagedata><tw-passagedata pid="15" name="Hinchar" tags="Escena-3" position="228,231" size="100,100">
+show character r RNormal left
+
+play sound Golpearpuerta
+&lt;pause&gt;
+
+play sound VozG1
+
+g ¡No creo que seas tan rápida!
+
+stop sound VozG1
+
+show character r RNormal2 left
+
+play sound VozR1
+
+r Ay, Dios santo.
+
+stop sound VozR1
+
+show character r RNormal left
+show character j JNormal2 right
+
+play sound VozJ1
+
+j ¿Vamos?
+
+stop sound VozJ1
+
+show character j JNormal right
+
+[[Insistir-&gt;Hinchar2]] 
+[[Ir a dejar las alpargatas-&gt;pre4]]</tw-passagedata><tw-passagedata pid="16" name="pre4" tags="Escena-3" position="426,132" size="100,100">show character r RNormal2 left
+
+play sound VozR1
+
+r Ya, vamos a dejar estas chalas.
+
+stop sound VozR1
+
+show character r RNormal left
+show character j JNormal2 right
+
+play sound VozJ1
+
+j Alpargatas, Roni.
+
+stop sound VozJ1
+
+show character r RNormal2 left
+show character j JNormal right
+
+play sound VozR1
+
+r Eso.
+
+stop sound VozR1
+
+show character r RNormal left
+show character j JNormal2 right
+
+play sound VozJ1
+
+j Ah, las entregamos en un segundito :)
+
+stop sound VozJ1
+play sound VozJ1
+
+j ¡Ven! Tengo que ver algo.
+
+stop sound VozJ1
+
+&lt;pause&gt;
+
+jump 4</tw-passagedata><tw-passagedata pid="17" name="4_1" tags="Escena-4" position="361,369" size="100,100">r Pero no hay señal, ¿cómo se van a enterar los turistas de esto?
+
+show character r RFear left
+show character j JDoubt2 right
+
+play sound VozJ2
+
+j Supongo que el Chasqui irá a entregar el mensaje a la ciudad.
+
+stop sound VozJ2
+
+show character j JDoubt right
+
+play sound VozR1
+
+r (¿Quién?)
+
+stop sound VozR1
+
+[[Preguntar quién es ese, como una boba-&gt;Temblor1]] 
+[[Fingir conocimiento-&gt;Temblor1]] </tw-passagedata><tw-passagedata pid="18" name="4_2" tags="Escena-4" position="521,373" size="100,100">show character r RFear2 left
+
+play sound VozR2
+
+r ¿Y qué compran acá? ¿Puras chalas?
+
+stop sound VozR2
+
+show character r RFear left
+show character j JNormal2 right
+
+play sound VozJ3
+
+j ¡Hey! ¡Respeta el cáñamo, sirve para hacer cualquier cosa!
+
+stop sound VozJ3
+
+show character j JNormal right
+
+play sound VozR2
+
+r (Ay... Ojalá no se haya enojado)
+
+stop sound VozR2
+
+[[Pedir perdón-&gt;Temblor1]] 
+[[Ignorar su enojo-&gt;Temblor1]] </tw-passagedata><tw-passagedata pid="19" name="Temblor1" tags="Escena-4" position="453,493" size="100,100">hide character r
+hide character j
+
+show background Tenderos shake
+stop sound AmbienteTenderos fadeOut
+play sound Tiembla
+
+&lt;pause&gt;
+
+show background TenderosA fadeIn
+
+&lt;pause&gt;
+
+play sound VozN1
+
+(Oh no...)
+
+stop sound VozN1
+play sound VozN2
+
+(¡Estás entrando en pánico!)
+
+stop sound VozN2
+
+show character r RFear3 center fadeIn
+
+play sound VozR3
+
+r ¡AAAAAAHHHHH EL FIN DEL MUNDOOOOO! 
+
+stop sound VozR3
+
+hide character r
+
+play music Alarma loop
+
+[[¡¡¡HAZ ALGO!!!-&gt;Temblor2]]</tw-passagedata><tw-passagedata pid="20" name="Temblor2" tags="Escena-4" position="261,482" size="100,100">[[Mirar las nubes-&gt;Temblor2_1]]
+[[Intentar respirar-&gt;Temblor2_1]]
+[[Apretar el cuerpo-&gt;Temblor2_1]]</tw-passagedata><tw-passagedata pid="21" name="CartaDoncella" tags="Escena-4" position="325,716" size="100,100">stop music Alarma fadeOut
+show background Tenderos
+show image D1 center fadeIn
+
+&lt;pause&gt;
+
+play sound VozN2
+
+centered La cuerda primera encuentra
+
+stop sound VozN2
+play sound VozN2
+
+centered En el bagaje de su viaje
+
+stop sound VozN2
+play sound VozN2
+
+centered Lo constitutivo de su esencia
+
+stop sound VozN2
+play sound VozN2
+
+centered Y lo que la salva del desgaste
+
+stop sound VozN2
+play sound VozN2
+
+centered Para llamarla tendrá la altura
+
+stop sound VozN2
+play sound VozN2
+
+centered La doncella de la aventura
+
+stop sound VozN2
+
+&lt;pause&gt;
+
+hide image D1
+play sound AmbienteTenderos fadeIn loop
+
+show character r RNormal left fadeIn
+show character j JNormal right fadeIn
+
+play sound VozN2
+
+(Bueno, eso decía la carta por detrás)
+
+stop sound VozN2
+play sound VozN1
+
+(Sea lo que sea que signifique)
+
+stop sound VozN1
+
+[[Leerle el texto a Juana-&gt;4_3]] [[Ir a dejar las alpargatas de una vez por todas-&gt;4_4]]</tw-passagedata><tw-passagedata pid="22" name="4_3" tags="Escena-4" position="208,798" size="100,100">show character j JDoubt right
+show character r RNormal2 left
+
+play sound VozR2
+
+r &quot;...Y para llamarla tendrá la altura
+
+stop sound VozR2
+play sound VozR2
+
+r La doncella de la aventura&quot;
+
+stop sound VozR2
+
+show character r RNormal left
+
+play sound VozN3
+
+(Mientras intentas quitarte el sonrojo piensas en por qué este texto tenía que estar escrito de forma tan cursi)
+
+stop sound VozN3
+
+show character j JDoubt2 right
+
+play sound VozJ3
+
+j Parece que Gema no está del todo loca. ¡Las doncellas existen!
+
+stop sound VozJ3
+
+show character j JHappy2 right
+
+play sound VozJ2
+
+j ¡Vamos por la doncella!
+
+stop sound VozJ2
+
+play music Pueblo fadeIn loop
+
+show character j JHappy right
+show character r RFear2 left
+
+play sound VozR1
+
+r ¿¡...!?
+
+stop sound VozR1
+play sound VozR2
+
+r Juana, esto no tiene ningún sentido.
+
+stop sound VozR2
+
+show character r RFear left
+show character j JHappy2 right
+
+play sound VozJ3
+
+j ¡Cómo que no! ¡Pero si salió de la tierra!
+
+stop sound VozJ3
+
+show character j JHappy right
+show character r RFear2 left
+
+play sound VozR3
+
+r PERO ESO QUÉ TIENE QUE VER, JUANA.
+
+stop sound VozR3
+play sound VozN2
+
+(Juana se encoge de hombros)
+
+stop sound VozN2
+
+show character r RFear left
+show character j JHappy2 right
+
+play sound VozJ1
+
+j ¿... :)?
+
+stop sound VozJ1
+
+...
+
+show character j JNormal right
+
+jump AVer</tw-passagedata><tw-passagedata pid="23" name="4_4" tags="Escena-4" position="436,793" size="100,100">show character r RNormal2 left
+
+play sound VozR3
+
+r ¿Podemos ir a dejar estas chalas? Quiero volver a la casa.
+
+stop sound VozR3
+
+show character r RNormal left
+show character j JNormal2 right
+
+play sound VozJ3
+
+j ¡Pero Roni! ¡Recogiste un objeto misterioso del suelo y ahora actúas como si nada!
+
+stop sound VozJ3
+
+show character j JNormal right
+
+play sound VozN3
+
+(Sin que puedas hacer mucho, Juana te quita la carta de mitos y le... La carta de la doncella de las manos)
+
+stop sound VozN3
+play sound VozJ1
+
+j ...
+
+stop sound VozJ1
+play sound VozN3
+
+(Ves lentamente como la expresión de su rostro va cambiando a medida que avanza en la lectura)
+
+stop sound VozN3
+
+show character j JHappy2 right
+
+play sound VozJ2
+
+j ¡¡¡RONI, ESTO ES MUY LOCO!!!
+
+stop sound VozJ2
+play sound VozJ2
+
+j ¿¿¿POR QUÉ NO ME DIJISTE NADA???
+
+stop sound VozJ2
+
+play music Pueblo fadeIn loop
+
+show character j JHappy right
+show character r RFear3 left
+
+play sound VozR2
+
+r NO SÉ ME PUSE NERVIOSA NO ME GRITES POR FAVOR.
+
+stop sound VozR2
+
+show character r RFear left
+show character j JHappy2 right
+
+play sound VozJ2
+
+j AHORA TENEMOS QUE IR POR LAS DONCELLAS.
+
+stop sound VozJ2
+
+show character j JHappy2 left
+
+play sound VozJ2
+
+j ¡¡ES VITAL, RONI!! ¡¡ES VITAL!!
+
+stop sound VozJ2
+play sound VozN2
+
+(Juana te toma de los hombros y te sacude)
+
+stop sound VozN2
+
+show character j JHappy left
+show character r RFear3 left
+
+play sound VozR1
+
+r PERO LAS CHALAS.
+
+stop sound VozR1
+
+show character r RFear left
+
+play sound VozN2
+
+(Finalmente, Juana se detiene)
+
+stop sound VozN2
+
+hide character j
+show character j JDoubt right fadeIn
+
+play sound VozJ2
+
+j ¿Y las doncellas?
+
+stop sound VozJ2
+
+show character r RNormal2 left
+show character j JNormal right
+
+play sound VozR3
+
+r Primero entreguemos las chalas, sino la abue no me dejará volver.
+
+stop sound VozR3
+
+show character j JNormal2 right
+
+play sound VozJ2
+
+j Pero después iremos por las doncellas.
+
+stop sound VozJ2
+
+jump AVer</tw-passagedata><tw-passagedata pid="24" name="AVer" tags="Escena-4" position="326,895" size="100,100">show character r RNormal2 left
+stop music Pueblo fadeOut
+
+play sound VozR1
+
+r Como digas…
+
+stop sound VozR1
+
+show character r RNormal left
+show character j JNormal2 right
+
+play sound VozJ2
+
+j A ver esas alpargatas.
+
+stop sound VozJ2
+
+[[Mostrar alpargatas con estoperoles -&gt;4_5]]
+[[Mostrar alpargatas negras -&gt;4_5]]
+[[Mostrar alpargatas rojas -&gt;4_6]]</tw-passagedata><tw-passagedata pid="25" name="4_5" tags="Escena-4" position="211,1048" size="100,100">show character j JDoubt2 right
+
+play sound VozJ2
+
+j Ni idea de quién es.
+
+stop sound VozJ2
+play sound VozJ3
+
+j Esas rojas me suenan... ¿A verlas?
+
+stop sound VozJ3
+
+show character j JDoubt right
+
+[[Mostrar alpargatas rojas -&gt;4_6]] </tw-passagedata><tw-passagedata pid="26" name="4_6" tags="Escena-4" position="381,1045" size="100,100">show character j JNormal2 right
+
+play sound VozJ2
+
+j Esa dice que es para tu papá, Hugo.
+
+stop sound VozJ2
+play sound VozJ2
+
+j Vamos al tiro a dejarlas a su casa.
+
+stop sound VozJ2
+
+show character r RFear3 left
+show character j JNormal right
+
+play sound VozR1
+
+r NO.
+
+stop sound VozR1
+
+show character r RFear left
+show character j JDoubt right
+
+&lt;pause&gt;
+
+show character j JDoubt2 right
+
+play sound VozJ2
+
+j Uh... ¿...?
+
+stop sound VozJ2
+
+show character j JDoubt right
+
+play sound VozN3
+
+(RÁPIDO DI ALGO POR FAVOR DEBE ESTAR PENSANDO MAL DE TI)
+
+stop sound VozN3
+
+[[Ser sincera y decir que no quieres verlo-&gt;4_7]]
+[[Excusarte con que van a perder tiempo-&gt;4_8]]</tw-passagedata><tw-passagedata pid="27" name="4_7" tags="Escena-4" position="506,1158" size="100,100">show character r RFear2 left
+
+play sound VozR2
+
+r Es que no quiero verlo.
+
+stop sound VozR2
+
+show character r RFear left
+show character j JMad2 right
+
+play sound VozJ2
+
+j Ay, Roni...
+
+stop sound VozJ2
+
+show character j JMad right
+&lt;pause&gt;
+
+show character j JHappy2 right
+
+play sound VozJ2
+
+j Es súper raro, ¿verdad?
+
+stop sound VozJ2
+play sound VozJ2
+
+j Jijijijiji
+
+stop sound VozJ2
+
+show character j JNormal2 right
+
+play sound VozJ3
+
+j ¿Quién es bailarín contemporáneo en esta época?
+
+stop sound VozJ3
+
+show character j JNormal right
+show character r RFear2 left
+
+play sound VozR1
+
+r Sí...
+
+stop sound VozR1
+
+show character r RFear left
+show character j JNormal2 right
+
+play sound VozJ2
+
+j Ya bueno Roni, como quieras.
+
+stop sound VozJ2
+play sound VozJ3
+
+j Podemos mandarlas por delivery si no quieres verlo.
+
+stop sound VozJ3
+
+jump PreCorreos</tw-passagedata><tw-passagedata pid="28" name="4_8" tags="" position="497,914" size="100,100">show character r RFear2 left
+show character j JDoubt right
+
+play sound VozR3
+
+r Es que vamos a perder tiempo... Más encima está todo chongueado...
+
+stop sound VozR3
+
+show character r RFear left
+show character j JNormal2 right
+
+play sound VozJ3
+
+j Mmm... Bueno, supongo que eso tiene sentido.
+
+stop sound VozJ3
+
+show character j JNormal right
+
+play sound VozN3
+
+(Te sientes aliviada por tu mentira, al menos Juana no cree que eres una pésima persona que merece la muerte)
+
+stop sound VozN3
+
+show character r RNormal2 left
+
+play sound VozR2
+
+r Sí, Juana. Hay que ser inteligentes.
+
+stop sound VozR2
+
+show character r RNormal left
+show character j JNormal2 right
+
+play sound VozJ2
+
+j Podríamos enviarlas por correo...
+
+stop sound VozJ2
+
+jump PreCorreos</tw-passagedata><tw-passagedata pid="29" name="PreCorreos" tags="Escena-4" position="577,1034" size="100,100">show character r RNormal2 left
+show character j JNormal right
+
+play sound VozR2
+
+r Buena, ¿a dónde hay que ir?
+
+stop sound VozR2
+
+show character r RNormal left
+show character j JNormal2 right
+
+play sound VozJ2
+
+j A la oficina de correos.
+
+stop sound VozJ2
+
+hide character r
+hide character j
+
+[[Ir a la oficina de correos -&gt;5]]</tw-passagedata><tw-passagedata pid="30" name="5" tags="Escena-5" position="560,206" size="100,100">stop sound AmbienteTenderos fadeOut
+show background Correos fadeIn
+play sound AmbienteCorreos fadeIn loop
+play sound AmbienteTenderos fadeIn loop
+
+&lt;pause&gt;
+
+[[Tocar timbre -&gt;Timbre]]</tw-passagedata><tw-passagedata pid="31" name="Timbre" tags="Escena-5" position="703,257" size="100,100">play sound Timbre
+&lt;pause&gt;
+
+show character c CNormal2 right fadeIn
+show character r RNormal left fadeIn
+show character j JNormal left fadeIn
+
+play sound VozC2
+
+c Hola chiquillas, ¿Qué desean enviar?
+
+stop sound VozC2
+
+show character c CNormal right
+show character j JNormal2 left
+
+play sound VozJ2
+
+j Holi Chasqui, ¿cómo va?
+
+stop sound VozJ2
+
+show character c CNormal2 right
+show character j JNormal left
+
+play sound VozC2
+
+c Ah, tan fresco como siempre.
+
+stop sound VozC2
+
+show character c CNormal right
+
+[[Intentar conversar como un ser humano normal-&gt;5_00]]
+[[Ir al grano-&gt;5_01]]</tw-passagedata><tw-passagedata pid="32" name="5_1" tags="Escena-5" position="756,623" size="100,100">show character r RNormal2 left
+
+play sound VozR2
+
+r Nah, para qué.
+
+stop sound VozR2
+
+show character r RNormal left
+show character j JNormal2 left
+
+play sound VozJ2
+
+j Yo creo que deberías, Roni
+
+stop sound VozJ2
+
+show character r RNormal2 left
+show character j JNormal left
+
+play sound VozR1
+
+r ¿Sí?
+
+stop sound VozR1
+
+show character r RNormal left
+show character j JNormal2 left
+
+play sound VozJ2
+
+j Obvio que sí, sabe que estai aquí.
+
+stop sound VozJ2
+play sound VozJ2
+
+j Ponle una excusa por lo menos.
+
+stop sound VozJ2
+
+show character j JNormal left
+
+jump YaEstá</tw-passagedata><tw-passagedata pid="33" name="5_2" tags="Escena-5" position="890,610" size="100,100">show character r RNormal2 left
+
+play sound VozR1
+
+r ¿Qué nota?
+
+stop sound VozR1
+
+show character r RNormal left
+show character j JNormal2 left
+
+play sound VozJ3
+
+j Esta del papel bonito, creo que deberías decirle por qué no podemos ir.
+
+stop sound VozJ3
+
+show character r RNormal2 left
+show character j JNormal left
+
+play sound VozR2
+
+r Mmm... Bueno.
+
+stop sound VozR2
+
+show character r RNormal left
+
+jump YaEstá</tw-passagedata><tw-passagedata pid="34" name="YaEstá" tags="Escena-5" position="844,731" size="100,100">hide character r
+hide character j
+hide character c
+
+show image P center fadeIn
+
+[[Escribirle una larga explicación/excusa sobre por qué no puedes verlo-&gt;YaEstá_2]]
+[[Escribirle algo corto para sacarte el cacho-&gt;YaEstá_3]]
+[[Escribirle literalmente cualquier cosa-&gt;YaEstá_4]]</tw-passagedata><tw-passagedata pid="35" name="Listo" tags="Escena-5" position="851,1078" size="100,100">hide image P
+
+show character r RNormal2 left fadeIn
+show character j JNormal left fadeIn
+show character c CNormal right fadeIn
+
+play sound VozR2
+
+r Ya, ahí está.
+
+stop sound VozR2
+
+show character r RNormal left
+
+play sound Inventario
+play sound VozN3
+
+Le entregas los papeles y las alpargatas al Chasqui.
+
+stop sound VozN3
+
+&lt;pause&gt;
+
+show character c CNormal2 right
+
+play sound VozC2
+
+c ¡Qué bien! Voy a preparar esto.
+
+stop sound VozC2
+
+show character c CNormal right
+show character j JDoubt2 left
+
+play sound VozJ3
+
+j Oie, ¿tu cachai para quién pueden ser estas otras alpargatas?
+
+stop sound VozJ3
+
+show character j JDoubt left
+
+show image A2 center fadeIn
+
+&lt;pause&gt;
+
+hide image A2
+show image A1 center fadeIn
+
+&lt;pause&gt;
+
+play sound VozC1
+
+c Mmmmhhhh…
+
+stop sound VozC1
+
+show character c CNormal2 right
+
+play sound VozC3
+
+c Creo que estas negras las puede saber una amiga.
+
+stop sound VozC3
+
+show character c CNormal right
+hide image A1
+
+show character j JNormal2 left
+
+play sound VozJ2
+
+j Genial, ¿nos puedes llevar con ella?
+
+stop sound VozJ2
+
+show character j JNormal left
+show character c CNormal2 right
+
+play sound VozC2
+
+c Tengo que entregar unas cosas primero.
+
+stop sound VozC2
+play sound VozC2
+
+c Las dejamos y luego vamos con Mile.
+
+stop sound VozC2
+
+show character c CNormal right
+show character j JDoubt2 left
+
+play sound VozJ1
+
+j ¿Mile?
+
+stop sound VozJ1
+play sound VozJ1
+
+j Ay no...
+
+stop sound VozJ1
+
+show character j JDoubt left
+
+[[Ignorar a Juana-&gt;5_3]]
+[[Preguntar cuál es el rollo con esa tal &quot;Mile&quot;-&gt;5_4]]</tw-passagedata><tw-passagedata pid="36" name="5_3" tags="Escena-5" position="702,1137" size="100,100">show character r RNormal2 left
+
+play sound VozR3
+
+r ¿No puedes ir a dejarlas tú y te esperamos?
+
+stop sound VozR3
+
+show character r RNormal left
+show character c CNormal2 right
+
+play sound VozC3
+
+c No, si fuera por mí me dedicaría a mis encargos no más.
+
+stop sound VozC3
+play sound VozC3
+
+c Si quieren que les haga este favor acompáñenme.
+
+stop sound VozC3
+
+show character c CNormal right
+show character r RNormal2 left
+
+play sound VozR1
+
+r Oh...bueno…
+
+stop sound VozR1
+
+jump ¿Listas?</tw-passagedata><tw-passagedata pid="37" name="5_4" tags="Escena-5" position="979,1135" size="100,100">show character r RNormal2 left
+
+play sound VozR2
+
+r ¿Quién es esta &quot;Mile&quot;?
+
+stop sound VozR2
+
+show character r RNormal left
+show character j JNormal2 left
+
+play sound VozJ3
+
+j Es la archienemiga de Otto. Creo que él le dijo algo sobre la banda del pueblo.
+
+stop sound VozJ3
+
+show character j JNormal left
+
+play sound VozN3
+
+(Siempre has escuchado a tu prima hablando de Otto y todavía no sabes quién es)
+
+stop sound VozN3
+
+jump ¿Listas?</tw-passagedata><tw-passagedata pid="38" name="¿Listas?" tags="Escena-5" position="844,1213" size="100,100">show character r RNormal left
+show character c CNormal2 right
+
+play sound VozC2
+
+c ¿Están listas?
+
+stop sound VozC2
+
+show character c CNormal right
+
+[[Tocar timbre-&gt;Insistir]]
+[[¡Vamos!-&gt;Minijuego]]</tw-passagedata><tw-passagedata pid="39" name="Insistir" tags="Escena-5" position="997,1339" size="100,100">play sound Timbre
+
+show character c CNormal2 right
+
+&lt;pause&gt;
+
+play sound VozC2
+
+c ¿Están rellenando el libro de sugerencias?
+
+stop sound VozC2
+
+show character c CNormal right
+
+[[Tocar timbre -&gt;Insistir2]] 
+[[¡Vamos! -&gt;Minijuego]] </tw-passagedata><tw-passagedata pid="40" name="Minijuego" tags="Escena-6" position="1171,1243" size="100,100">hide character r
+hide character j
+hide character c
+
+stop sound AmbienteCorreos fadeOut
+stop sound AmbienteTenderos fadeOut
+play music P&amp;C fadeIn loop
+
+centered MINIJUEGO DINOSAURIO
+
+&lt;pause&gt;
+
+jump 7</tw-passagedata><tw-passagedata pid="41" name="7" tags="Escena-7" position="1186,1106" size="100,100">hide character r
+hide character c
+stop music P&amp;C fadeOut
+
+show background TodoAMil fadeIn
+play sound Tienda fadeIn loop
+play sound AmbienteTenderos fadeIn loop
+
+&lt;pause&gt;
+
+show character r RNormal left fadeIn
+show character j JNormal left fadeIn
+show character c CNormal right fadeIn
+show character m MNormal right fadeIn
+
+&lt;pause&gt;
+
+play sound VozM1
+
+m ...
+
+stop sound VozM1
+
+show character r RNormal2 left
+
+play sound VozR2
+
+r ... ¿Hola?
+
+stop sound VozR2
+
+show character r RNormal left
+show character m MNormal2 right
+
+play sound VozM2
+
+m ¿Quién eres?
+
+stop sound VozM2
+
+show character m MNormal right
+
+[[&quot;Mi papá es Hugo&quot; -&gt;7_1]]
+[[&quot;Mi abuela es Gema&quot; -&gt;7_2]]
+[[&quot;Mi prima es Juana&quot; -&gt;7_3]]</tw-passagedata><tw-passagedata pid="42" name="7_1" tags="Escena-7" position="1023,857" size="100,100">
+show character r RHappy left
+
+play sound VozR2
+
+r Eh... Mi papá es Hugo.
+
+stop sound VozR2
+
+show character r RHappy2 left
+
+play sound VozR1
+
+r ¿ :] ?
+
+stop sound VozR1
+
+show character m MMad2 right
+
+play sound VozM3
+
+m Iugh, tampoco perteneces aquí entonces.
+
+stop sound VozM3
+
+show character m MMad right
+show character r RFear left
+
+jump Ok...</tw-passagedata><tw-passagedata pid="43" name="7_2" tags="Escena-7" position="1146,858" size="100,100">show character r RNormal2 left
+
+play sound VozR2
+
+r Eh... Mi abuela es Gema
+
+stop sound VozR2
+
+show character r RNormal left
+show character m MNormal2 right
+
+play sound VozM3
+
+m Ah, me cae bien, va al bingo con mi abuelo.
+
+stop sound VozM3
+
+show character m MNormal right
+
+jump ¡Bacán!</tw-passagedata><tw-passagedata pid="44" name="7_3" tags="Escena-7" position="1273,859" size="100,100">show character r RNormal2 left
+
+play sound VozR2
+
+r Eh... Mi prima es Juana.
+
+stop sound VozR2
+
+show character r RNormal left
+show character m MMad2 right
+
+play sound VozM1
+
+m Se nota...
+
+stop sound VozM1
+
+show character r RHappy2 left
+show character m MMad right
+show character j JMad left
+
+jump Ok...</tw-passagedata><tw-passagedata pid="45" name="Ok..." tags="Escena-7" position="1085,749" size="100,100">show character c CNormal2 right
+
+play sound VozC1
+
+c Eh, bueno... 
+
+stop sound VozC1
+play sound VozC3
+
+c ... Queríamos saber si estas alpargatas son tuyas.
+
+stop sound VozC3
+
+show character c CNormal right
+show character m MNormal2 right
+
+play sound VozM2
+
+m Ya bueno, déjame verlas.
+
+stop sound VozM2
+
+jump Alpargata</tw-passagedata><tw-passagedata pid="46" name="¡Bacán!" tags="Escena-7" position="1208,747" size="100,100">show character c CNormal2 right
+
+play sound VozC3
+
+c ¡Qué bueno! Justo Roni tiene algo que creo que es para ti.
+
+stop sound VozC3
+
+show character c CNormal right
+show character m MNormal2 right
+
+play sound VozM2
+
+m ¿En serio? A ver.
+
+stop sound VozM2
+
+jump Alpargata</tw-passagedata><tw-passagedata pid="47" name="Alpargata" tags="Escena-7" position="1139,638" size="100,100">show image A1 center fadeIn
+
+&lt;pause&gt;
+
+show character m MFear2 right
+
+play sound VozM2
+
+m Oooooooohhhhhh...
+
+stop sound VozM2
+play sound VozM2
+
+m No son mías...
+
+stop sound VozM2
+
+show character m MFear right
+show character r RNormal2 left
+show character j JNormal left
+
+play sound VozR1
+
+r Pucha...
+
+stop sound VozR1
+
+show character r RNormal left
+show character m MFear2 right
+
+play sound VozM2
+
+m Son del Flea.
+
+stop sound VozM2
+
+show character m MFear right
+show character r RNormal2 left
+
+play sound VozR1
+
+r ¿Quién?
+
+stop sound VozR1
+
+show character r RNormal left
+show character m MMad right
+hide image A1
+show character m MMad2 right
+
+play sound VozM3
+
+m Se nota que no eres de por acá.
+
+stop sound VozM3
+
+show character m MMad right
+show character c CNormal2 right
+
+play sound VozC2
+
+c Fatal Flea.
+
+stop sound VozC2
+play sound VozC3
+
+c Es el cantante de la banda del pueblo, “Calcetín Sucio” .
+
+stop sound VozC3
+
+show character c CNormal right
+show character r RNormal2 left
+
+play sound VozR2
+
+r ¿Y por qué se llama así?
+
+stop sound VozR2
+
+show character r RNormal left
+show character j JNormal2 left
+
+play sound VozJ2
+
+j Son punks, Roni.
+
+stop sound VozJ2
+
+show character j JNormal left
+show character m MFear2 right
+
+play sound VozM2
+
+m SON MÁS QUE PUNKS, &quot;JUANA&quot;.
+
+stop sound VozM2
+
+show character m MFear right
+play sound VozN3
+
+(Puedes escuchar las comillas en la forma en que dice el nombre de tu prima)
+
+stop sound VozN3
+
+show character m MFear2 right
+
+play sound VozM3 loop
+
+m SON LA CABEZA DE UN MOVIMIENTO QUE MEZCLA JAPANOISE CON PUNKFOLK ALTERNATIVO HACIENDO UNA REINTERPRETACIÓN DE LA SUBCULTURA PUNK TRADICIONAL TOMANDO ELEMENTOS DEL TECHNO UNDERGROUND INDUSTRIAL DE LOS AÑOS NOVENTA SUBVIRTIENDO LA EXPECTATIVA DEL GÉNERO PARA REINVENTAR LOS CONCEPTOS FUNDACIONALES DE ESTA SOCIEDAD USANDO EL NOMBRE &quot;CALCETÍN SUCIO&quot; COMO ESTANDARTE DE SU REBELDÍA Y ASÍ
+
+stop sound VozM3
+play sound VozN2
+
+(Te cuesta escuchar más allá de eso)
+
+stop sound VozN2
+
+[[Preguntarle si puede ella entregar las alpargatas-&gt;7_4]] [[Preguntar por el paradero de este tipo-&gt;7_5]]</tw-passagedata><tw-passagedata pid="48" name="7_4" tags="Escena-7" position="1055,519" size="100,100">
+show character m MFear right
+show character r RNormal2 left
+
+play sound VozR2
+
+r Oye, y... ¿No se las puedes pasar tú?
+
+stop sound VozR2
+
+show character r RNormal left
+show character j JNormal2 left
+
+play sound VozJ2
+
+j No tan rápido Roni, ¿Y si se las queda?
+
+stop sound VozJ2
+
+show character m MMad2 right
+show character j JNormal left
+
+play sound VozM2
+
+m ¿Me estai diciendo ladrona?
+
+stop sound VozM2
+
+show character r RMad left
+show character j JMad left
+
+play sound VozM2
+
+m Yo nunca me robaría nada...
+
+stop sound VozM2
+play sound VozM2
+
+show character m MNormal2 right
+
+m ... de Calcetín Sucio.
+
+stop sound VozM2
+
+show character m MNormal right
+show character c CNormal2 right
+
+play sound VozC2
+
+c ¿Y si les dices donde está el Flea mejor?
+
+stop sound VozC2
+
+show character c CNormal right
+show character m MMad2 right
+
+play sound VozM2
+
+m ¿A Ellas? No gratis.
+
+stop sound VozM2
+
+show character m MMad right
+
+jump Ayuda</tw-passagedata><tw-passagedata pid="49" name="7_5" tags="Escena-7" position="1229,521" size="100,100">
+show character m MFear right
+show character r RNormal2 left
+
+play sound VozR2
+
+r Y ¿dónde está el Flea?
+
+stop sound VozR2
+
+show character r RNormal left
+show character m MMad2 right
+
+play sound VozM2
+
+m Fatal Flea para ti, foránea.
+
+stop sound VozM2
+
+show character r RMad left
+
+play sound VozM3
+
+m Bueno, te diré, pero necesito una pequeña ayuda primero.
+
+stop sound VozM3
+
+show character m MMad right
+
+jump Ayuda</tw-passagedata><tw-passagedata pid="50" name="Ayuda" tags="Escena-7" position="1143,407" size="100,100">show character r RMad2 left
+
+play sound VozR1
+
+r Mh, ya.
+
+stop sound VozR1
+play sound VozR2
+
+r ¿Qué quieres?
+
+stop sound VozR2
+
+show character r RMad left
+
+show character m MNormal2 right
+
+play sound VozM3
+
+m Tienes que entrar en esta tienda y sacar el CD exclusivo de una banda muy bakán, que al dueño de la tienda no le caigo muy bien. 
+
+stop sound VozM3
+
+show character j JNormal left
+show character r RFear2 left
+show character m MNormal right
+
+play sound VozR3
+
+r MHHHHHHHHHHHHHHHH...
+
+stop sound VozR3
+play sound VozN3
+
+No estás muy segura de si lo que te está pidiendo es...
+
+stop sound VozN3
+
+show character j JNormal2 left
+
+play sound VozJ2
+
+j ¿Le estás pidiendo que robe?
+
+stop sound VozJ2
+
+show character j JNormal left
+
+show background TodoAMilA
+play music Alarma loop
+
+show character m MNormal2 right
+
+play sound VozM2
+
+m ¿Quieren mi ayuda o no?
+
+stop sound VozM2
+
+show character m MNormal right
+
+[[Entrar a la tienda-&gt;TiendaPnC]]</tw-passagedata><tw-passagedata pid="51" name="[Video]" tags="" position="2516,11" size="100,200">Scroll: scroll.mp4</tw-passagedata><tw-passagedata pid="52" name="TiendaPnC" tags="" position="987,351" size="100,100">hide character j
+hide character r
+hide character c
+hide character m
+show background #000
+
+hide character j
+hide character r
+hide character c
+hide character m
+show background #000
+
+<!--JAVASCRIPT POINT AND CLICK PNC P&C-->
+
+&#96;&#96;&#96;js
+
+	loadIframe(&quot;/P&C_funcional/P&C_TAM.html&quot;);
+
+	&#96;&#96;&#96;
+
+<!--REVISAR QUE ESTÉ BIEN ESCRITO EL IFRAME-->
+
+jump 7_6</tw-passagedata><tw-passagedata pid="53" name="7_6" tags="Escena-7" position="1101,247" size="100,100">show background TodoAMil fadeIn
+stop music Alarma fadeOut
+play sound Tienda fadeIn loop
+
+show character r RFear2 left fadeIn
+show character j JHappy left fadeIn
+show character c CNormal right fadeIn
+show character m MNormal right fadeIn
+
+play sound VozR2
+
+r ¡LO LOGRÉ!
+
+stop sound VozR2
+
+show character r RFear left
+show character j JHappy2 left
+
+play sound VozJ2
+
+j ¡Buena Roni!
+
+stop sound VozJ2
+
+show character j JHappy left
+
+play sound VozN3
+(Roni no quiso decirle a nadie, pero de hecho pagó por el CD)
+
+stop sound VozN3
+play sound VozN2
+
+(Robar está mal, jóvenes)
+
+stop sound VozN2
+
+show character m MNormal2 right
+
+play sound VozM1
+
+m Wena.
+
+stop sound VozM1
+play sound VozM3
+
+m Pueden encontrar al Flea en la Galería Abandonada.
+
+stop sound VozM3
+play sound VozM3
+
+m Cualquier cosa voy a estar por aquí buscando banderines.
+
+stop sound VozM3
+play sound VozM2
+
+m Nos vemos por ahí.
+
+stop sound VozM2
+
+hide character m MNormal right fadeOut
+show character c CNormal2 right
+
+play sound VozC2
+
+c ¡Adiós, niñas!
+
+stop sound VozC2
+play sound VozC3
+
+c Si necesitan energías, vayan donde Fabio Fitness.
+
+stop sound VozC3
+play sound VozC3
+
+c ¡Si dicen que van de mi parte les dará barritas!
+
+stop sound VozC3
+
+hide character c CNormal right fadeOut
+
+&lt;pause&gt;
+
+hide character j
+show character j JHappy2 right fadeIn
+
+play sound VozJ2
+
+j ¿Ahora qué? :)
+
+stop sound VozJ2
+
+[[Ir a buscar al man-&gt;8]]
+[[Ir donde Gema-&gt;7_7]]
+[[Ir donde Fabio Fitness-&gt;7_8]]</tw-passagedata><tw-passagedata pid="54" name="8" tags="Escena-8" position="1316,128" size="100,100">stop sound Tienda fadeOut
+show background Tenderos fadeIn
+play sound AmbienteTenderos fadeIn loop
+
+hide character r
+hide character j
+
+&lt;pause&gt;
+
+show character r RNormal left fadeIn
+show character j JNormal2 right fadeIn
+
+play sound VozJ2
+
+j ¡Espera, Roni!
+
+stop sound VozJ2
+
+show character j JNormal right
+
+&lt;pause&gt;
+
+show character r RNormal2 left
+
+play sound VozR2
+
+r ¿Qué pasó?
+
+stop sound VozR2
+
+show character r RNormal left
+show character j JNormal2 right
+
+play music Pueblo fadeIn loop
+
+play sound VozJ3
+
+j ¿No crees que alguna de las personas que hemos conocido hasta ahora puede ser la doncella?
+
+stop sound VozJ3
+
+show character r RFear left
+show character j JNormal right
+
+play sound VozN3
+
+(Genial, Juana sigue estando loca)
+
+stop sound VozN3
+
+[[Decir que no crees que sea nadie para que se calle-&gt;8_1]]
+[[Preguntarle por qué cree que el Chasqui o la niña desagradable pueden ser una doncella-&gt;8_2]]</tw-passagedata><tw-passagedata pid="55" name="7_7" tags="Escena-7" position="766,138" size="100,100">show character j JNormal2 right
+
+play sound VozJ2
+
+j No creo que nos deje entrar, Roni.
+
+stop sound VozJ2
+play sound VozJ2
+
+j Todavía te queda una alpargata.
+
+stop sound VozJ2
+
+show character j JNormal right
+
+[[Ir donde Fabio Fitness-&gt;7_8]]
+[[Ir por el man-&gt;8]] </tw-passagedata><tw-passagedata pid="56" name="7_8" tags="" position="974,21" size="100,100">
+
+show character r RMad2 left
+
+play sound VozR2
+
+r ¡No quiero barritas!
+
+stop sound VozR2
+
+show character r RMad left
+
+[[Ir donde Gema-&gt;7_7]]
+[[Ir por el punki-&gt;8]]</tw-passagedata><tw-passagedata pid="57" name="Hinchar2" tags="" position="242,367" size="100,100">play sound Golpearpuerta
+&lt;pause&gt;
+...
+&lt;pause&gt;
+
+show character r RNormal2 left
+
+play sound VozR1
+
+r Pucha.
+
+stop sound VozR1
+
+show character r RNormal left
+show character j JNormal2 right
+
+play sound VozJ1
+
+j :)
+
+stop sound VozJ1
+
+show character j JNormal right
+
+[[Hinchar más-&gt;Hinchar2]] 
+[[Ir a hacer el encargo -&gt;pre4]]</tw-passagedata><tw-passagedata pid="58" name="4" tags="Escena-4" position="437,247" size="100,100">stop sound Ambientecampo fadeOut
+hide character r
+hide character j
+show background Tenderos fadeIn
+play sound AmbienteTenderos fadeIn loop
+
+play sound VozR1
+
+r ¡¿...!?
+
+stop sound VozR1
+
+show character r RFear2 left fadeIn
+show character j JHappy2 right fadeIn
+
+play sound VozJ2
+
+j ¡Sabía, se ve increíble!
+
+stop sound VozJ2
+play sound VozJ3
+
+j ¡Bienvenida a la gran Avenida Alberto D&#39;Chong!
+
+stop sound VozJ3
+
+show character r RFear3 left
+
+play sound VozR2
+
+r ¡¿Qué onda esta gente?!
+
+stop sound VozR2
+
+show character r RFear left
+show character j JDoubt2 right
+
+play sound VozJ3
+
+j Pero si se ven la raja esas grietas abiertas en la tierra.
+
+stop sound VozJ3
+
+show character j JHappy2 right
+
+play sound VozJ2
+
+j ¡Vendrán más turistas!
+
+stop sound VozJ2
+play sound VozJ2
+
+j ¡Esto es muy bueno Roni!
+
+stop sound VozJ2
+play sound VozJ2
+
+j ¡El chonguimiento es genial!
+
+stop sound VozJ2
+
+show character j JHappy right
+
+play sound VozN2
+
+(Claramente tu prima está loca)
+
+stop sound VozN2
+
+[[Preguntar cómo se enterarían los turistas de esto si se cayeron todas las antenas-&gt;4_1]]
+[[Preguntar por la gracia de este cochino pueblo-&gt;4_2]]</tw-passagedata><tw-passagedata pid="59" name="Temblor3" tags="Escena4" position="331,597" size="100,100">
+play sound VozN1
+
+(¡Oh!)
+
+stop sound VozN1
+play sound VozN3
+
+(Parece que algo se asoma entre una de las nuevas grietas en el piso...)
+
+stop sound VozN3
+
+&lt;pause&gt;
+
+play sound VozN3
+
+(Examinándola más de cerca puedes ver que se trata de...)
+
+stop sound VozN3
+play sound VozN2
+
+(¡Una carta!)
+
+stop sound VozN2
+play sound VozN3
+
+(¡Como las de mitos y leyendas!)
+
+stop sound VozN3
+
+[[Ni tu primo más viejo se acuerda de esas cartas-&gt;CartaDoncella]] 
+[[¡Se dicen grandes cosas de esa franquicia!-&gt;CartaDoncella]]</tw-passagedata><tw-passagedata pid="60" name="5_00" tags="Escena-5" position="713,391" size="100,100">show character r RHappy left
+
+play sound VozR3
+
+r Jaja, sí... Y tú... ¿Trabajas hace mucho aquí?
+
+stop sound VozR3
+
+show character r RHappy left
+show character c CNormal2 right
+
+play sound VozC2
+
+c Desde que tengo memoria.
+
+stop sound VozC2
+
+show character c CNormal right
+
+play sound VozN3
+
+(El Chasqui mira hacia arriba con añoranza)
+
+stop sound VozN3
+
+show character c CNormal2 right
+
+play sound VozC3
+
+c Mis primeros pasos los di en esta oficina de Correos.
+
+stop sound VozC3
+
+show character r RHappy2 left
+show character c CNormal right
+show character j JNormal2 left
+
+play sound VozJ3
+
+j Sí, Roni. Y ha sido empleado del mes desde que YO tengo memoria.
+
+stop sound VozJ3
+
+show character j JNormal left
+
+play sound VozN3
+
+(Te das cuenta de los numerosos carteles de &quot;empleado del mes&quot; que hay repartidos en las paredes)
+
+stop sound VozN3
+play sound VozN2
+
+(Todos son del Chasqui)
+
+stop sound VozN2
+
+show character r RHappy left
+
+play sound VozR2
+
+r Y... Qué cosas, esto del chonguimiento.
+
+stop sound VozR2
+play sound VozR1
+
+r ¿No?
+
+stop sound VozR1
+
+show character c CNormal2 right
+
+play sound VozC2
+
+c No realmente.
+
+stop sound VozC2
+
+show character c CNormal right
+show character r RHappy2 left
+
+&lt;pause&gt;
+
+show character c CNormal2 right
+show character r RNormal left
+
+play sound VozC3
+
+c Bueno, suficiente palabrerío. ¿A qué vienen?
+
+stop sound VozC3
+
+show character c CNormal right
+show character j JNormal2 left
+
+play sound VozJ3
+
+r Roni quería enviarle unas alpargatas a su papá.
+
+stop sound VozJ3
+
+show character j JNormal left
+show character r RNormal2 left
+
+play sound VozR2
+
+r Sí, estas rojas...
+
+stop sound VozR2
+
+jump Papeles</tw-passagedata><tw-passagedata pid="61" name="5_01" tags="Escena-5" position="857,360" size="100,100">show character r RNormal2 left
+
+play sound VozR1
+
+r Uh...
+
+stop sound VozR1
+
+show character r RNormal left
+
+&lt;pause&gt;
+
+show character r RHappy left
+
+play sound VozR2
+
+r Necesito enviar unas chalas.
+
+stop sound VozR2
+
+show character c CNormal2 right
+
+play sound VozC3
+
+c ¡Claro, amiga! Nuestro lema es &quot;Todo donde debe ir, sin importar que llueva o tiemble&quot;...
+
+stop sound VozC3
+play sound VozC2
+
+c ¡O chonguee!
+
+stop sound VozC2
+
+show character c CNormal right
+
+show character c CNormal2 right
+show character j JHappy2 left
+show character r RHappy2 left
+
+play sound VozC3
+play sound VozJ3
+
+(Juana y el Chasqui se ríen)
+
+stop sound VozC3
+stop sound VozJ3
+
+&lt;pause&gt;
+
+show character c CNormal right
+show character j JHappy left
+show character r RNormal2 left
+
+play sound VozR3
+
+r ¿No les da miedo que esté todo chongueado?
+
+stop sound VozR3
+
+show character r RNormal left
+show character j JNormal2 left
+
+play sound VozJ2
+
+j ¿Por qué, Roni?
+
+stop sound VozJ2
+play sound VozJ3
+
+j Ya sabemos lo que tenemos que hacer :)
+
+stop sound VozJ3
+
+show character j JNormal left
+
+play sound VozN2
+
+(Juana te guiñe el ojo)
+
+stop sound VozN2
+
+show character c CNormal2 right
+
+play sound VozC2
+
+c Sí, tranquila.
+
+stop sound VozC2
+play sound VozC3
+
+c No puede ser tan terrible como parece.
+
+stop sound VozC3
+
+show character c CNormal right
+show character r RFear2 left
+
+play sound VozR2
+
+r Eeeeehhh...
+
+stop sound VozR2
+
+show character r RFear left
+show character c CNormal2 right
+
+play sound VozC2
+
+c ¡Pero bueno!
+
+stop sound VozC2
+play sound VozC3
+
+c ¿Quieres delivery para tus chalas, cierto?
+
+stop sound VozC3
+
+show character c CNormal right
+show character j JNormal2 left
+
+play sound VozJ2
+
+j Son alpargatas, de hecho.
+
+stop sound VozJ2
+
+show character c CNormal2 right
+show character j JNormal left
+
+play sound VozC1
+
+c Ah...
+
+stop sound VozC1
+play sound VozC3
+
+c Bueno, ¿quieres delivery para ellas?
+
+stop sound VozC3
+
+show character r RNormal2 left
+
+play sound VozR2
+
+r Eh, sí...
+
+stop sound VozR2
+
+jump Papeles</tw-passagedata><tw-passagedata pid="62" name="Papeles" tags="Escena-5" position="823,474" size="100,100">show character r RNormal left
+show character j JNormal left
+
+show character c CNormal2 right
+
+play sound VozC2
+
+c Ningún problema, amiga.
+
+stop sound VozC2
+
+show character c CNormal right
+show image P center fadeIn
+
+&lt;pause&gt;
+
+show character c CNormal2 right
+
+play sound VozC3
+
+c Eso sí, necesito que rellenes estos papeles.
+
+stop sound VozC3
+
+show character c CNormal right
+hide image P
+
+&lt;pause&gt;
+
+play sound Escribir
+
+&lt;pause&gt;
+
+show character j JNormal2 left
+
+play sound VozJ2
+
+j ¿No le vas a dejar una notita?
+
+stop sound VozJ2
+
+show character j JNormal left
+
+[[Decir que no sin hacer preguntas-&gt;5_1]]
+[[Preguntar a cuál nota se refiere-&gt;5_2]]</tw-passagedata><tw-passagedata pid="63" name="Insistir2" tags="Escena-5" position="1147,1369" size="100,100">play sound Timbre
+
+&lt;pause&gt;
+
+show character c CNormal2 right
+
+play sound VozC3
+
+c Tengo que hacer las entregas, ¡vamos!
+
+stop sound VozC3
+
+show character c CNormal right
+
+[[Hinchar más-&gt;Insistir3]]
+[[Ir-&gt;Minijuego]]</tw-passagedata><tw-passagedata pid="64" name="8_1" tags="" position="1259,285" size="100,100">show character r RNormal2 left
+
+play sound VozR3
+
+r No sé, Juana. No creo que sea nadie.
+
+stop sound VozR3
+
+jump 8_3</tw-passagedata><tw-passagedata pid="65" name="8_2" tags="" position="1389,281" size="100,100">show character r RNormal2 left
+
+play sound VozR2
+
+r ¿Por qué sería el Chasqui?
+
+stop sound VozR2
+
+show character r RMad2 left
+
+play sound VozR2
+
+r O esa... Mile.
+
+stop sound VozR2
+
+jump 8_3</tw-passagedata><tw-passagedata pid="66" name="8_3" tags="" position="1323,401" size="100,100">show character r RNormal left
+show character j JNormal2 right
+
+play sound VozJ3
+
+j Creo que estás siendo muy cerrada de mente, Roni.
+
+stop sound VozJ3
+
+show character j JNormal right
+
+play sound VozN3
+
+(Juana levanta una ceja como si tuviera algo inconmesurablemente inteligente que decir)
+
+stop sound VozN3
+
+show character j JNormal2 right
+
+play sound VozJ3
+
+j Piénsalo. &quot;La cuerda primera encuentra | En el bagaje de su viaje&quot;
+
+stop sound VozJ3
+play sound VozJ3
+
+r &quot;Lo constitutivo de su esencia | Y lo que la salva del desgaste&quot;
+
+stop sound voz
+
+show character r RFear left
+
+play sound VozJ3
+
+j &quot;Para llamarla tendrá la altura | La doncella de la aventura&quot;
+
+play sound VozJ3
+
+show character j JNormal right
+
+play sound VozN3
+
+(Vaya, realmente se está tomando eso en serio)
+
+stop sound VozN3
+
+show character j JNormal2 right
+
+play sound VozJ3
+
+j ¡El Chasqui siempre está haciendo viajes para todos lados, Roni!
+
+stop sound VozJ3
+play sound VozJ3
+
+j Es la persona más aventurera que conozco.
+
+stop sound VozJ3
+
+show character j JNormal right
+show character r RFear2 left
+
+play sound VozR1
+
+r ¿Ya?
+
+stop sound VozR1
+
+show character r RFear left
+show character j JNormal2 right
+
+play sound VozJ3
+
+j Y Mile, bueno... No es la persona que más me agrada del pueblo.
+
+stop sound VozJ3
+play sound VozJ3
+
+j Pero debo admitir que tiene bastante bagaje... Cultural al menos.
+
+stop sound VozJ3
+play sound VozJ3
+
+j Y siempre está en busca de cosas nuevas que escuchar.
+
+stop sound VozJ3
+
+show character j JNormal right
+show character r RFear2 left
+
+play sound VozR3
+
+r ¿Y por qué tendría que ser uno de ellos y no otra de las 400 personas que viven en el pueblo?
+
+stop sound VozR3
+
+show character r RFear left
+show character j JHappy2 right
+
+play sound VozJ3
+
+j JAJAJAJAJA ¡¡¡RONI!!! ¡¡¡QUE ERES CHISTOSA!!!
+
+stop sound VozJ3
+play sound VozJ2
+
+j JAJAJAJAJAJAJAJAJAJA
+
+stop sound VozJ2
+
+show character j JHappy right
+
+play sound VozN3
+
+(Juana finge secarse un par de lágrimas)
+
+stop sound VozN3
+
+show character j JNormal2 right
+
+play sound VozJ3
+
+j Somos por lo menos cinco mil, Roni.
+
+stop sound VozJ3
+
+show character j JNormal right
+show character r RNormal2 left
+
+play sound VozR2
+
+r Lo siento, Juana.
+
+stop sound VozR2
+
+show character r RNormal left
+show character j JNormal2 right
+
+play sound VozJ2
+
+j Error de estimación :)
+
+stop sound VozJ2
+
+show character j JNormal right
+show character r RNormal2 left
+
+play sound VozR3
+
+r Ya, pero ¿por qué no puede ser otro de los
+
+stop sound VozR3
+
+r MÁS DE CINCO MIL HABITANTES
+
+stop sound VozR3
+play sound VozR2
+
+r de El Chongui?
+
+stop sound VozR2
+
+show character j JNormal2 right
+show character r RNormal left
+
+play sound VozJ3
+
+j Roni, yo conozco a casi todas las personas que viven en este pueblo.
+
+stop sound VozJ3
+
+show character j JNormal right
+show character r RNormal2 left
+
+play sound VozR2
+
+r ¿A las más o menos cinco mil?
+
+stop sound VozR2
+
+show character j JNormal2 right
+show character r RNormal left
+
+play sound VozJ2
+
+j Sí, Roni.
+
+stop sound VozJ2
+
+show character j JNormal right
+
+&lt;pause&gt;
+
+show character j JNormal2 right
+
+play sound VozJ3
+
+j Te puedo asegurar que nadie se ajusta mejor a la descripción.
+
+stop sound VozJ3
+
+show character j JDoubt2 right
+
+play sound VozJ3
+
+j Bueno, quizás Fabio Fitness también serviría.
+
+stop sound VozJ3
+play sound VozJ3
+
+j Digo, nadie pensó que se aventuraría en su viaje fitness cuando recién comenzó.
+
+stop sound VozJ3
+
+show character j JNormal2 right
+
+play sound VozJ3
+
+j Ahora es la persona más fuerte del pueblo :)
+
+stop sound VozJ3
+
+show character j JNormal right
+show character r RNormal2 left
+
+play sound VozR3
+
+r ¿Entonces serían Mile, el Chasqui o ese tal Fabio?
+
+stop sound VozR3
+
+show character j JNormal2 right
+show character r RNormal left
+
+play sound VozJ1
+
+j ¡Claro!
+
+stop sound VozJ1
+play sound VozJ3
+
+j He estado pensando todo el tiempo en esto y nada me hace más sentido :)
+
+stop sound VozJ3
+
+show character j JNormal right
+
+play sound VozN3
+
+(¿Te convence el argumento de tu prima?)
+
+stop sound VozN3
+
+[[Sí]]
+[[No del todo-&gt;No]]
+[[Creo que todo esto es una estupidez-&gt;LOL]]</tw-passagedata><tw-passagedata pid="67" name="Sí" tags="" position="1573,521" size="100,100">stop music Pueblo fadeOut
+
+show character r RNormal2 left
+
+play sound VozR2
+
+r ¿Sabes qué?
+
+stop sound VozR2
+play sound VozR2
+
+r Sí, me convence.
+
+stop sound VozR2
+
+show character r RNormal left
+show character j JHappy2 right
+
+play sound VozJ2
+
+j Wiiiiii :)
+
+stop sound VozJ2
+play sound VozJ2
+
+j ¡Genial, Roni!
+
+stop sound VozJ2
+play sound VozJ3
+
+j Ahora vayamos por ellas :)
+
+stop sound VozJ3
+
+show character j JHappy right
+show character r RNormal2 left
+
+play sound VozR3
+
+r Pero espera, ¿no podemos entregarle estas chalas al niño punk primero?
+
+stop sound VozR3
+
+show character r RNormal left
+show character j JNormal2 right
+
+play sound VozJ3
+
+j Roni, ¡no creo que tengamos tanto tiempo!
+
+stop sound VozJ3
+
+show character r RNormal2 left
+show character j JNormal right
+
+play sound VozR1
+
+r Pero...
+
+stop sound VozR1
+
+jump Chongueado</tw-passagedata><tw-passagedata pid="68" name="No" tags="" position="1461,524" size="100,100">stop music Pueblo fadeOut
+
+show character r RNormal2 left
+
+play sound VozR2
+
+r Pucha Juana, no sé.
+
+stop sound VozR2
+play sound VozR3
+
+r La verdad es que siento que deberíamos buscar más a las doncellas si queremos hacer esto bien.
+
+stop sound VozR3
+
+show character r RNormal left
+show character j JNormal2 right
+
+play sound VozJ3
+
+j Pero Roni, ¡ya no hay tiempo!
+
+stop sound VozJ3
+
+jump Chongueado</tw-passagedata><tw-passagedata pid="69" name="LOL" tags="" position="1341,521" size="100,100">stop music Pueblo fadeOut
+
+show character r RNormal2 left
+
+play sound VozR3
+
+r Juana, creo que todo esto es una estupidez. Digo, solo fue un...
+
+stop sound VozR3
+
+jump Chongueado</tw-passagedata><tw-passagedata pid="70" name="Temblor2_1" tags="" position="198,596" size="100,100">show background TenderosA shake
+play sound Tiembla
+
+show character r RFear3 center fadeIn
+
+play sound VozR3
+
+r AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHH
+
+stop sound VozR3
+
+(Ves con pavor como se quiebra aún más el piso)
+
+play sound VozR3
+
+r UNODOSTRESCUATROCINCOSEISSIETEOCHONUEVEDIEZ
+
+stop sound VozR3
+play sound VozR3
+
+r DIEZ DIEZ DIEZ DIEZ DIEZ
+
+stop sound VozR3
+play sound VozR3 loop
+
+r DIEZDIEZDIEZDIEZDIEZDIEZDIEZDIEZDIEZDIEZDIEZ
+
+stop sound VozR3
+
+hide character r
+
+&lt;pause&gt;
+
+jump Temblor3</tw-passagedata><tw-passagedata pid="71" name="YaEstá_2" tags="Escena-5" position="707,961" size="100,100">play sound Escribir
+play sound VozR1
+
+centered &quot;Hugo,
+
+stop sound VozR1
+play sound VozR3
+
+centered estoy bastante ocupada ayudando a Gema con todo.
+
+stop sound VozR3
+play sound VozR3
+
+centered Ayer pasé seis horas machacando cáñamos a todo sol, y hoy pasó este terremoto que todo el mundo llama &quot;chonguimiento&quot; y más encima Gema me mandó a entregar unas chalas.
+
+stop sound VozR3
+play sound VozR3
+
+centered Bueno, y entre ellas están las tuyas, que te mando aquí.
+
+stop sound VozR3
+play sound VozR3
+
+centered Perdón por no poder ir a verte, además de entregar las chalas tengo que hacer algo de buscar unas doncellas para hacer un ritual o algo así.
+
+stop sound VozR3
+play sound VozR3
+
+centered La verdad no entiendo mucho, pero Juana está muy emocionada.
+
+stop sound VozR3
+play sound VozR2
+
+centered Bueno, en fin.
+
+stop sound VozR2
+play sound VozR3
+
+centered Te mando tus chalas. Ojalá te vaya bien.
+
+stop sound VozR3
+play sound VozR1
+
+centered -Roni.&quot;
+
+stop sound VozR1
+
+[[Listo]]</tw-passagedata><tw-passagedata pid="72" name="YaEstá_3" tags="Escena-5" position="849,961" size="100,100">play sound Escribir
+play sound VozR1
+
+centered &quot;Hugo,
+
+stop sound VozR1
+play sound VozR3
+
+centered te mando estas chalas que Gema me mandó a entregarte.
+
+stop sound VozR3
+play sound VozR3
+
+centered No pude ir en persona por todo esto del temblor o chonguimiento o como se llame.
+
+stop sound VozR3
+play sound VozR2
+
+centered Nos vemos,
+
+stop sound VozR2
+play sound VozR1
+
+centered -Roni.&quot;
+
+stop sound VozR1
+
+[[Listo]]</tw-passagedata><tw-passagedata pid="73" name="YaEstá_4" tags="Escena-5" position="1004,980" size="100,100">play sound Escribir
+play sound VozR1
+
+centered &quot;Hugo,
+
+stop sound VozR1
+play sound VozR2
+
+centered aasdadsadaadad
+
+stop sound VozR2
+play sound VozR2
+
+centered awidsajdkaskd
+
+stop sound VozR2
+play sound VozR2
+
+centered asoqwodaks.
+
+stop sound VozR2
+play sound VozR1
+
+centered -Roni.&quot;
+
+stop sound VozR1
+
+[[Listo]]</tw-passagedata><tw-passagedata pid="74" name="Insistir3" tags="" position="1302,1359" size="100,100">play sound Timbre
+
+play sound VozC1
+
+c ...
+
+stop sound VozC1
+
+show character c CNormal2 right
+
+play sound VozC2
+
+c ESTÁS PROBANDO MI PACIENCIA, NIÑA.
+
+stop sound VozC2
+
+show character c CNormal right
+show character j JNormal2 left
+
+play sound VozJ2
+
+j Ya, Roni. Vamos
+
+stop sound VozJ2
+
+show character j JNormal left
+
+[[Ir-&gt;Minijuego]]</tw-passagedata><tw-passagedata pid="75" name="Chongueado" tags="" position="1465,641" size="100,100">hide character r
+hide character j
+show background Tenderos shake
+play sound Tiembla
+
+&lt;pause&gt;
+
+(A lo lejos, puedes ver como una tienda de textiles de cáñamo flota a unos tres metros sobre el nivel del resto del suelo y comienza a alejarse aún más)
+(El dueño corre tras ella, persiguiéndola)
+
+show background TenderosA fadeIn
+play music Alarma x3 loop
+
+show character r RFear2 left fadeIn
+show character j JNormal left fadeIn
+
+j Te lo dije, Roni.
+j Gema no está tan loca.
+g ¡RONI!
+
+show character g GMad2 right fadeIn
+
+g ¡RONI, OLVIDA ESAS ALPARGATAS!
+
+show character r RFear3 left
+show character g GMad right
+
+r ¡GEMA!
+r ¿Cómo saliste de la casa con ese pie enyesado?
+
+show character r RFear2 left
+show character g GNormal2 right
+
+g No hay tiempo para explicar, Roni.
+g ¡Es hora de que salves El Chongui!
+
+show character r RFear3 left
+show character g GNormal right
+
+r ¿¡PERO POR QUÉ YO!?
+
+show character g GNormal2 right
+show character r RFear2 left
+
+g Supongo que deberé explicarme un poco...
+
+show character g GNormal right
+
+stop music Alarma fadeOut
+stop sound AmbienteTenderos fadeOut
+show background Scroll loop
+play sound Drone fadeIn loop
+
+&lt;pause&gt;
+
+show character g GNormal2 right
+
+centered Quien más tema a lo distinto
+centered O más lejos quiera estar
+centered Más será atraído
+centered A juntar la variedad
+centered Y así será evidente
+centered Y comprenderá su lugar
+
+stop sound Drone fadeOut
+show background Tenderos
+play sound AmbienteTenderos fadeIn loop
+
+show character g GMad right
+show character r RFear3 left
+
+r ESO NO ME DICE NADA, ABUE.
+
+show character r RFear2 left
+show character j JNormal2 left
+
+j ¡Creo que tú eres la persona destinada a hacer este ritual, Roni!
+
+show character g GMad2 right
+show character j JNormal left
+
+g ¡Justamente! Aunque no lo queramos.
+g Con todos mis años de estudio de la arpillera centenaria, puedo decírtelo Roni...
+
+show character g GNormal2 right
+
+g Eres tú quien debe salvar El Chongui.
+
+show character g GNormal right
+
+play music Alarma loop
+show background TenderosA fadeIn
+
+show character r RFear3 left
+
+r ¿¡...!?
+
+show character g GNormal2 right
+
+g ¡Pero no entres en pánico!
+
+show character g GNormal right
+stop music Alarma fadeOut
+show background Tenderos fadeIn
+show character r RFear left
+
+&lt;pause&gt;
+
+show character g GNormal2 right
+
+g Solo debes respirar y seguir adelante, estará todo bien.
+g Lo primero que debes hacer es...
+g Decidir quién es la primera doncella.
+
+show character g GNormal right
+show character j JNormal2 left
+
+j Piensa en lo que te dije, Roni :)
+
+show character j JNormal left
+
+(Creo que la primera doncella...)
+
+[[Es el Chasqui-&gt;Doncella1]]
+[[Es Mile-&gt;Doncella2]]
+[[Busquemos un poco más-&gt;Doncella3]]</tw-passagedata><tw-passagedata pid="76" name="Doncella1" tags="" position="1396,797" size="100,100">hide character r
+hide character j
+hide character g
+
+show image D1 center fadeIn
+&lt;pause&gt;
+show image DC center fadeIn
+&lt;pause&gt;
+
+(Así que crees que es él...)
+
+show character r RNormal2 left fadeIn
+show character j JNormal left fadeIn
+show character g GNormal right fadeIn
+
+r Creo que es el Chasqui.
+
+hide image DC
+hide image D1
+
+show character r RNormal left
+show character j JNormal2 left
+
+j ¡Me hace mucho sentido!
+
+show character j JNormal left
+show character g GNormal2 right
+
+g Perfecto, niñas.
+g Ahora, vayan. Tienen mucho trabajo que hacer.
+
+&lt;pause&gt;
+
+show character g GNormal right
+show character o ONormal2 right fadeIn
+
+o Hooola Juani, ¿qué onda?
+
+show character j JNormal2 left
+show character ONormal right
+
+j ¡Holi Otto! Justo pensaba en llamarte.
+
+show character o ONormal2 right
+show character j JNormal left
+
+o ¿Por qué? ¿Qué pasó?
+
+show character o ONormal right
+show character j JNormal2 left
+
+j Necesitamos ayuda en algo, después te explico.
+j Ah, esta es mi prima, Roni :)
+
+show character j JNormal left
+show character r RHappy left
+
+r H-hola.
+r :]
+
+(No eres muy buena conociendo gente nueva)
+(Ojalá Otto no piense que eres una zopenca)
+
+show character o ONormal2 right
+
+o Jaja, qué simpática.
+o Te ves como esos perros chicos que tiritan todo el rato.
+
+show character o ONormal right
+show character j JHappy2 left
+show character r RHappy2 left
+
+j ¡Síiii! Es súper tierna, ¿verdad?
+
+show character j JHappy left
+
+r Ya...
+r ¿Podemos ir por nuestra doncella?
+
+show character o ONormal2 right
+
+o Waaah, ¿vamos a hacer el mítico ritual del chonguimiento para salvar a El Chongui de ascender al espacio?
+
+show character o ONormal right
+show character j JNormal2 left
+
+j Es como si nos leyéramos la mente :)
+
+show character j JNormal left
+
+(Juana y Otto hacen un complicado saludo con las manos)
+
+show character g GNormal2 right
+
+g Me hace feliz saber que escuchabas las historias que les contaba, Otelo.
+
+show character g GNormal right
+show character o ONormal2 right
+show character j JHappy left
+
+o No me diga así, señora Gema. Porfi.
+
+show character j JHappy2 left
+show character o ONormal right
+
+j Qué liiiiindo, el Otelito.
+
+show character j JHappy left
+
+r ¿Vamos?
+
+jump FIN</tw-passagedata><tw-passagedata pid="77" name="Doncella2" tags="" position="1516,800" size="100,100">hide character r
+hide character j
+hide character g
+
+show image D1 center fadeIn
+&lt;pause&gt;
+show image DM center fadeIn
+&lt;pause&gt;
+
+(Así que crees que es ella...)
+
+show character r RNormal2 left fadeIn
+show character j JNormal left fadeIn
+show character g GNormal right fadeIn
+
+r Creo que es Mile.
+
+hide image DM
+hide image D1
+
+show character r RNormal left
+show character g GNormal2 right
+
+g ¡Me hace mucho sentido! Esa niñita siempre fue una pionera en todo.
+
+show character j JNormal2 left
+show character g GNormal right
+
+j Una pionera en ser desagradable...
+
+show character j JNormal left
+show character g GNormal2 right
+
+g Perfecto, niñas.
+g Ahora, vayan. Tienen mucho trabajo que hacer.
+
+&lt;pause&gt;
+
+show character g GNormal right
+show character o ONormal2 right fadeIn
+
+o Hooola Juani, ¿qué onda?
+
+show character j JNormal2 left
+show character ONormal right
+
+j ¡Holi Otto! A que no adivinas en qué estamos...
+
+show character j JNormal
+show character o ONormal2 right
+
+o Waaah, ¿vamos a hacer el mítico ritual del chonguimiento para salvar a El Chongui de ascender al espacio?
+
+show character o ONormal right
+show character j JNormal2 left
+
+j Es como si nos leyéramos la mente :)
+
+show character j JNormal left
+
+(Juana y Otto hacen un complicado saludo con las manos)
+
+show character g GNormal2 right
+
+g Me hace feliz saber que escuchabas las historias que les contaba, Otelo.
+
+show character g GNormal right
+show character o ONormal2 right
+show character j JHappy left
+
+o No me diga así, señora Gema. Porfi.
+
+show character j JHappy2 left
+show character o ONormal right
+
+j Qué liiiiindo, el Otelito.
+
+show character j JHappy left
+show character g GNormal2 right
+
+g Otelo, esta es mi otra nieta, Roni.
+
+show character g GNormal right
+show character r RHappy left
+
+r H-hola.
+r :]
+
+(No eres muy buena conociendo gente nueva)
+(Ojalá Otto no piense que eres una zopenca)
+
+show character o ONormal2 right
+
+o Jaja, qué simpática.
+o Te ves como esos perros chicos que tiritan todo el rato.
+
+show character o ONormal right
+show character j JHappy2 left
+show character r RHappy2 left
+
+j ¡Síiii! Es súper tierna, ¿verdad?
+
+show character j JHappy left
+
+r Ya...
+r ¿Podemos ir por nuestra doncella?
+
+show character o ONormal2 right
+
+o ¡Vamos!
+
+show character o ONormal right
+show character j JNormal2 left
+show character r RNormal left
+
+j Ah, no te dije, Otto.
+j La doncella es Mile.
+
+show character j JNormal left
+show character o ONormal2 right
+
+o Oh.
+o ...
+
+show character o ONormal right
+
+&lt;pause&gt;
+
+show character o ONormal2 right
+
+o Bueno, pero el pueblo es más importante...
+o Encontraremos una forma de lograr que venga con nosotros.
+o ¡Vamos!
+
+show character o ONormal right
+show character r RNormal2 left
+
+r Vamos.
+
+jump FIN</tw-passagedata><tw-passagedata pid="78" name="Doncella3" tags="" position="1648,801" size="100,100">hide character r
+hide character j
+hide character g
+
+show image D1 center fadeIn
+&lt;pause&gt;
+(Así que aún no podemos saberlo...)
+
+show character r RNormal2 left fadeIn
+show character j JNormal left fadeIn
+show character g GNormal right fadeIn
+
+r Creo que aún no podemos saberlo.
+
+hide image D1
+
+show character r RNormal left
+show character g GNormal2 right
+
+g Está bien, Roni. Pero apresúrense.
+g Busquen ayuda como puedan para terminar esto lo antes posible.
+
+&lt;pause&gt;
+
+show character g GNormal right
+show character o ONormal2 right fadeIn
+
+o Hooola Juani, ¿qué onda?
+
+show character j JNormal2 left
+show character ONormal right
+
+j ¡Holi Otto! A que no adivinas en qué estamos...
+
+show character j JNormal
+show character o ONormal2 right
+
+o Waaah, ¿vamos a hacer el mítico ritual del chonguimiento para salvar a El Chongui de ascender al espacio?
+
+show character o ONormal right
+show character j JNormal2 left
+
+j Es como si nos leyéramos la mente :)
+
+show character j JNormal left
+
+(Juana y Otto hacen un complicado saludo con las manos)
+
+show character g GNormal2 right
+
+g Me hace feliz saber que escuchabas las historias que les contaba, Otelo.
+
+show character g GNormal right
+show character o ONormal2 right
+show character j JHappy left
+
+o No me diga así, señora Gema. Porfi.
+
+show character j JHappy2 left
+show character o ONormal right
+
+j Qué liiiiindo, el Otelito.
+
+show character j JHappy left
+show character g GNormal2 right
+
+g Otelo, esta es mi otra nieta, Roni.
+
+show character g GNormal right
+show character r RHappy left
+
+r H-hola.
+r :]
+
+(No eres muy buena conociendo gente nueva)
+(Ojalá Otto no piense que eres una zopenca)
+
+show character o ONormal2 right
+
+o Jaja, qué simpática.
+o Te ves como esos perros chicos que tiritan todo el rato.
+
+show character o ONormal right
+show character j JHappy2 left
+show character r RHappy2 left
+
+j ¡Síiii! Es súper tierna, ¿verdad?
+
+show character j JHappy left
+
+r Ya...
+r ¿Podemos ir por nuestra doncella?
+
+show character o ONormal2 right
+
+o ¡Vamos!
+
+jump FIN</tw-passagedata><tw-passagedata pid="79" name="FIN" tags="" position="1459,938" size="200,100">
+hide character r
+hide character j
+hide character g
+hide character o
+
+show background #000
+
+&lt;pause&gt;
+
+play music Pueblo fadeIn loop
+
+centered ¡Muchas gracias por jugar nuestra DEMO!
+centered Próximamente, la aventura continuará.
+centered Por ahora, tomate las cosas con calma.
+centered ¡No entres en pánico!
+centered Y, si las cosas se ven muy duras, siempre puedes visitar sitios como
+centered thequietplaceproject.xyz,
+centered xhalr.com,
+centered mynoise.net,
+centered ¡y muchos otros más!
+
+centered FIN</tw-passagedata></tw-storydata>
+		</div>
+		
+		<div id="monogatari">
+			<visual-novel>
+				<loading-screen></loading-screen>
+				<main-screen>
+					<main-menu></main-menu>
+				</main-screen>
+				<game-screen>
+					<dialog-log></dialog-log>
+					<text-box></text-box>
+					<quick-menu></quick-menu>
+				</game-screen>
+				<gallery-screen></gallery-screen>
+				<load-screen></load-screen>
+				<save-screen></save-screen>
+				<settings-screen></settings-screen>
+				<help-screen></help-screen>
+			</visual-novel>
+		</div>
+		
+		<div id="tw-errors">
+			<div class="icon" title="The script has errors">&#x26A0;&#xFE0F;</div>
+			<ul class="errors"></ul>
+		</div>
+		
+		<script>
+			window.twineStory = TwineMonogatari.convert();
+			console.log('Parsed story', window.twineStory);
+			if (window.twineStory.errors) {
+				console.error('Story contains errors', window.twineStory.errors);
+			}
+		</script>
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/js/options-twine.js"></script>
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/js/storage-twine.js"></script>
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/js/script-twine.js"></script>
+		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/js/main.js"></script>
+	</body>
+</html>
