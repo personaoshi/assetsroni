@@ -1,0 +1,306 @@
+/**
+ * =============================================================================
+ * This is the file where all your styling should go in.
+ * Instead of modifying the styles found in the monogatari.css file or others,
+ * you should overwrite those styles in this file.
+ *
+ * The CSS selectors shown are not an extensive list but they are the most
+ * common you might want to change. To find what other elements are available,
+ * you can take a look at the monogatari.css file or use your browser's dev
+ * tools to inspect the elements.
+ * =============================================================================
+**/
+
+/**
+ * ===========================
+ * General Styling
+ * ===========================
+**/
+
+/* General Style */
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+body {
+    
+	font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 1.4rem;
+
+}
+
+/* Simple Button styles*/
+button {
+
+}
+
+/* Simple Button Style on Hover */
+button:hover {
+
+}
+
+/* General Styling for Menu Screens */
+[data-screen] {
+
+}
+
+/**
+ * ===========================
+ * Main Menu Styling
+ * ===========================
+**/
+
+/* Main Menu Styling */
+[data-screen="main"] {
+
+}
+
+/* Main Menu Buttons Styling */
+[data-screen="main"] button {
+
+}
+
+/**
+ * ===========================
+ * Save and Load Menus Styling
+ * ===========================
+**/
+
+/* Slots Style */
+[data-component="save-slot"] figure {
+
+}
+
+/* Slot's Image Style */
+[data-component="save-slot"] img {
+
+}
+
+/* Slots Title Style */
+[data-component="save-slot"] figcaption {
+
+}
+
+/* Slots Delete Button Style */
+[data-component="save-slot"] button {
+
+}
+
+/**
+ * ===========================
+ * Game Elements Styling
+ * ===========================
+**/
+
+/* Choice Buttons style */
+[data-component="choice-container"] button {
+
+}
+
+/* Choice Button Style on Hover */
+[data-component="choice-container"] button:hover {
+
+}
+
+/* Text Box styling */
+[data-component="text-box"] {
+    border: 5px solid black;
+    border-radius: 20px;
+    margin: 30px 20px;
+    width: 96vw;
+    bottom: 20px;
+    min-height: 250px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff34;
+}
+
+/* Character Name Style */
+[data-ui="who"] {
+    padding: 0rem;
+    margin: 7px 0px 23px 40rem;
+    font-size: 2.5rem;
+    background: #00000000;
+    width: 7rem;
+    border-radius: 50px;
+    border: 15px black;
+}
+
+/* Style for Centered Text */
+[data-component="centered-dialog"] {
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    font-size: 40px;
+}
+
+/* Character Images Styles */
+[data-screen="game"] [data-character] {
+    
+}
+
+/* Other Images Styles */
+[data-screen="game"] [data-image] {
+
+}
+
+/**
+ * ===========================
+ * Quick Menu Styling
+ * ===========================
+**/
+
+/* These styles are applied to the Mobile version of the Quick Menu */
+
+/* Quick Menu Style */
+[data-component="quick-menu"] {
+
+}
+
+/* Quick Menu Buttons Style */
+[data-component="quick-menu"] span {
+
+}
+
+/* Quick Menu Buttons Style on Hover */
+[data-component="quick-menu"] span:hover {
+
+}
+
+/* Quick Menu Buttons Icon Style */
+[data-component="quick-menu"] > span > .fa {
+
+}
+
+/**
+ * ===========================
+ * Range Styling
+ * ===========================
+**/
+
+/* Use the background property to set a color for these */
+input[type=range]:focus::-webkit-slider-runnable-track {
+
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+
+}
+
+input[type=range]:focus::-ms-fill-upper {
+
+}
+
+input[type=range]:focus::-ms-fill-lower {
+
+}
+
+input[type=range]::-moz-range-track {
+
+}
+
+input[type=range]::-ms-fill-lower {
+
+}
+
+input[type=range]::-ms-fill-upper {
+
+}
+
+/* Styles for the desktop version of the Quick Menu*/
+@media screen and (min-width: 37.56255em) {
+
+	/* Quick Menu Style */
+	[data-component="quick-menu"] {
+
+	}
+
+	/* Quick Menu Buttons Style */
+	[data-component="quick-menu"] span {
+
+	}
+
+	/* Quick Menu Buttons Style on Hover */
+	[data-component="quick-menu"] span:hover {
+
+	}
+	
+}
+[data-component="main-menu"] {
+    position: fixed;
+    top: 45%;
+    right: 47%;
+}
+
+[data-action="open-screen"], [data-component="quick-menu"] {
+    display: none;
+}
+
+[data-component="text-box"] {
+    border: 2px solid black;
+    margin: 0 30px;
+    width: 96vw;
+    bottom: 20px;
+    min-height: 145px;
+    background-color: #7878786e;
+    backdrop-filter: blur(5px);
+}
+
+[data-screen="game"] [data-character] {
+    transform: scale(1.5);
+}
+
+game-screen [data-sprite].right {
+    left: auto;
+    right: 9rem;
+    top: auto;
+    bottom: 20px;
+    max-height: 58rem;
+}
+
+game-screen [data-sprite].left {
+    left: 9rem;
+    right: auto;
+    top: auto;
+    bottom: 20px;
+    max-height: 58rem; 
+}
+
+game-screen [data-sprite].center {
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: 20px;
+    max-height: 58rem; 
+}
+
+choice-container button {
+    color: 
+}
+
+[data-content=dialog], [data-ui=say] {
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+text-box p {
+    display: block;
+    width: 75rem;
+    height: 8rem;
+    padding: 10px;
+    margin: -30px -2rem 0rem 8.5rem;
+    text-align: justify;
+    background: #ff000000;
+}
+
+/* [data-character="j"] {
+    left: 140px;
+} */
+
+#iframe-minigame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    display: none;
+    background-color: black;
+
+}
