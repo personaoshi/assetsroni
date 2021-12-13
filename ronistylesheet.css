@@ -257,6 +257,14 @@ game-screen [data-sprite].left {
     max-height: 58rem; 
 }
 
+game-screen [data-sprite].center {
+    left: 9rem;
+    right: auto;
+    top: auto;
+    bottom: 20px;
+    max-height: 58rem; 
+}
+
 choice-container button {
     color: 
 }
