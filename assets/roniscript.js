@@ -13,7 +13,8 @@ function closeIframe() {
 function receiveMessage(event){
     if (event.data=="removetheiframe"){
        var element = document.getElementById('iframe-minigame');
-       element.parentNode.removeChild(element);
+       element.style.display = "none";
+       element.src = 'none';
     }
  }
  window.addEventListener("message", receiveMessage, false);
