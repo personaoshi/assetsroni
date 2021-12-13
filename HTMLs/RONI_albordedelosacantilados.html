@@ -165,22 +165,44 @@ play sound VozG2
 
 g El Chongui tiene las respuestas marcadas hace cientos de años, solo hay que salir a buscarlas...
 
+stop sound VozG2
+
 show character g GNormal right fadeIn
 show character j JNormal2 left fadeIn
 
+play sound VozJ1
+
 j ¡Wow, que bien! Nunca me canso de esta historia.
+
+stop sound VozJ1
+play sound VozJ2
+
 j Y no suena para nada como una locura de tus grupos conspiranoicos de facebake, abue :)
+
+stop sound VozJ2
 
 show character j JNormal left
 show character r RNormal2 left
 
+play sound VozR1
+
 r Sí, bueno, suerte con tu aventura, Gema.
+
+stop sound VozR1
+play sound VozR2
+
 r Con su permiso voy a recluirme en mi pieza.
+
+stop sound VozR2
 
 show character r RNormal left
 show character g GMad2 right
 
+play sound VozG1
+
 g Alto ahí, Roni.
+
+stop sound VozG1
 
 show character g GNormal right
 
@@ -195,42 +217,74 @@ show image A3 center fadeIn
 
 show character g GNormal2 right
 
+play sound VozG2
+
 g Primero tendrás que entregar estas alpargatas a mis clientes.
+
+stop sound VozG2
 
 show character g GNormal right
 show character r RFear2 left
 show character j JNormal left
 
+play sound VozR1
+
 r ¡Pero si no teníamos nada que hacer hoy!
+
+stop sound VozR1
 
 show character r RFear left
 show character j JNormal left
 show character g GMad2 right
 
+play sound VozG2
+
 g Pues ahora sí, en vista y consideración de tu actitud.
+
+stop sound VozG2
 
 show character r RFear2 left
 show character j JNormal left
 show character g GMad right
 
+play sound VozR1
+
 r Pero si ni sé dónde están las cosas acá.
+
+stop sound VozR1
 
 show character r RFear left
 show character g GMad2 right
 
+play sound VozG1
+
 g Que te acompañe tu prima entonces.
+
+stop sound VozG1
 
 show character j JHappy2 left
 show character g GNormal right
 
+play sound VozJ1
+
 j ¡Qué bacán, Roni!
+
+stop sound VozJ1
+play sound VozJ2
+
 j ¡Hace tiempo no hacemos cosas juntas! :)
+
+stop sound VozJ2
 
 show character j JHappy left
 show character g GMad2 right
 hide image A3
 
+play sound VozG2
+
 g ¡Ya, fuera! ¡Tengo que lavarle las patas a Gaspar!
+
+stop sound VozG2
 
 show character g GMad right
 
@@ -239,7 +293,11 @@ show character ga GaNormal right fadeIn
 
 show character g GMad2 right
 
+play sound VozG1
+
 g Fuchi.
+
+stop sound VozG1
 
 hide character g
 hide character ga
@@ -331,14 +389,27 @@ o:
     ONormal2: O1B.png</tw-passagedata><tw-passagedata pid="13" name="LeyendaIV" tags="Escena-1" position="10,464" size="100,100">stop sound Drone fadeOut
 show background #000
 
+play sound VozN3
+
 centered Roni, una chiquilla que apenas sale de su pieza, acaba de llegar al pueblo de El Chongui, obligada a ayudar a su accidentada abuela Gema. 
 
+stop sound VozN2
 play sound Tiembla fadeIn
+play sound VozN3
 
 centered Sin embargo, un gran terremoto marca el inicio del Chonguimiento, una catástrofe que levanta el pueblo, del suelo hacia los cielos. 
+
+stop sound VozN3
+play sound VozN2
+
 centered Gema instruye a Roni: Para detener el Chonguimiento debe ENCONTRAR en el pueblo a las 5 DONCELLAS profetizadas.
+
+stop sound VozN2
+play sound VozN1
+
 centered Y realizar el ritual que devolverá el pueblo a su sitio.
 
+stop sound VozN1
 stop sound Tiembla fadeOut
 
 jump 2
@@ -347,12 +418,20 @@ jump 2
 show character r RMad2 left fadeIn
 show character j JNormal right fadeIn
 
+play sound VozR1
+
 r Tsch...
+
+stop sound VozR1
 
 show character r RMad left
 show character j JNormal2 right
 
+play sound VozJ1
+
 j ¿Y bien? ¿Qué harás ahora?
+
+stop sound VozJ1
 
 [[Ver si la abue te abre la puerta-&gt;Hinchar]]
 [[Entregar las alpargatas-&gt;pre4]]</tw-passagedata><tw-passagedata pid="15" name="Hinchar" tags="Escena-3" position="228,231" size="100,100">
@@ -360,39 +439,72 @@ show character r RNormal left
 
 play sound Golpearpuerta
 &lt;pause&gt;
+
+play sound VozG1
+
 g ¡No creo que seas tan rápida!
+
+stop sound VozG1
 
 show character r RNormal2 left
 
+play sound VozR1
+
 r Ay, Dios santo.
+
+stop sound VozR1
 
 show character r RNormal left
 show character j JNormal2 right
 
+play sound VozJ1
+
 j ¿Vamos?
+
+stop sound VozJ1
 
 show character j JNormal right
 
 [[Insistir-&gt;Hinchar2]] 
 [[Ir a dejar las alpargatas-&gt;pre4]]</tw-passagedata><tw-passagedata pid="16" name="pre4" tags="Escena-3" position="426,132" size="100,100">show character r RNormal2 left
 
+play sound VozR1
+
 r Ya, vamos a dejar estas chalas.
+
+stop sound VozR1
 
 show character r RNormal left
 show character j JNormal2 right
 
+play sound VozJ1
+
 j Alpargatas, Roni.
+
+stop sound VozJ1
 
 show character r RNormal2 left
 show character j JNormal right
 
+play sound VozR1
+
 r Eso.
+
+stop sound VozR1
 
 show character r RNormal left
 show character j JNormal2 right
 
+play sound VozJ1
+
 j Ah, las entregamos en un segundito :)
+
+stop sound VozJ1
+play sound VozJ1
+
 j ¡Ven! Tengo que ver algo.
+
+stop sound VozJ1
 
 &lt;pause&gt;
 
@@ -401,7 +513,11 @@ jump 4</tw-passagedata><tw-passagedata pid="17" name="4_1" tags="Escena-4" posit
 show character r RFear left
 show character j JDoubt2 right
 
+play sound VozJ2
+
 j Supongo que el Chasqui irá a entregar el mensaje a la ciudad.
+
+stop sound VozJ2
 
 show character j JDoubt right
 
