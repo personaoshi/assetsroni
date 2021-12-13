@@ -24,7 +24,7 @@
 body {
     
 	font-family: 'Mochiy Pop One', sans-serif;
-    font-size: 1.5rem;
+    font-size: 3vh;
 
 }
 
@@ -94,7 +94,11 @@ button:hover {
 
 /* Choice Buttons style */
 [data-component="choice-container"] button {
-
+    font-size: 2.7vh;
+    padding: 2vh;
+    margin: 3vh;
+    background: #00000080;
+    backdrop-filter: blur(2px);
 }
 
 /* Choice Button Style on Hover */
@@ -109,7 +113,7 @@ button:hover {
         margin: 0 30px;
         width: 96vw;
         bottom: 20px;
-        min-height: 250px;
+        min-height:  29vh;
         color: rgb(0, 0, 0);
         background-color: #ffffffc5;
 }
@@ -117,8 +121,8 @@ button:hover {
 /* Character Name Style */
 [data-ui="who"] {
     padding: 0rem;
-    margin: 7px 0px 23px 40rem;
-    font-size: 2.5rem;
+    margin: 2vh 0vh 0vh 80vh;
+    font-size: 5vh;
     background: #00000000;
     width: 7rem;
     border-radius: 50px;
@@ -129,7 +133,7 @@ button:hover {
 [data-component="centered-dialog"] {
     color: white;
     text-shadow: 0px 0px 10px black;
-    font-size: 40px;
+    font-size: 5vh;
 }
 
 /* Character Images Styles */
@@ -246,7 +250,7 @@ game-screen [data-sprite].right {
     right: 9rem;
     top: auto;
     bottom: 20px;
-    max-height: 58rem;
+    max-height: 100vh;
 }
 
 game-screen [data-sprite].left {
@@ -254,7 +258,7 @@ game-screen [data-sprite].left {
     right: auto;
     top: auto;
     bottom: 20px;
-    max-height: 58rem; 
+    max-height: 100vh; 
 }
 
 game-screen [data-sprite].center {
@@ -262,7 +266,7 @@ game-screen [data-sprite].center {
     right: auto;
     top: auto;
     bottom: 20px;
-    max-height: 58rem; 
+    max-height: 100vh; 
 }
 
 choice-container button {
@@ -270,15 +274,15 @@ choice-container button {
 }
 
 [data-content=dialog], [data-ui=say] {
-    padding: 2rem 5rem 2rem 5rem;
+    padding: 6vh 10vh 4vh 10vh;
 }
 
 text-box p {
     display: block;
-    width: 75rem;
-    height: 8rem;
-    padding: 10px;
-    margin: -30px -2rem 0rem 8.5rem;
+    width: 150vh;
+    height: 23vh;
+    padding: 10vh;
+    margin: -5vh 0vh 0vh 18.5vh;
     text-align: justify;
-    background: #ff000000;
+    background: #ffffff00;
 }
