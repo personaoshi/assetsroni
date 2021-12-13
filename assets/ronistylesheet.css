@@ -286,3 +286,15 @@ text-box p {
     text-align: justify;
     background: #ffffff00;
 }
+
+#iframe-minigame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    display: none;
+    background-color: black;
+
+}

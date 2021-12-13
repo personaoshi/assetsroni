@@ -17,8 +17,8 @@
 		<link rel="stylesheet" href="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/engine/core/monogatari.css">
 		<link rel="stylesheet" href="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/style/error.css">
 		<link rel="stylesheet" href="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/style/main.css">
-		<link rel="stylesheet" href="assets_local/roni-stylesheet.css">
-		<script src="assets_local/roniscript.js"></script>
+		<link rel="stylesheet" href="assets/ronistylesheet.css">
+		<script src="assets/roniscript.js"></script>
 		<!-- Third Party JavaScript Libraries -->
 		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/js/vendor/jquery.min.js"></script>
 		<script src="https://haroldo-ok-2.github.io/twine-monogatari/v0.2.0//Monogatari/js/vendor/js-yaml.min.js"></script>
@@ -116,7 +116,11 @@ P: papers.png
 IB: bolso-objetos-2.jpg
 
 DC: TarotChasqui.png
-DM: TarotMile.png</tw-passagedata><tw-passagedata pid="7" name="Start" tags="" position="10,3" size="100,100">jump LeyendaI</tw-passagedata><tw-passagedata pid="8" name="LeyendaI" tags="Escena-1" position="11,120" size="100,100">play sound VozN3
+DM: TarotMile.png</tw-passagedata><tw-passagedata pid="7" name="Start" tags="" position="10,3" size="100,100">jump LeyendaI</tw-passagedata><tw-passagedata pid="8" name="LeyendaI" tags="Escena-1" position="11,120" size="100,100"> &#96;&#96;&#96;js
+
+	loadIframe(&quot;assets/external/click/index.html&quot;);
+
+	&#96;&#96;&#96; play sound VozN3
 
 (Para avanzar, presiona la barra espaciadora o haz click en la pantalla)
 
@@ -1828,17 +1832,6 @@ hide character r
 hide character c
 hide character m
 show background #000
-
-<!--JAVASCRIPT POINT AND CLICK PNC P&C-->
-
-&#96;&#96;&#96;js
-
-	loadIframe(&quot;/P&C_funcional/P&C_TAM.html&quot;);
-
-	&#96;&#96;&#96;
-
-<!--REVISAR QUE ESTÉ BIEN ESCRITO EL IFRAME-->
-
 jump 7_6</tw-passagedata><tw-passagedata pid="53" name="7_6" tags="Escena-7" position="1101,247" size="100,100">show background TodoAMil fadeIn
 stop music Alarma fadeOut
 play sound Tienda fadeIn loop
