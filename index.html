@@ -2490,7 +2490,13 @@ r Eh, sí...
 
 stop sound VozR
 
-jump Papeles</tw-passagedata><tw-passagedata pid="62" name="Papeles" tags="Escena-5" position="823,474" size="100,100">show character r RNormal left
+jump Papeles</tw-passagedata><tw-passagedata pid="62" name="Papeles" tags="Escena-5" position="823,474" size="100,100">
+stop sound AmbienteCorreos
+stop sound AmbienteTenderos
+play sound AmbienteCorreos loop
+play sound AmbienteTenderos loop
+
+show character r RNormal left
 show character j JNormal left
 
 show character c CNormal2 right
