@@ -1415,7 +1415,7 @@ show character c CNormal2 right
 
 play sound VozC
 
-c Ya, se viene lo mejor
+c Ya, se viene lo mejor.
 
 stop sound VozC
 play sound VozC
@@ -1502,7 +1502,12 @@ show character r RNormal2 left
 
 play sound VozR
 
-r ... ¿Hola?
+r ...
+
+stop sound VozR
+play sound VozR
+
+r ¿Hola?
 
 stop sound VozR
 
@@ -1628,7 +1633,13 @@ m ¿En serio? A ver.
 
 stop sound VozM
 
-jump Alpargata</tw-passagedata><tw-passagedata pid="47" name="Alpargata" tags="Escena-7" position="1139,638" size="100,100">show image A1 center fadeIn
+jump Alpargata</tw-passagedata><tw-passagedata pid="47" name="Alpargata" tags="Escena-7" position="1139,638" size="100,100">
+stop sound AmbienteTenderos
+stop sound Tienda	
+play sound AmbienteTenderos
+play sound Tienda
+
+show image A1 center fadeIn
 
 &lt;pause&gt;
 
