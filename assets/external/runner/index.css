@@ -136,3 +136,13 @@ html, body {
     padding: 0 8px;
   }
 }
+
+.spacebar {
+  max-width: 580px;
+  margin-top: 20vh;
+  opacity: 90%;
+}
+
+.sendmessage{
+  text-align: center;
+}
