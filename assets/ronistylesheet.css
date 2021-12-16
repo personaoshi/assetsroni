@@ -298,3 +298,9 @@ text-box p {
     background-color: black;
 
 }
+
+img[data-image="A1"],
+img[data-image="A2"],
+img[data-image="A3"] {
+    max-width: 17vw;
+}
